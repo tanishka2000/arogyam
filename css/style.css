@@ -1,0 +1,286 @@
+/** Home Page **/
+#mainBackDrop {
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    background-color: white;
+    background-image: url(../assets/images/backDrop1.png);
+    background-repeat: no-repeat; background-position: center;
+    background-size: cover;
+}
+
+#mainBackDrop .img-fluid {
+    max-width: 80%;
+}
+
+#mainHeader {
+    height: 70vh;
+}
+
+.primary-nav {
+    border: rgba( 255, 255, 255, 0.57) 5px solid;
+    border-radius: 0 0 20px 20px;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75)
+}
+
+.primary-nav .nav-link {
+    border: 10em;
+    border-color: black;
+}
+
+.primary-nav .nav-link.border {
+    background-color: #666666;
+    color: #ffffff;
+}
+
+.primary-nav .nav-link h5 {
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.primary-nav .nav-link.border h5 {
+    color: #ffffff;
+}
+
+.primary-nav .nav-link h5::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #161616;
+    transition: all ease-in-out 250ms;
+}
+
+.primary-nav .border h5::after {
+    width: 0%;
+}
+
+.primary-mobile-nav {
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75)
+}
+
+.primary-mobile-nav .nav-link {
+    border-radius: 0;
+    border: 0.1rem solid #ffffff;
+    color: #000000;
+}
+
+#subtitle {
+    background-color: #006B12;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/** Other Pages **/
+#mainHeader .secondary-nav {
+    background-color: #ffffff;
+    border-radius: 0 0 20px 20px;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75)
+}
+
+#mainHeader .secondary-nav .border {
+    background-color: #666666;
+    color: #ffffff;
+}
+
+#mainHeader .secondary-nav .nav-link {
+    margin: 0 1em;
+}
+
+#mainHeader .secondary-nav .nav-link h5 {
+    color: #000000;
+    margin-bottom: 0;
+}
+
+#mainHeader .secondary-nav .nav-link h5::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #161616;
+    transition: all ease-in-out 250ms;
+}
+
+#mainHeader .secondary-nav .nav-link.active h5, #mainHeader .secondary-nav .nav-link.border h5 {
+    color: #ffffff;
+}
+
+#mainHeader .secondary-nav .nav-link.active h5::after, #mainHeader .secondary-nav .nav-link.border h5::after {
+    width: 0%;
+}
+
+.secondary-mobile-nav {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.75)
+}
+
+.secondary-mobile-nav .nav-link {
+    border-radius: 0;
+    border: 0.1rem solid #ffffff;
+    color: #000000;
+}
+
+/** Coconut **/
+#mainBackDrop.coconut {
+    background-image: url(../assets/images/coconut-cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#mainHeader.coconut .secondary-nav .nav-link.active { 
+    background-image: linear-gradient(#AFD8AC, #77A074);
+}
+
+#mainHeader.coconut .secondary-mobile-nav .nav-link.active { 
+    background-image: linear-gradient(#AFD8AC, #77A074);
+}
+
+.coconut.rounded-circle {
+    background-color: #77A074;
+    width: 150px !important;
+    height: 150px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/** Flaxseed **/
+#mainBackDrop.flaxseed {
+    background-image: url(../assets/images/flaxseed-cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#mainHeader.flaxseed .secondary-nav .nav-link.active { 
+    background-image: linear-gradient(#BEB4C5, #5A5067);
+}
+
+#mainHeader.flaxseed .secondary-mobile-nav .nav-link.active { 
+    background-image: linear-gradient(#BEB4C5, #5A5067);
+}
+
+.flaxseed.rounded-circle {
+    background-color: #5A5067;
+    width: 150px !important;
+    height: 150px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/** Sesame **/
+#mainBackDrop.sesame {
+    background-image: url(../assets/images/sesame-cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#mainHeader.sesame .secondary-nav .nav-link.active { 
+    background-image: linear-gradient(#ACC5D8, #6F7D88);
+}
+
+#mainHeader.sesame .secondary-mobile-nav .nav-link.active { 
+    background-image: linear-gradient(#ACC5D8, #6F7D88);
+}
+
+.sesame.rounded-circle {
+    background-color: #6F7D88;
+    width: 150px !important;
+    height: 150px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/** Almond **/
+#mainBackDrop.almond {
+    background-image: url(../assets/images/almond-cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#mainHeader.almond .secondary-nav .nav-link.active { 
+    background-image: linear-gradient(#D8ACAC, #997777);
+}
+
+#mainHeader.almond .secondary-mobile-nav .nav-link.active { 
+    background-image: linear-gradient(#D8ACAC, #997777);
+}
+
+.almond.rounded-circle {
+    background-color: #997777;
+    width: 150px !important;
+    height: 150px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/** GroundNut **/
+#mainBackDrop.groundnut {
+    background-image: url(../assets/images/groundnut-cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#mainHeader.groundnut .secondary-nav .nav-link.active { 
+    background-image: linear-gradient(#E6A57E, #A5775C);
+}
+
+#mainHeader.groundnut .secondary-mobile-nav .nav-link.active { 
+    background-image: linear-gradient(#E6A57E, #A5775C);
+}
+
+.groundnut.rounded-circle {
+    background-color: #A5775C;
+    width: 150px !important;
+    height: 150px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/** Mustard **/
+#mainBackDrop.mustard {
+    background-image: url(../assets/images/mustard-cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#mainHeader.mustard .secondary-nav .nav-link.active { 
+    background-image: linear-gradient(#E8D595, #A69869);
+}
+
+#mainHeader.mustard .secondary-mobile-nav .nav-link.active { 
+    background-image: linear-gradient(#E8D595, #A69869);
+}
+
+.mustard.rounded-circle {
+    background-color: #A69869;
+    width: 150px !important;
+    height: 150px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
