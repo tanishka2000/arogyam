@@ -136,10 +136,15 @@
 }
 
 /** Coconut **/
+p {
+    color: #ffffff;
+}
+
 #mainBackDrop.coconut {
     background-image: url(../assets/images/coconut-cover.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left bottom;
     background-attachment: fixed;
 }
 
@@ -165,6 +170,7 @@
     background-image: url(../assets/images/flaxseed-cover.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left bottom;
     background-attachment: fixed;
 }
 
@@ -190,6 +196,7 @@
     background-image: url(../assets/images/sesame-cover.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left bottom;
     background-attachment: fixed;
 }
 
@@ -215,6 +222,7 @@
     background-image: url(../assets/images/almond-cover.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left bottom;
     background-attachment: fixed;
 }
 
@@ -240,6 +248,7 @@
     background-image: url(../assets/images/groundnut-cover.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left bottom;
     background-attachment: fixed;
 }
 
@@ -265,6 +274,7 @@
     background-image: url(../assets/images/mustard-cover.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left bottom;
     background-attachment: fixed;
 }
 
