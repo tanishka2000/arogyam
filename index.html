@@ -1,104 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap & other CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
 
-  <!-- Bootstrap & other CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/style.css" />
+    <!-- icons -->
+    <link rel="icon" type="image/png" href="./assets/images/icon.png" />
 
-  <!-- icons -->
-  <link rel="icon" type="image/png" href="./assets/images/icon.png"/>
+    <title>Arogyam</title>
+  </head>
 
-  <title>Arogyam</title>
-</head>
-
-<body>
-  <div id="mainBackDrop" class="jumbotron jumbotron-fluid m-0 p-0">
-    <table style="height: 100%;">
-      <tbody>
-        <tr>
-          <td class="align-bottom">
-            <svg class="waves sticky-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"
-            >
-              <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-              </defs>
-              <g class="parallax">
-                <use xlink:href="#gentle-wave" x="48" y="0" fill="#E6A57E" />
-                <use xlink:href="#gentle-wave" x="48" y="1" fill="#E8D595" />
-                <use xlink:href="#gentle-wave" x="48" y="3" fill="#ACC5D8" />
-                <use xlink:href="#gentle-wave" x="48" y="5" fill="#D8ACAC" />
-                <use xlink:href="#gentle-wave" x="48" y="7" fill="#AFD8AC" />
-                <use xlink:href="#gentle-wave" x="48" y="9" fill="#BEB4C5" />
-              </g>
-            </svg>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <nav class="primary-nav navbar nav nav-expand-lg nav-pills flex-column flex-sm-row sticky-top">
-    <a class="flex-sm-fill text-sm-center nav-link" href="index.html"><img src="./assets/images/logo.png"
-        width="27vw" /></a>
-    <a class="flex-sm-fill text-sm-center nav-link d-md-block d-none" href="coconut.html">
-      <h5>Coconut oil</h5>
-    </a>
-    <a class="flex-sm-fill text-sm-center nav-link d-md-block d-none" href="flaxseed.html">
-      <h5>FlaxSeed oil</h5>
-    </a>
-    <a class="flex-sm-fill text-sm-center nav-link d-md-block d-none" href="sesame.html">
-      <h5>Sesame oil</h5>
-    </a>
-    <a class="flex-sm-fill text-sm-center nav-link d-md-block d-none" href="almond.html">
-      <h5>Almond oil</h5>
-    </a>
-    <a class="flex-sm-fill text-sm-center nav-link d-md-block d-none" href="groundnut.html">
-      <h5>GroundNut oil</h5>
-    </a>
-    <a class="flex-sm-fill text-sm-center nav-link d-md-block d-none" href="mustard.html">
-      <h5>Mustard oil</h5>
-    </a>
-    <a class="flex-sm-fill text-sm-center nav-link border d-md-block d-none" href="#">
-      <h5>FAQs</h5>
-    </a>
-  </nav>
-  <div id="mainHeader" class="jumbotron jumbotron-fluid my-auto p-0">
-    <div class="col-md-5 col-sm-12 py-md-5 px-md-5 px-4 py-auto my-auto text-md-left text-center">
-      <img src="./assets/images/Arogyam.png" class="img-fluid mt-md-0 mt-5" />
-      <h3 class="my-3 mx-0">
-        <mark id="subtitle" class="py-0">Wodden Cold Pressed</mark>
-        <mark id="subtitle" class="py-0">Extra Virgin</mark>
-      </h3>
-      <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat.
-      </p>
+  <body>
+    <div id="mainBackDrop" class="jumbotron jumbotron-fluid m-0 p-0">
+      <table style="height: 100%">
+        <tbody>
+          <tr>
+            <td class="align-bottom">
+              <svg
+                class="waves sticky-bottom"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28"
+                preserveAspectRatio="none"
+                shape-rendering="auto"
+              >
+                <defs>
+                  <path
+                    id="gentle-wave"
+                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                  />
+                </defs>
+                <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="#E6A57E" />
+                  <use xlink:href="#gentle-wave" x="48" y="1" fill="#E8D595" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="#ACC5D8" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="#D8ACAC" />
+                  <use xlink:href="#gentle-wave" x="48" y="7" fill="#AFD8AC" />
+                  <use xlink:href="#gentle-wave" x="48" y="9" fill="#BEB4C5" />
+                </g>
+              </svg>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <nav class="primary-mobile-nav nav nav-pills nav-justified fixed-bottom d-md-none d-flex">
-      <a class="nav-link" href="coconut.html">Coconut</a>
-      <a class="nav-link" href="flaxseed.html">Flaxseed</a>
-      <a class="nav-link" href="sesame.html">Sesame</a>
-      <a class="nav-link" href="almond.html">Almond</a>
-      <a class="nav-link" href="groundnut.html">Groundnut</a>
-      <a class="nav-link" href="mustard.html">Mustard</a>
+    <nav
+      class="primary-nav navbar nav nav-expand-lg nav-pills flex-column flex-sm-row sticky-top"
+    >
+      <a class="flex-sm-fill text-sm-center nav-link" href="index.html"
+        ><img src="./assets/images/logo.png" width="27vw"
+      /></a>
+      <a
+        class="flex-sm-fill text-sm-center nav-link d-md-block d-none"
+        href="coconut.html"
+      >
+        <h5>Coconut oil</h5>
+      </a>
+      <a
+        class="flex-sm-fill text-sm-center nav-link d-md-block d-none"
+        href="flaxseed.html"
+      >
+        <h5>FlaxSeed oil</h5>
+      </a>
+      <a
+        class="flex-sm-fill text-sm-center nav-link d-md-block d-none"
+        href="sesame.html"
+      >
+        <h5>Sesame oil</h5>
+      </a>
+      <a
+        class="flex-sm-fill text-sm-center nav-link d-md-block d-none"
+        href="almond.html"
+      >
+        <h5>Almond oil</h5>
+      </a>
+      <a
+        class="flex-sm-fill text-sm-center nav-link d-md-block d-none"
+        href="groundnut.html"
+      >
+        <h5>GroundNut oil</h5>
+      </a>
+      <a
+        class="flex-sm-fill text-sm-center nav-link d-md-block d-none"
+        href="mustard.html"
+      >
+        <h5>Mustard oil</h5>
+      </a>
+      <a
+        class="flex-sm-fill text-sm-center nav-link border d-md-block d-none"
+        href="#"
+      >
+        <h5>FAQs</h5>
+      </a>
     </nav>
-  </div>
+    <div id="mainHeader" class="jumbotron jumbotron-fluid my-auto p-0">
+      <div
+        class="col-md-5 col-sm-12 py-md-5 px-md-5 px-4 py-auto my-auto text-md-left text-center"
+      >
+        <img src="./assets/images/Arogyam.png" class="img-fluid mt-md-0 mt-5" />
+        <h3 class="my-3 mx-0">
+          <mark id="subtitle" class="py-0">Wodden Cold Pressed</mark>
+          <mark id="subtitle" class="py-0">Extra Virgin</mark>
+        </h3>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
 
-  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-  </script>
-</body>
+        <!-- ****************************************Contact Us Form***************************************** -->
+        <div id="contactUsForm" class="contactUsFormClass">
+          <!-- py-2 px-2 ^ -->
+          <div class="formHeading text-center text-white">
+            Contact Us
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="bi bi-chevron-double-right"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              onclick="closeNav()"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
+          <form id="mainFormId" class="mainFormClass py-4 px-4">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <div class="input-group my-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+                <input
+                  type="email"
+                  placeholder="Enter Email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea
+                class="form-control my-3"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
 
+            <button type="submit" class="btn btn-primary btn-block">
+              Submit
+            </button>
+            <!-- <button onclick="closeNav()" class="btn btn-primary">Close</button> -->
+          </form>
+        </div>
+      </div>
+      <div id="contactus-iconId" class="align-right-bottom">
+        <img
+          class="contactus-iconClass"
+          onclick="openNav()"
+          src="./assets/images/contactus.png"
+        />
+      </div>
+      <nav
+        class="primary-mobile-nav nav nav-pills nav-justified fixed-bottom d-md-none d-flex"
+      >
+        <a class="nav-link" href="coconut.html">Coconut</a>
+        <a class="nav-link" href="flaxseed.html">Flaxseed</a>
+        <a class="nav-link" href="sesame.html">Sesame</a>
+        <a class="nav-link" href="almond.html">Almond</a>
+        <a class="nav-link" href="groundnut.html">Groundnut</a>
+        <a class="nav-link" href="mustard.html">Mustard</a>
+      </nav>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="./js/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

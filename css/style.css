@@ -1,336 +1,397 @@
 @font-face {
-    font-family: Montserrat;
-    src: url(../assets/fonts/Montserrat-Bold.ttf);
+  font-family: Montserrat;
+  src: url(../assets/fonts/Montserrat-Bold.ttf);
 }
 
-h1, h2, h3, h4, h5, h6, a {
-    font-family: Montserrat;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: Montserrat;
 }
 
 /** Home Page **/
 #mainBackDrop {
-    position: fixed;
-    right: 0;
-    left: 0;
-    height: 100vh;
-    background-color: white;
-    background-repeat: no-repeat; background-position: center;
-    background-size: cover;
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #mainBackDrop .waves {
-    position: relative;
-    width: 2560px;
-    height: 80%;
-    margin-bottom:-7px;
-    max-height: 100%;
+  position: relative;
+  width: 2560px;
+  height: 80%;
+  margin-bottom: -7px;
+  max-height: 100%;
 }
 
 .parallax > use {
-    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(5) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(6) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -6s;
+  animation-duration: 25s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -7s;
+  animation-duration: 32s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
   }
-  .parallax > use:nth-child(5) {
-    animation-delay: -2s;
-    animation-duration: 7s;
+  100% {
+    transform: translate3d(85px, 0, 0);
   }
-  .parallax > use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
   }
-  .parallax > use:nth-child(6) {
-    animation-delay: -4s;
-    animation-duration: 13s;
-  }
-  .parallax > use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s;
-  }
-  .parallax > use:nth-child(1) {
-    animation-delay: -6s;
-    animation-duration: 25s;
-  }
-  .parallax > use:nth-child(3) {
-    animation-delay: -7s;
-    animation-duration: 32s;
-  }
-  @keyframes move-forever {
-    0% {
-     transform: translate3d(-90px,0,0);
-    }
-    100% { 
-      transform: translate3d(85px,0,0);
-    }
-  }
-  /*Shrinking for mobile*/
-  @media (max-width: 768px) {
-    .waves {
-      height:40px;
-      min-height:40px;
-    }
 }
 
 #mainBackDrop .img-fluid {
-    max-width: 80%;
+  max-width: 80%;
 }
 
 .primary-nav {
-    border: rgba( 255, 255, 255, 0.57) 5px solid;
-    border-radius: 0 0 20px 20px;
+  border: rgba(255, 255, 255, 0.57) 5px solid;
+  border-radius: 0 0 20px 20px;
 }
 
 .primary-nav .nav-link {
-    border: 10em;
-    border-color: black;
+  border: 10em;
+  border-color: black;
 }
 
 .primary-nav .nav-link.border {
-    background-color: #666666;
-    color: #ffffff;
+  background-color: #666666;
+  color: #ffffff;
 }
 
 .primary-nav .nav-link h5 {
-    color: #000000;
-    margin-bottom: 0;
+  color: #000000;
+  margin-bottom: 0;
 }
 
 .primary-nav .nav-link.border h5 {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .primary-nav .nav-link h5::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #161616;
-    transition: all ease-in-out 250ms;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #161616;
+  transition: all ease-in-out 250ms;
 }
 
 .primary-nav .border h5::after {
-    width: 0%;
+  width: 0%;
 }
 
 .primary-mobile-nav .nav-link {
-    border-radius: 0;
-    border: 0.09em solid #ffffff;
-    color: #000000;
+  border-radius: 0;
+  border: 0.09em solid #ffffff;
+  color: #000000;
 }
 
 #subtitle {
-    background-color: rgba( 0, 0, 0, 0.25);
-    color: white;
-    font-family: Roboto;
-    line-height: 1.4;
-    border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+  font-family: Roboto;
+  line-height: 1.4;
+  border-radius: 5px;
 }
 
 /** Other Pages **/
 #mainHeader .secondary-nav {
-    background-color: #ffffff;
-    border-radius: 0 0 20px 20px;
+  background-color: #ffffff;
+  border-radius: 0 0 20px 20px;
 }
 
 #mainHeader .secondary-nav .border {
-    background-color: #666666;
-    color: #ffffff;
+  background-color: #666666;
+  color: #ffffff;
 }
 
 #mainHeader .secondary-nav .nav-link {
-    margin: 0 1em;
+  margin: 0 1em;
 }
 
 #mainHeader .secondary-nav .nav-link h5 {
-    color: #000000;
-    margin-bottom: 0;
+  color: #000000;
+  margin-bottom: 0;
 }
 
 #mainHeader .secondary-nav .nav-link h5::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #161616;
-    transition: all ease-in-out 250ms;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #161616;
+  transition: all ease-in-out 250ms;
 }
 
-#mainHeader .secondary-nav .nav-link.active h5, #mainHeader .secondary-nav .nav-link.border h5 {
-    color: #ffffff;
+#mainHeader .secondary-nav .nav-link.active h5,
+#mainHeader .secondary-nav .nav-link.border h5 {
+  color: #ffffff;
 }
 
-#mainHeader .secondary-nav .nav-link.active h5::after, #mainHeader .secondary-nav .nav-link.border h5::after {
-    width: 0%;
+#mainHeader .secondary-nav .nav-link.active h5::after,
+#mainHeader .secondary-nav .nav-link.border h5::after {
+  width: 0%;
 }
 
 .secondary-mobile-nav {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .secondary-mobile-nav .nav-link {
-    border-radius: 0;
-    border: 0.1rem solid #ffffff;
-    color: #000000;
+  border-radius: 0;
+  border: 0.1rem solid #ffffff;
+  color: #000000;
 }
 
 /** Coconut **/
 #mainHeader .row p {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 #mainBackDrop.coconut {
-    background-image: url(../assets/images/coconut-cover.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left bottom;
-    background-attachment: fixed;
+  background-image: url(../assets/images/coconut-cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  background-attachment: fixed;
 }
 
-#mainHeader.coconut .secondary-nav .nav-link.active { 
-    background-image: linear-gradient(#AFD8AC, #77A074);
+#mainHeader.coconut .secondary-nav .nav-link.active {
+  background-image: linear-gradient(#afd8ac, #77a074);
 }
 
-#mainHeader.coconut .secondary-mobile-nav .nav-link.active { 
-    background-image: linear-gradient(#AFD8AC, #77A074);
+#mainHeader.coconut .secondary-mobile-nav .nav-link.active {
+  background-image: linear-gradient(#afd8ac, #77a074);
 }
 
 .coconut.rounded-circle {
-    background-color: #77A074;
-    width: 150px !important;
-    height: 150px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+  background-color: #77a074;
+  width: 150px !important;
+  height: 150px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /** Flaxseed **/
 #mainBackDrop.flaxseed {
-    background-image: url(../assets/images/flaxseed-cover.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left bottom;
-    background-attachment: fixed;
+  background-image: url(../assets/images/flaxseed-cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  background-attachment: fixed;
 }
 
-#mainHeader.flaxseed .secondary-nav .nav-link.active { 
-    background-image: linear-gradient(#BEB4C5, #5A5067);
+#mainHeader.flaxseed .secondary-nav .nav-link.active {
+  background-image: linear-gradient(#beb4c5, #5a5067);
 }
 
-#mainHeader.flaxseed .secondary-mobile-nav .nav-link.active { 
-    background-image: linear-gradient(#BEB4C5, #5A5067);
+#mainHeader.flaxseed .secondary-mobile-nav .nav-link.active {
+  background-image: linear-gradient(#beb4c5, #5a5067);
 }
 
 .flaxseed.rounded-circle {
-    background-color: #5A5067;
-    width: 150px !important;
-    height: 150px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+  background-color: #5a5067;
+  width: 150px !important;
+  height: 150px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /** Sesame **/
 #mainBackDrop.sesame {
-    background-image: url(../assets/images/sesame-cover.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left bottom;
-    background-attachment: fixed;
+  background-image: url(../assets/images/sesame-cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  background-attachment: fixed;
 }
 
-#mainHeader.sesame .secondary-nav .nav-link.active { 
-    background-image: linear-gradient(#ACC5D8, #6F7D88);
+#mainHeader.sesame .secondary-nav .nav-link.active {
+  background-image: linear-gradient(#acc5d8, #6f7d88);
 }
 
-#mainHeader.sesame .secondary-mobile-nav .nav-link.active { 
-    background-image: linear-gradient(#ACC5D8, #6F7D88);
+#mainHeader.sesame .secondary-mobile-nav .nav-link.active {
+  background-image: linear-gradient(#acc5d8, #6f7d88);
 }
 
 .sesame.rounded-circle {
-    background-color: #6F7D88;
-    width: 150px !important;
-    height: 150px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+  background-color: #6f7d88;
+  width: 150px !important;
+  height: 150px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /** Almond **/
 #mainBackDrop.almond {
-    background-image: url(../assets/images/almond-cover.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left bottom;
-    background-attachment: fixed;
+  background-image: url(../assets/images/almond-cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  background-attachment: fixed;
 }
 
-#mainHeader.almond .secondary-nav .nav-link.active { 
-    background-image: linear-gradient(#D8ACAC, #997777);
+#mainHeader.almond .secondary-nav .nav-link.active {
+  background-image: linear-gradient(#d8acac, #997777);
 }
 
-#mainHeader.almond .secondary-mobile-nav .nav-link.active { 
-    background-image: linear-gradient(#D8ACAC, #997777);
+#mainHeader.almond .secondary-mobile-nav .nav-link.active {
+  background-image: linear-gradient(#d8acac, #997777);
 }
 
 .almond.rounded-circle {
-    background-color: #997777;
-    width: 150px !important;
-    height: 150px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+  background-color: #997777;
+  width: 150px !important;
+  height: 150px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /** GroundNut **/
 #mainBackDrop.groundnut {
-    background-image: url(../assets/images/groundnut-cover.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left bottom;
-    background-attachment: fixed;
+  background-image: url(../assets/images/groundnut-cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  background-attachment: fixed;
 }
 
-#mainHeader.groundnut .secondary-nav .nav-link.active { 
-    background-image: linear-gradient(#E6A57E, #A5775C);
+#mainHeader.groundnut .secondary-nav .nav-link.active {
+  background-image: linear-gradient(#e6a57e, #a5775c);
 }
 
-#mainHeader.groundnut .secondary-mobile-nav .nav-link.active { 
-    background-image: linear-gradient(#E6A57E, #A5775C);
+#mainHeader.groundnut .secondary-mobile-nav .nav-link.active {
+  background-image: linear-gradient(#e6a57e, #a5775c);
 }
 
 .groundnut.rounded-circle {
-    background-color: #A5775C;
-    width: 150px !important;
-    height: 150px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+  background-color: #a5775c;
+  width: 150px !important;
+  height: 150px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /** Mustard **/
 #mainBackDrop.mustard {
-    background-image: url(../assets/images/mustard-cover.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left bottom;
-    background-attachment: fixed;
+  background-image: url(../assets/images/mustard-cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  background-attachment: fixed;
 }
 
-#mainHeader.mustard .secondary-nav .nav-link.active { 
-    background-image: linear-gradient(#E8D595, #A69869);
+#mainHeader.mustard .secondary-nav .nav-link.active {
+  background-image: linear-gradient(#e8d595, #a69869);
 }
 
-#mainHeader.mustard .secondary-mobile-nav .nav-link.active { 
-    background-image: linear-gradient(#E8D595, #A69869);
+#mainHeader.mustard .secondary-mobile-nav .nav-link.active {
+  background-image: linear-gradient(#e8d595, #a69869);
 }
 
 .mustard.rounded-circle {
-    background-color: #A69869;
-    width: 150px !important;
-    height: 150px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+  background-color: #a69869;
+  width: 150px !important;
+  height: 150px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* For contact us Form */
+#contactUsForm {
+  z-index: 1;
+  /* border: 1px solid red; */
+}
+
+.contactUsFormClass {
+  border: 1px solid red;
+  border-radius: 8px;
+  font-family: Montserrat;
+  /* from arogyam 2  */
+  /* height: auto; */
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  /* border: 1px solid black; */
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+#mainFormId {
+}
+.mainFormClass {
+  background-color: rgba(253, 254, 255, 0.459);
+  border-radius: 0px 0px 8px 8px;
+}
+.formHeading {
+  /* transform-origin: bottom left; */
+  /* transform: rotate(90deg); */
+  font-size: 25px;
+  background-color: red;
+  /*border postioning => top-left top-right bottom-right bottom-left */
+  border-radius: 8px 8px 0px 0px;
+  font-family: Montserrat;
+}
+
+.align-right-bottom {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+}
+#contactus-iconId {
+  transition: 0.5s;
+}
+.contactus-iconClass {
+  height: 80px;
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 10%;
+  transition: 0.5s;
 }
