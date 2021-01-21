@@ -13,6 +13,10 @@ a {
   font-family: Montserrat;
 }
 
+p {
+  font-family: Roboto !important;
+}
+
 /** Home Page **/
 #mainBackDrop {
   position: fixed;
@@ -20,6 +24,7 @@ a {
   left: 0;
   height: 100vh;
   background-color: white;
+  background-image: url(../assets/images/backDrop1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -69,15 +74,40 @@ a {
   }
 }
 /*Shrinking for mobile*/
+
 @media (max-width: 768px) {
   .waves {
     height: 40px;
     min-height: 40px;
   }
 }
+@media screen and (max-width: 768px) {
+  #contactus-iconId {
+    margin-bottom: 10%;
+  }
+}
 
 #mainBackDrop .img-fluid {
   max-width: 80%;
+}
+
+.primary-nav .nav-link h6::after {
+  content: "";
+  display: block;
+  height: 2.5px;
+  width: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #161616;
+  transition: all ease-out 500ms;
+}
+
+.primary-nav .nav-link:hover h6::after {
+  width: 50%;
+}
+
+.primary-nav .nav-link.border h6::after {
+  width: 0%;
 }
 
 .primary-nav {
@@ -133,7 +163,17 @@ a {
   border-radius: 5px;
 }
 
+p.h5 {
+  font-family: Roboto;
+  font-size: medium;
+  font-weight: 400;
+}
+
 /** Other Pages **/
+#mainHeader {
+  height: 80vh !important;
+}
+
 #mainHeader .secondary-nav {
   background-color: #ffffff;
   border-radius: 0 0 20px 20px;
@@ -345,7 +385,7 @@ a {
 }
 /* For contact us Form */
 #contactUsForm {
-  z-index: 1;
+  z-index: 100;
   /* border: 1px solid red; */
 }
 
@@ -357,11 +397,10 @@ a {
   /* height: auto; */
   width: 0;
   position: fixed;
-  z-index: 1;
   right: 0;
   bottom: 0;
   /* border: 1px solid black; */
-  overflow-x: hidden;
+  overflow-x: auto;
   transition: 0.5s;
 }
 #mainFormId {
