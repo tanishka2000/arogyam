@@ -168,7 +168,7 @@
                   type="email"
                   placeholder="Enter Email"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="formEmailInput"
                   aria-describedby="emailHelp"
                 />
               </div>
@@ -177,12 +177,17 @@
               <label for="exampleFormControlTextarea1">Message</label>
               <textarea
                 class="form-control my-3"
-                id="exampleFormControlTextarea1"
+                id="formMessageInput"
                 rows="3"
+                required
               ></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-block">
+            <button
+              type="button"
+              onclick="sendMail()"
+              class="btn btn-primary btn-block"
+            >
               Submit &nbsp;
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -251,6 +256,8 @@
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="./js/main.js"></script>
+    <script src="./js/sendmail.js"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
