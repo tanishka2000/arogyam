@@ -46,22 +46,23 @@ function sendMail() {
       console.log(this.responseText);
     }
   });
-  xhr.open("POST", "https://api.sendgrid.com/v3/mail/send");
+  xhr.open(
+    "POST",
+    "https://cors-anywhere.herokuapp.com/https://api.sendgrid.com/v3/mail/send"
+  );
   xhr.setRequestHeader(
     "authorization",
     "Bearer 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"
   );
-  xhr.setRequestHeader(
-    "Access-Control-Allow-Origin",
-    "https://cors-anywhere.herokuapp.com/http://127.0.0.1:5501"
-  );
-  xhr.setRequestHeader("Access-Control-Allow-Credentials", " true");
+
+  xhr.setRequestHeader("Access-Control-Allow-Origin", "http://127.0.0.1:5501/");
+  xhr.setRequestHeader("Access-Control-Allow-Credentials", "true");
   // xhr.setRequestHeader(
   //   "Access-Control-Allow-Methods",
   //   "GET, POST, PUT, DELETE, OPTIONS"
   // );
-  xhr.setRequestHeader("Access-Control-Allow-Methods", " POST");
-  xhr.setRequestHeader("Access-Control-Allow-Headers", " Content-Type");
+  xhr.setRequestHeader("Access-Control-Allow-Methods", "POST");
+  xhr.setRequestHeader("Access-Control-Allow-Headers", "Content-Type");
 
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.send(data);
