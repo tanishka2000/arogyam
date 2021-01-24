@@ -1,3 +1,13 @@
+function initiateMailSending() {
+  var fieldsEmpty = checkInputs();
+  if (fieldsEmpty == true) {
+    document.getElementById("alertEmptyFieldsTrue").style.opacity = 1;
+    document.getElementById("alertEmptyFieldsFalse").style.opacity = 0;
+  }
+  if (fieldsEmpty == false) {
+    sendMail();
+  }
+}
 function sendMail() {
   var data = JSON.stringify({
     personalizations: [
@@ -8,12 +18,6 @@ function sendMail() {
             name: "Vishal Khandate",
           },
         ],
-        // dynamic_template_data: {
-        //   guest: "Anthony Wang",
-        //   partysize: "4",
-        //   english: true,
-        //   date: "April 1st, 2018",
-        // },
         subject: "Hello, World!",
       },
     ],
@@ -44,6 +48,8 @@ function sendMail() {
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === this.DONE) {
       console.log(this.responseText);
+      document.getElementById("alertEmptyFieldsFalse").style.opacity = 1;
+      document.getElementById("alertEmptyFieldsTrue").style.opacity = 0;
     }
   });
   xhr.open(
@@ -67,7 +73,14 @@ function sendMail() {
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.send(data);
 }
+
 function checkInputs() {
-  if (true) {
+  if (
+    document.getElementById("formEmailInput").value == "" ||
+    document.getElementById("formMessageInput").value == ""
+  ) {
+    return true;
+  } else {
+    return false;
   }
 }

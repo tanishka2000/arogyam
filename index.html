@@ -121,6 +121,26 @@
         <h5>FAQs</h5>
       </a>
     </nav>
+    <div
+      id="alertEmptyFieldsTrue"
+      onclick="closeErrorAlert()"
+      class="alert alert-danger"
+      role="alert"
+    >
+      Please fill all the fields!<span class="float-right" aria-hidden="true"
+        ><h3>&times;</h3></span
+      >
+    </div>
+    <div
+      id="alertEmptyFieldsFalse"
+      onclick="closeSuccessAlert()"
+      class="alert alert-success"
+      role="alert"
+    >
+      We got your mail!<span class="float-right" aria-hidden="true"
+        ><h3>&times;</h3></span
+      >
+    </div>
     <div id="mainHeader" class="jumbotron jumbotron-fluid my-auto p-0">
       <div
         class="col-md-5 col-sm-12 py-md-5 px-md-5 px-4 py-auto my-auto text-md-left text-center"
@@ -185,7 +205,7 @@
 
             <button
               type="button"
-              onclick="sendMail()"
+              onclick="initiateMailSending()"
               class="btn btn-primary btn-block"
             >
               Submit &nbsp;

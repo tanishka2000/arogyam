@@ -35,3 +35,10 @@ if (screen.width <= parseInt("880px")) {
     document.getElementById("mobile-nav").style.height = "auto";
   }
 }
+function closeErrorAlert() {
+  document.getElementById("alertEmptyFieldsTrue").style.opacity = 0;
+}
+
+function closeSuccessAlert() {
+  document.getElementById("alertEmptyFieldsFalse").style.opacity = 0;
+}

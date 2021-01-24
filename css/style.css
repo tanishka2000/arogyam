@@ -385,7 +385,7 @@ p.h5 {
 }
 /* For contact us Form */
 #contactUsForm {
-  z-index: 100;
+  /* z-index: 100; */
   /* border: 1px solid red; */
 }
 
@@ -432,5 +432,14 @@ p.h5 {
   width: 80px;
   border: 1px solid black;
   border-radius: 10%;
+  transition: 0.5s;
+}
+/*Alert Box*/
+#alertEmptyFieldsTrue,
+#alertEmptyFieldsFalse {
+  opacity: 0;
+  width: 50%;
+  margin: auto;
+  cursor: pointer;
   transition: 0.5s;
 }
