@@ -25,39 +25,6 @@
 
   <body>
     <div id="mainBackDrop" class="jumbotron jumbotron-fluid m-0 p-0">
-      <!-- Waves Start  -->
-      <!-- <table style="height: 100%">
-        <tbody>
-          <tr>
-            <td class="align-bottom">
-              <svg
-                class="waves sticky-bottom"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 24 150 28"
-                preserveAspectRatio="none"
-                shape-rendering="auto"
-              >
-                <defs>
-                  <path
-                    id="gentle-wave"
-                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-                  />
-                </defs>
-                <g class="parallax">
-                  <use xlink:href="#gentle-wave" x="48" y="0" fill="#E6A57E" />
-                  <use xlink:href="#gentle-wave" x="48" y="1" fill="#E8D595" />
-                  <use xlink:href="#gentle-wave" x="48" y="3" fill="#ACC5D8" />
-                  <use xlink:href="#gentle-wave" x="48" y="5" fill="#D8ACAC" />
-                  <use xlink:href="#gentle-wave" x="48" y="7" fill="#AFD8AC" />
-                  <use xlink:href="#gentle-wave" x="48" y="9" fill="#BEB4C5" />
-                </g>
-              </svg>
-            </td>
-          </tr>
-        </tbody>
-      </table> -->
-      <!-- Waves End -->
       <table style="height: 100%">
         <tbody>
           <tr>
@@ -127,7 +94,7 @@
       class="alert alert-danger"
       role="alert"
     >
-      Please fill all the fields!<span class="float-right" aria-hidden="true"
+      Please fill all the fields<span class="float-right" aria-hidden="true"
         ><h3>&times;</h3></span
       >
     </div>
@@ -137,20 +104,19 @@
       class="alert alert-success"
       role="alert"
     >
-      We got your mail!<span class="float-right" aria-hidden="true"
+      Mail Sent<span class="float-right" aria-hidden="true"
         ><h3>&times;</h3></span
       >
     </div>
     <div id="mainHeader" class="jumbotron jumbotron-fluid my-auto p-0">
       <div
-        class="col-md-5 col-sm-12 py-md-5 px-md-5 px-4 py-auto my-auto text-md-left text-center"
+        class="col-md-5 col-sm-12 py-md-5 px-md-5 px-4 py-0 text-md-left text-center"
       >
-        <img src="./assets/images/Arogyam.png" class="img-fluid mt-md-0 mt-5" />
-        <h3 class="my-3 mx-0">
-          <mark id="subtitle" class="py-0">Wodden Cold Pressed</mark>
-          <mark id="subtitle" class="py-0">Extra Virgin</mark>
+        <img src="./assets/images/Arogyam.png" class="img-fluid mt-md-0 mt-4 text-md-left text-center" />
+        <h3 class="subtitle-wrap my-3 mx-0 text-md-left text-center">
+          <mark id="subtitle" class="py-0">Wodden Cold Pressed | Extra Virgin</mark>
         </h3>
-        <p class="lead">
+        <p class="lead mr-md-5 mr-0 pr-md-5 pr-0 px-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -161,7 +127,7 @@
         <div id="contactUsForm" class="contactUsFormClass">
           <!-- py-2 px-2 ^ -->
           <div class="formHeading text-center text-white">
-            Contact Us &nbsp;
+            Contact Us to Order &nbsp;
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
@@ -254,12 +220,42 @@
           </form>
         </div>
       </div>
-      <div id="contactus-iconId" class="align-right-bottom">
+      <div id="contact-btn-wrap" class="align-right-bottom">
+        <button onclick="openForm()" class="btn btn-danger contact">
+          <span class="d-md-inline-block d-none">Contact Us to</span> Order
+        </button>
+      </div>
+      <div id="socialMedia-icons" class="align-right-bottom-1 d-md-block d-none">
         <img
-          class="contactus-iconClass"
-          onclick="openForm()"
-          src="./assets/images/contactus.png"
+          class="contactus-iconClass mx-2"
+          src="./assets/images/whatsapp-icon.png"
         />
+        <img
+          class="contactus-iconClass mx-2"
+          src="./assets/images/facebook-icon.png"
+        />
+        <img
+          class="contactus-iconClass mx-2"
+          onclick="openForm()"
+          src="./assets/images/gmail-icon.png"
+        />
+        <img
+          class="contactus-iconClass mx-2"
+          src="./assets/images/instagram-icon.png"
+        />
+      </div>
+      <div id="marketing-line" class="align-right-bottom-2 d-md-block d-none">
+        <div class="row">
+          <div class="col-auto">
+            <img
+              class="contactus-iconClass mx-2"
+              src="./assets/images/natureskarawan-icon.png"
+            />
+          </div>
+          <div class="col-auto">
+            <p class="market-credit">Marketed by ABC : 98xxxxxxxx</p>
+          </div>
+        </div>
       </div>
       <nav
         id="mobile-nav"
