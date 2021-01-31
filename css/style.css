@@ -82,6 +82,11 @@ p {
     max-width: 80%;
 }
 
+#mainHeader p {
+    color: #414141;
+    font-size: medium;
+}
+
 .primary-nav .nav-link h6::after {
     content: "";
     display: block;
@@ -91,6 +96,7 @@ p {
     margin-right: auto;
     background-color: #161616;
     transition: all ease-out 500ms;
+    border-radius: 50vw;
 }
 
 .primary-nav .nav-link:hover h6::after {
@@ -112,7 +118,7 @@ p {
 }
 
 .primary-nav .nav-link.border {
-    background-color: #666666;
+    background-color: #414141;
     color: #ffffff;
     transition: all ease-out 500ms;
 }
@@ -149,12 +155,6 @@ p {
     border-radius: 5px;
 }
 
-p.h5 {
-    font-family: Roboto;
-    font-size: medium;
-    font-weight: 400;
-}
-
 /** Other Pages **/
 #mainHeader {
     height: 80vh !important;
@@ -174,27 +174,32 @@ p.h5 {
     margin: 0 1em;
 }
 
-#mainHeader .secondary-nav .nav-link h5 {
+#mainHeader .secondary-nav .nav-link h6 {
     color: #000000;
     margin-bottom: 0;
 }
 
-#mainHeader .secondary-nav .nav-link h5::after {
+#mainHeader .secondary-nav .nav-link h6::after {
     content: "";
     display: block;
-    height: 3px;
-    width: 50%;
+    height: 2.5px;
+    width: 0%;
     margin-left: auto;
     margin-right: auto;
     background-color: #161616;
-    transition: all ease-in-out 250ms;
+    transition: all ease-out 500ms;
+    border-radius: 50vw;
 }
 
-#mainHeader .secondary-nav .nav-link.active h5, #mainHeader .secondary-nav .nav-link.border h5 {
+#mainHeader .secondary-nav .nav-link:hover h6::after {
+    width: 50%;
+}
+
+#mainHeader .secondary-nav .nav-link.active h6, #mainHeader .secondary-nav .nav-link.border h6 {
     color: #ffffff;
 }
 
-#mainHeader .secondary-nav .nav-link.active h5::after, #mainHeader .secondary-nav .nav-link.border h5::after {
+#mainHeader .secondary-nav .nav-link.active h6::after, #mainHeader .secondary-nav .nav-link.border h6::after {
     width: 0%;
 }
 
@@ -209,10 +214,6 @@ p.h5 {
 }
 
 /** Coconut **/
-#mainHeader p {
-    color: #ffffff;
-}
-
 #mainBackDrop.coconut {
     background-image: url(../assets/images/coconut-cover.png);
     background-repeat: no-repeat;
