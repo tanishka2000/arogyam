@@ -97,17 +97,6 @@ p {
 }
 
 .primary-nav .nav-link h6::after {
-<<<<<<< HEAD
-    content: "";
-    display: block;
-    height: 2.5px;
-    width: 0%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #161616;
-    transition: all ease-out 500ms;
-    border-radius: 50vw;
-=======
   content: "";
   display: block;
   height: 2.5px;
@@ -116,7 +105,6 @@ p {
   margin-right: auto;
   background-color: #161616;
   transition: all ease-out 500ms;
->>>>>>> 1853938094760ef82123d25638a10ab54fa39589
 }
 
 .primary-nav .nav-link:hover h6::after {
@@ -138,14 +126,8 @@ p {
 }
 
 .primary-nav .nav-link.border {
-<<<<<<< HEAD
-    background-color: #414141;
-    color: #ffffff;
-    transition: all ease-out 500ms;
-=======
   background-color: #666666;
   color: #ffffff;
->>>>>>> 1853938094760ef82123d25638a10ab54fa39589
 }
 
 .primary-nav .nav-link h5 {
@@ -186,15 +168,12 @@ p {
   border-radius: 5px;
 }
 
-<<<<<<< HEAD
-=======
 p.h5 {
   font-family: Roboto;
   font-size: medium;
   font-weight: 400;
 }
 
->>>>>>> 1853938094760ef82123d25638a10ab54fa39589
 /** Other Pages **/
 #mainHeader {
   height: 80vh !important;
@@ -214,35 +193,6 @@ p.h5 {
   margin: 0 1em;
 }
 
-<<<<<<< HEAD
-#mainHeader .secondary-nav .nav-link h6 {
-    color: #000000;
-    margin-bottom: 0;
-}
-
-#mainHeader .secondary-nav .nav-link h6::after {
-    content: "";
-    display: block;
-    height: 2.5px;
-    width: 0%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #161616;
-    transition: all ease-out 500ms;
-    border-radius: 50vw;
-}
-
-#mainHeader .secondary-nav .nav-link:hover h6::after {
-    width: 50%;
-}
-
-#mainHeader .secondary-nav .nav-link.active h6, #mainHeader .secondary-nav .nav-link.border h6 {
-    color: #ffffff;
-}
-
-#mainHeader .secondary-nav .nav-link.active h6::after, #mainHeader .secondary-nav .nav-link.border h6::after {
-    width: 0%;
-=======
 #mainHeader .secondary-nav .nav-link h5 {
   color: #000000;
   margin-bottom: 0;
@@ -267,7 +217,6 @@ p.h5 {
 #mainHeader .secondary-nav .nav-link.active h5::after,
 #mainHeader .secondary-nav .nav-link.border h5::after {
   width: 0%;
->>>>>>> 1853938094760ef82123d25638a10ab54fa39589
 }
 
 .secondary-mobile-nav {
@@ -281,13 +230,10 @@ p.h5 {
 }
 
 /** Coconut **/
-<<<<<<< HEAD
-=======
 #mainHeader .row p {
   color: #ffffff;
 }
 
->>>>>>> 1853938094760ef82123d25638a10ab54fa39589
 #mainBackDrop.coconut {
   background-image: url(../assets/images/coconut-cover.png);
   background-repeat: no-repeat;
