@@ -51,8 +51,8 @@ p {
 }
 
 #mainHeader p {
-    color: #414141;
-    font-size: medium;
+  color: #414141;
+  font-size: medium;
 }
 
 .primary-nav .nav-link h6::after {
@@ -120,7 +120,7 @@ p {
 }
 
 #subtitle {
-  background-color: #006B12;
+  background-color: #006b12;
   color: white;
   font-family: Roboto;
   line-height: 1.4;
@@ -133,7 +133,7 @@ p {
   width: 100px;
   height: 7px;
   margin-top: 5px;
-  background-color: #006B12;
+  background-color: #006b12;
 }
 
 .contact-btn-wrap {
@@ -145,7 +145,7 @@ button.contact {
   width: 400px;
   font-family: Montserrat;
   font-size: medium;
-  background-color: #B41414;
+  background-color: #b41414;
   transform: rotate(-90deg);
   transform-origin: 100% 0%;
   -webkit-transform: rotate(90deg);
@@ -391,7 +391,7 @@ p.lead {
 }
 
 .contactUsFormClass {
-  border: 1px solid #B41414;
+  border: 1px solid #b41414;
   border-radius: 8px;
   font-family: Montserrat;
   /* from arogyam 2  */
@@ -417,7 +417,7 @@ p.lead {
   /* transform-origin: bottom left; */
   /* transform: rotate(90deg); */
   font-size: 25px;
-  background-color: #B41414;
+  background-color: #b41414;
   /*border postioning => top-left top-right bottom-right bottom-left */
   border-radius: 8px 8px 0px 0px;
   font-family: Montserrat;
@@ -461,4 +461,40 @@ p.lead {
   margin: auto;
   cursor: pointer;
   transition: 0.5s;
+}
+/******************************************** Faq Section **********************************************/
+#faqSection {
+  width: 0%;
+  transition: 0.5s;
+  /* border-radius: 0px; */
+  /* border-radius: 7px 7px 7px 7px; */
+}
+#accordion {
+  /* border: 2px solid rgb(0, 0, 0); */
+  border-radius: 7px 7px 0px 0px;
+}
+.card {
+  border-radius: 40px 40px 40px 40px;
+  background-color: rgba(255, 255, 255, 0.459);
+}
+.card-header {
+  border-radius: 40px 40px 40px 40px;
+  border-bottom: 0px;
+  background-color: rgba(207, 21, 21, 0);
+}
+.card-body {
+  border-radius: 40px 40px 40px 40px;
+  border-top: 1px solid rgba(192, 161, 161, 0.575);
+  /* background-color: rgba(253, 254, 255, 0.459); */
+  background-color: rgb(253 254 255 / 82%);
+}
+.align-right-top {
+  position: fixed;
+  top: 77px;
+  right: 0%;
+  /* height: 0%; */
+}
+#closeFaqBtn {
+  border-radius: 20px 20px 20px 20px;
+  height: auto;
 }
