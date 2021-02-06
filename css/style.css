@@ -18,21 +18,25 @@ p {
 }
 
 /** Home Page **/
-#mainBackDrop {
-  position: fixed;
+#centerImg {
+  display: flex;
+  position: absolute;
   right: 0;
   left: 0;
-  height: 100vh;
-  background-color: white;
-  background-image: url(../assets/images/backDrop1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  top: 5vh;
+  max-height: 91vh;
 }
 
 /*Shrinking for mobile*/
-
 @media screen and (max-width: 768px) {
+  #mainHeader {
+    align-items: center !important;
+  }
+  #centerImg {
+    display: block;
+    position: static;
+    top: 0;
+  }
   #contactus-iconId {
     margin-bottom: 10%;
   }
@@ -50,12 +54,24 @@ p {
   max-width: 80%;
 }
 
-#mainHeader p {
-    color: #414141;
-    font-size: medium;
+#mainHeader {
+  height: 100vh;
+  background-color: white;
+  background-image: url(../assets/images/backDrop1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.primary-nav .nav-link h6::after {
+#mainHeader p {
+  color: #414141;
+  font-size: medium;
+}
+
+.navbar {
+  align-items: flex-start;
+}
+
+.navbar .nav-link h6::after {
   content: "";
   display: block;
   height: 2.5px;
@@ -66,39 +82,39 @@ p {
   transition: all ease-out 500ms;
 }
 
-.primary-nav .nav-link:hover h6::after {
+.navbar .nav-link:hover h6::after {
   width: 50%;
 }
 
-.primary-nav .nav-link.border h6::after {
+.navbar .nav-link.border h6::after {
   width: 0%;
 }
 
-.primary-nav {
+.navbar {
   border: rgba(255, 255, 255, 0.57) 5px solid;
   border-radius: 0 0 20px 20px;
 }
 
-.primary-nav .nav-link {
+.navbar .nav-link {
   border: 10em;
   border-color: black;
 }
 
-.primary-nav .nav-link.border {
+.navbar .nav-link.border {
   background-color: #666666;
   color: #ffffff;
 }
 
-.primary-nav .nav-link h5 {
+.navbar .nav-link h5 {
   color: #000000;
   margin-bottom: 0;
 }
 
-.primary-nav .nav-link.border h5 {
+.navbar .nav-link.border h5 {
   color: #ffffff;
 }
 
-.primary-nav .nav-link h5::after {
+.navbar .nav-link h5::after {
   content: "";
   display: block;
   height: 3px;
@@ -109,14 +125,13 @@ p {
   transition: all ease-in-out 250ms;
 }
 
-.primary-nav .border h5::after {
+.navbar .border h5::after {
   width: 0%;
 }
 
-.primary-mobile-nav .nav-link {
-  border-radius: 0;
-  border: 0.09em solid #ffffff;
-  color: #000000;
+#navbar.scrolled {
+  background-color: #fff !important;
+  border-color: #fff !important;
 }
 
 #subtitle {
@@ -151,6 +166,10 @@ button.contact {
   -webkit-transform: rotate(90deg);
 }
 
+#mainHeader .row p {
+  color: #000000;
+}
+
 p.h5 {
   font-family: Roboto;
   font-size: medium;
@@ -170,10 +189,6 @@ p.lead {
 }
 
 /** Other Pages **/
-#mainHeader {
-  height: 70vh !important;
-}
-
 #mainHeader .secondary-nav {
   background-color: #ffffff;
   border-radius: 0 0 20px 20px;
@@ -225,27 +240,21 @@ p.lead {
 }
 
 /** Coconut **/
-#mainHeader .row p {
-  color: #000000;
-}
-
-#mainBackDrop.coconut {
+#coconut {
+  position: absolute;
+  top: 100vh;
+  height: 100vh;
   background-image: url(../assets/images/coconut-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
-  background-attachment: fixed;
 }
 
-#mainHeader.coconut .secondary-nav .nav-link.active {
+#mainHeader .secondary-nav .nav-link.coconut.active {
   background-image: linear-gradient(#afd8ac, #77a074);
 }
 
-#mainHeader.coconut .secondary-mobile-nav .nav-link.active {
-  background-image: linear-gradient(#afd8ac, #77a074);
-}
-
-.coconut.rounded-circle {
+#coconut .rounded-circle {
   background-color: #77a074;
   width: 150px !important;
   height: 150px;
@@ -255,23 +264,21 @@ p.lead {
 }
 
 /** Flaxseed **/
-#mainBackDrop.flaxseed {
+#flaxseed {
+  position: absolute;
+  top: 200vh;
+  height: 100vh;
   background-image: url(../assets/images/flaxseed-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
-  background-attachment: fixed;
 }
 
 #mainHeader.flaxseed .secondary-nav .nav-link.active {
   background-image: linear-gradient(#beb4c5, #5a5067);
 }
 
-#mainHeader.flaxseed .secondary-mobile-nav .nav-link.active {
-  background-image: linear-gradient(#beb4c5, #5a5067);
-}
-
-.flaxseed.rounded-circle {
+#flaxseed .rounded-circle {
   background-color: #5a5067;
   width: 150px !important;
   height: 150px;
@@ -281,23 +288,21 @@ p.lead {
 }
 
 /** Sesame **/
-#mainBackDrop.sesame {
+#sesame {
+  position: absolute;
+  top: 300vh;
+  height: 100vh;
   background-image: url(../assets/images/sesame-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
-  background-attachment: fixed;
 }
 
 #mainHeader.sesame .secondary-nav .nav-link.active {
   background-image: linear-gradient(#acc5d8, #6f7d88);
 }
 
-#mainHeader.sesame .secondary-mobile-nav .nav-link.active {
-  background-image: linear-gradient(#acc5d8, #6f7d88);
-}
-
-.sesame.rounded-circle {
+#sesame .rounded-circle {
   background-color: #6f7d88;
   width: 150px !important;
   height: 150px;
@@ -307,23 +312,21 @@ p.lead {
 }
 
 /** Almond **/
-#mainBackDrop.almond {
+#almond {
+  position: absolute;
+  top: 400vh;
+  height: 100vh;
   background-image: url(../assets/images/almond-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
-  background-attachment: fixed;
 }
 
 #mainHeader.almond .secondary-nav .nav-link.active {
   background-image: linear-gradient(#d8acac, #997777);
 }
 
-#mainHeader.almond .secondary-mobile-nav .nav-link.active {
-  background-image: linear-gradient(#d8acac, #997777);
-}
-
-.almond.rounded-circle {
+#almond .rounded-circle {
   background-color: #997777;
   width: 150px !important;
   height: 150px;
@@ -333,23 +336,21 @@ p.lead {
 }
 
 /** GroundNut **/
-#mainBackDrop.groundnut {
+#groundnut {
+  position: absolute;
+  top: 500vh;
+  height: 100vh;
   background-image: url(../assets/images/groundnut-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
-  background-attachment: fixed;
 }
 
 #mainHeader.groundnut .secondary-nav .nav-link.active {
   background-image: linear-gradient(#e6a57e, #a5775c);
 }
 
-#mainHeader.groundnut .secondary-mobile-nav .nav-link.active {
-  background-image: linear-gradient(#e6a57e, #a5775c);
-}
-
-.groundnut.rounded-circle {
+#groundnut .rounded-circle {
   background-color: #a5775c;
   width: 150px !important;
   height: 150px;
@@ -359,35 +360,27 @@ p.lead {
 }
 
 /** Mustard **/
-#mainBackDrop.mustard {
+#mustard {
+  position: absolute;
+  top: 600vh;
+  height: 100vh;
   background-image: url(../assets/images/mustard-cover.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
-  background-attachment: fixed;
 }
 
 #mainHeader.mustard .secondary-nav .nav-link.active {
   background-image: linear-gradient(#e8d595, #a69869);
 }
 
-#mainHeader.mustard .secondary-mobile-nav .nav-link.active {
-  background-image: linear-gradient(#e8d595, #a69869);
-}
-
-.mustard.rounded-circle {
+#mustard .rounded-circle {
   background-color: #a69869;
   width: 150px !important;
   height: 150px;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
-}
-
-/* For contact us Form */
-#contactUsForm {
-  /* z-index: 100; */
-  /* border: 1px solid red; */
 }
 
 .contactUsFormClass {
@@ -431,14 +424,14 @@ p.lead {
 
 .align-right-bottom-1 {
   display: inline-block;
-  position: fixed;
+  position: absolute;
   bottom: 10%;
   right: 5%;
 }
 
 .align-right-bottom-2 {
   display: inline-block;
-  position: fixed;
+  position: absolute;
   bottom: 1%;
   right: 5%;
 }
@@ -459,6 +452,8 @@ p.lead {
   opacity: 0;
   width: 50%;
   margin: auto;
+  display: flex;
+  position: fixed;
   cursor: pointer;
   transition: 0.5s;
 }
