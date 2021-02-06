@@ -384,11 +384,7 @@ p.lead {
   vertical-align: middle;
 }
 
-/* For contact us Form */
-#contactUsForm {
-  /* z-index: 100; */
-  /* border: 1px solid red; */
-}
+/********************************************************** For contact us Form ************************************************************/
 
 .contactUsFormClass {
   border: 1px solid #b41414;
@@ -405,17 +401,12 @@ p.lead {
   transition: 0.5s;
 }
 
-#mainFormId {
-}
-
 .mainFormClass {
   background-color: rgba(253, 254, 255, 0.459);
   border-radius: 0px 0px 8px 8px;
 }
 
 .formHeading {
-  /* transform-origin: bottom left; */
-  /* transform: rotate(90deg); */
   font-size: 25px;
   background-color: #b41414;
   /*border postioning => top-left top-right bottom-right bottom-left */
@@ -459,10 +450,10 @@ p.lead {
   opacity: 0;
   width: 50%;
   margin: auto;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: 0.5s;
 }
-/******************************************** Faq Section **********************************************/
+/************************************************************* Faq Section ************************************************************/
 #faqSection {
   width: 0%;
   transition: 0.5s;

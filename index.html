@@ -338,19 +338,23 @@
         <img
           class="contactus-iconClass mx-2"
           src="./assets/images/whatsapp-icon.png"
+          onclick="sendMessage('whatsapp')"
         />
         <img
           class="contactus-iconClass mx-2"
           src="./assets/images/facebook-icon.png"
+          onclick="sendMessage('facebook')"
         />
         <img
           class="contactus-iconClass mx-2"
           onclick="openForm()"
           src="./assets/images/gmail-icon.png"
+          onclick="sendMessage('gmail')"
         />
         <img
           class="contactus-iconClass mx-2"
           src="./assets/images/instagram-icon.png"
+          onclick="sendMessage('instagram')"
         />
       </div>
       <div id="marketing-line" class="align-right-bottom-2 d-md-block d-none">
@@ -384,6 +388,7 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="./js/main.js"></script>
     <script src="./js/sendmail.js"></script>
+    <script src="./js/socialmedia.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

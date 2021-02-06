@@ -1,7 +1,7 @@
 function isMobile() {
   return screen.width <= parseInt("880px");
 }
-// if (screen.width > parseInt("880px")) {
+
 function openForm() {
   closeFaq();
   document.getElementById("contactUsForm").style.opacity = isMobile() ? 1 : 1;
@@ -47,26 +47,7 @@ function closeForm() {
     document.getElementById("mobile-nav").style.height = "auto";
   }
 }
-// }
-// if (screen.width <= parseInt("880px")) {
-//   function openForm() {
-//     document.getElementById("contactUsForm").style.opacity = 1;
-//     document.getElementById("contactUsForm").style.width = "100%";
-//     document.getElementById("socialMedia-icons").style.marginRight = "100%";
-//     document.getElementById("socialMedia-icons").style.opacity = 0;
 
-//     document.getElementById("mobile-nav").style.height = 0;
-//   }
-
-//   function closeForm() {
-//     document.getElementById("contactUsForm").style.width = "0";
-//     document.getElementById("contactUsForm").style.opacity = 0;
-
-//     document.getElementById("socialMedia-icons").style.marginRight = "0px";
-//     document.getElementById("socialMedia-icons").style.opacity = 1;
-//     document.getElementById("mobile-nav").style.height = "auto";
-//   }
-// }
 function closeErrorAlert() {
   document.getElementById("alertEmptyFieldsTrue").style.opacity = 0;
 }
