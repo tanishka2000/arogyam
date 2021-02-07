@@ -31,19 +31,44 @@ p {
 @media screen and (max-width: 768px) {
   #mainHeader {
     align-items: center !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
   }
   #centerImg {
     display: block;
     position: static;
     top: 0;
   }
+  #brand-logo{
+    max-width: 60vw;
+  }
   #contactus-iconId {
     margin-bottom: 10%;
   }
+  #subtitle {
+    font-size: medium;
+  }
+  p.lead {
+    font-size: smaller !important;
+  }
+  p.lead::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 7px;
+    margin-top: 5px;
+    background-color: #006B12;
+  }
+  p.lead::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 7px;
+    margin-top: 5px;
+    background-color: #006B12;
+  }
   .subtitle-wrap::after {
-    text-align: center !important;
-    float: center !important;
-    margin: auto;
+    display: none !important;
   }
   button.contact {
     width: auto !important;
@@ -68,7 +93,13 @@ p {
 }
 
 .navbar {
-  align-items: flex-start;
+  border: rgba(255, 255, 255, 0.57) 5px solid;
+  border-radius: 0 0 20px 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
 }
 
 .navbar .nav-link h6::after {
@@ -88,11 +119,6 @@ p {
 
 .navbar .nav-link.border h6::after {
   width: 0%;
-}
-
-.navbar {
-  border: rgba(255, 255, 255, 0.57) 5px solid;
-  border-radius: 0 0 20px 20px;
 }
 
 .navbar .nav-link {

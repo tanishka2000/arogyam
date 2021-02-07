@@ -19,29 +19,32 @@
 
 <body>
   <!-- Navbar Starts -->
-  <nav id="navbar" class="navbar nav nav-expand-lg nav-pills flex-column flex-sm-row fixed-top text-sm-left">
-    <a class="flex-sm-fill text-sm-center nav-link" href="#mainHeader"><img src="./assets/images/logo.png"
+  <nav id="navbar" class="navbar nav nav-expand-lg nav-pills flex-row fixed-top text-sm-left justify-content-flex-start">
+    <a class="flex-md-fill text-sm-center nav-link" href="#mainHeader"><img src="./assets/images/logo.png"
         width="27vw" /></a>
-    <a class="flex-sm-fill text-sm-center nav-link d-md-block d-none" href="#coconut">
+    <a class="flex-md-fill text-sm-center nav-link d-md-block d-none" href="#coconut">
       <h5>Coconut oil</h5>
     </a>
-    <a class="flex-sm-fill text-sm-center nav-link d-md-block d-none" href="#flaxseed">
+    <a class="flex-md-fill text-sm-center nav-link d-md-block d-none" href="#flaxseed">
       <h5>FlaxSeed oil</h5>
     </a>
-    <a class="flex-sm-fill text-sm-center nav-link d-md-block d-none" href="#sesame">
+    <a class="flex-md-fill text-sm-center nav-link d-md-block d-none" href="#sesame">
       <h5>Sesame oil</h5>
     </a>
-    <a class="flex-sm-fill text-sm-center nav-link d-md-block d-none" href="#almond">
+    <a class="flex-md-fill text-sm-center nav-link d-md-block d-none" href="#almond">
       <h5>Almond oil</h5>
     </a>
-    <a class="flex-sm-fill text-sm-center nav-link d-md-block d-none" href="#groundnut">
+    <a class="flex-md-fill text-sm-center nav-link d-md-block d-none" href="#groundnut">
       <h5>GroundNut oil</h5>
     </a>
-    <a class="flex-sm-fill text-sm-center nav-link d-md-block d-none" href="#mustard">
+    <a class="flex-md-fill text-sm-center nav-link d-md-block d-none" href="#mustard">
       <h5>Mustard oil</h5>
     </a>
-    <a class="flex-sm-fill text-sm-center nav-link border d-md-block d-none" href="#">
+    <a class="flex-md-fill text-sm-center nav-link border ml-md-0 ml-auto d-md-block" href="#">
       <h5>FAQs</h5>
+    </a>
+    <a class="flex-sm-fill text-sm-center nav-link border ml-md-0 ml-1 d-md-none d-block" href="#">
+      <h5>Oils</h5>
     </a>
   </nav>
   <!-- Navbar Ends -->
@@ -66,15 +69,15 @@
   <!-- Contact Us Sidebar Ends -->
 
   <!-- Main Header Starts-->
-  <div id="mainHeader" class="jumbotron jumbotron-fluid p-0">
-    <img id="centerImg" src="./assets/images/main.png" alt="" class="img-fluid mx-auto d-none d-md-block" />
-    <div class="col-md-5 col-sm-12 py-md-5 px-md-5 px-4 py-0 text-md-left text-center">
-      <img src="./assets/images/Arogyam.png" class="img-fluid mt-5 text-md-left text-center" />
-      <img id="centerImg" src="./assets/images/main.png" alt="" class="img-fluid mx-auto d-block d-md-none" />
-      <h3 class="subtitle-wrap my-3 mx-0 text-md-left text-center">
+  <div id="mainHeader" class="jumbotron jumbotron-fluid p-0 d-flex align-items-center">
+    <img id="centerImg" src="./assets/images/main.png" alt="" class="img-fluid mx-auto d-none d-md-flex" />
+    <div class="col-md-5 col-sm-12 py-md-5 px-md-5 px-4 py-0 text-center">
+      <img id="brand-logo" src="./assets/images/Arogyam.png" class="img-fluid mt-5 text-md-left text-center" />
+      <h3 class="subtitle-wrap my-md-3 my-0 mx-0 text-md-left text-center">
         <mark id="subtitle" class="py-0">Wodden Cold Pressed | Extra Virgin</mark>
       </h3>
-      <p class="lead mr-md-5 mr-0 pr-md-5 pr-0 px-3">
+      <img id="centerImg" src="./assets/images/centerImg.png" alt="" class="img-fluid mx-auto d-block d-md-none" />
+      <p class="lead text-left mr-md-5 mr-0 my-1 pr-md-5 pr-0 px-3">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -619,13 +622,7 @@
       </div>
     </div>
   </div>
-  
-  <script>
-    $(Document).scroll(() => {
-      var $nav = $("#navbar");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  </script>
+
   <script src="./js/main.js"></script>
   <script src="./js/sendmail.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -633,6 +630,15 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+  <script>
+    $(document).ready(function() {
+      window.onscroll = () => {
+        const $navbar = document.getElementById("navbar");
+        if($(window).scrollTop() >= 100) $("nav").addClass('scrolled');
+        else $("nav").removeClass('scrolled');
+      }
+    });
   </script>
 </body>
 
