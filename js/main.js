@@ -3,7 +3,7 @@ function isMobile() {
 }
 
 function openForm() {
-  closeFaq();
+  // closeFaq();
   document.getElementById("contactUsForm").style.opacity = isMobile() ? 1 : 1;
 
   document.getElementById("contactUsForm").style.width = isMobile()

@@ -24,98 +24,108 @@
   </head>
 
   <body>
-    <div id="mainBackDrop" class="jumbotron jumbotron-fluid m-0 p-0">
-      <table style="height: 100%">
-        <tbody>
-          <tr>
-            <td class="align-middle">
-              <img
-                src="./assets/images/main.png"
-                alt=""
-                class="img-fluid mx-auto d-none d-md-block"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <!-- Navbar Starts -->
     <nav
-      class="primary-nav navbar nav nav-expand-lg nav-pills flex-column flex-sm-row sticky-top"
+      id="navbar"
+      class="navbar nav nav-expand-lg nav-pills flex-column flex-sm-row fixed-top text-sm-left"
     >
-      <a class="flex-sm-fill text-sm-center nav-link" href="index.html"
+      <a class="flex-sm-fill text-sm-center nav-link" href="#mainHeader"
         ><img src="./assets/images/logo.png" width="27vw"
       /></a>
       <a
         class="flex-sm-fill text-sm-center nav-link d-md-block d-none"
-        href="coconut.html"
+        href="#coconut"
       >
         <h5>Coconut oil</h5>
       </a>
       <a
         class="flex-sm-fill text-sm-center nav-link d-md-block d-none"
-        href="flaxseed.html"
+        href="#flaxseed"
       >
         <h5>FlaxSeed oil</h5>
       </a>
       <a
         class="flex-sm-fill text-sm-center nav-link d-md-block d-none"
-        href="sesame.html"
+        href="#sesame"
       >
         <h5>Sesame oil</h5>
       </a>
       <a
         class="flex-sm-fill text-sm-center nav-link d-md-block d-none"
-        href="almond.html"
+        href="#almond"
       >
         <h5>Almond oil</h5>
       </a>
       <a
         class="flex-sm-fill text-sm-center nav-link d-md-block d-none"
-        href="groundnut.html"
+        href="#groundnut"
       >
         <h5>GroundNut oil</h5>
       </a>
       <a
         class="flex-sm-fill text-sm-center nav-link d-md-block d-none"
-        href="mustard.html"
+        href="#mustard"
       >
         <h5>Mustard oil</h5>
       </a>
       <a
-        id="faqButton"
         class="flex-sm-fill text-sm-center nav-link border d-md-block d-none"
-        onclick="openFaq()"
+        href="#faq"
       >
         <h5>FAQs</h5>
       </a>
     </nav>
+    <!-- Navbar Ends -->
+
     <div
       id="alertEmptyFieldsTrue"
       onclick="closeErrorAlert()"
-      class="alert alert-danger"
+      class="alert alert-danger d-flex"
       role="alert"
     >
-      Please fill all the fields<span class="float-right" aria-hidden="true"
-        ><h3>&times;</h3></span
-      >
+      Please fill all the fields<span class="float-right" aria-hidden="true">
+        <h3>&times;</h3>
+      </span>
     </div>
     <div
       id="alertEmptyFieldsFalse"
       onclick="closeSuccessAlert()"
-      class="alert alert-success"
+      class="alert alert-success d-flex"
       role="alert"
     >
-      Mail Sent<span class="float-right" aria-hidden="true"
-        ><h3>&times;</h3></span
-      >
+      Mail Sent<span class="float-right" aria-hidden="true">
+        <h3>&times;</h3>
+      </span>
     </div>
-    <div id="mainHeader" class="jumbotron jumbotron-fluid my-auto p-0">
+
+    <!-- Contact Us Sidebar Starts -->
+    <div id="contact-btn-wrap" class="align-right-bottom">
+      <button onclick="openForm()" class="btn btn-danger contact">
+        <span class="d-md-inline-block d-none">Contact Us to</span> Order
+      </button>
+    </div>
+    <!-- Contact Us Sidebar Ends -->
+
+    <!-- Main Header Starts-->
+    <div id="mainHeader" class="jumbotron jumbotron-fluid p-0">
+      <img
+        id="centerImg"
+        src="./assets/images/main.png"
+        alt=""
+        class="img-fluid mx-auto d-none d-md-block"
+      />
       <div
         class="col-md-5 col-sm-12 py-md-5 px-md-5 px-4 py-0 text-md-left text-center"
       >
         <img
           src="./assets/images/Arogyam.png"
-          class="img-fluid mt-md-0 mt-4 text-md-left text-center"
+          class="img-fluid mt-5 text-md-left text-center"
+        />
+        <img
+          id="centerImg"
+          src="./assets/images/main.png"
+          alt=""
+          class="img-fluid mx-auto d-block d-md-none"
         />
         <h3 class="subtitle-wrap my-3 mx-0 text-md-left text-center">
           <mark id="subtitle" class="py-0"
@@ -128,111 +138,10 @@
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <!-- ****************************************FAQ Section***************************************** -->
-        <div id="faqSection" class="align-right-top">
-          <div id="accordion">
-            <h5 class="text-center">FAQs</h5>
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                  <button
-                    class="btn btn-link"
-                    data-toggle="collapse"
-                    data-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    What is querySelector?
-                  </button>
-                </h5>
-              </div>
 
-              <div
-                id="collapseOne"
-                class="collapse"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
-                <div class="card-body text-left">
-                  The querySelector() method returns the first element that
-                  matches a specified CSS selector(s) in the document. ... If
-                  the selector matches an ID in document that is used several
-                  times (Note that an "id" should be unique within a page and
-                  should not be used more than once), it returns the first
-                  matching element.
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                  <button
-                    class="btn btn-link collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    What does querySelector do in JS?
-                  </button>
-                </h5>
-              </div>
-              <div
-                id="collapseTwo"
-                class="collapse"
-                aria-labelledby="headingTwo"
-                data-parent="#accordion"
-              >
-                <div class="card-body text-left">
-                  The Document method querySelector() returns the first Element
-                  within the document that matches the specified selector, or
-                  group of selectors. If no matches are found, null is returned.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button
-                    class="btn btn-link collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    What does getElementById mean?
-                  </button>
-                </h5>
-              </div>
-              <div
-                id="collapseThree"
-                class="collapse"
-                aria-labelledby="headingThree"
-                data-parent="#accordion"
-              >
-                <div class="card-body text-left">
-                  Definition and Usage The getElementById() method returns the
-                  element that has the ID attribute with the specified value.
-                  This method is one of the most common methods in the HTML DOM,
-                  and is used almost every time you want to manipulate, or get
-                  info from, an element on your document.
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            id="closeFaqBtn"
-            class="btn btn-danger btn-block"
-            onclick="closeFaq()"
-          >
-            Close
-          </button>
-        </div>
-        <!-- ****************************************Contact Us Form***************************************** -->
+        <!-- Contact Us Form Starts -->
         <div id="contactUsForm" class="contactUsFormClass">
-          <!-- py-2 px-2 ^ -->
-          <div id="formHeading" class="formHeading text-center text-white">
+          <div class="formHeading text-center text-white">
             Contact Us to Order &nbsp;
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -321,15 +230,9 @@
                 />
               </svg>
             </button>
-
-            <!-- <button onclick="closeNav()" class="btn btn-primary">Close</button> -->
           </form>
         </div>
-      </div>
-      <div id="contact-btn-wrap" class="align-right-bottom">
-        <button onclick="openForm()" class="btn btn-danger contact">
-          <span class="d-md-inline-block d-none">Contact Us to</span> Order
-        </button>
+        <!-- Contact Us Form Ends -->
       </div>
       <div
         id="socialMedia-icons"
@@ -338,23 +241,19 @@
         <img
           class="contactus-iconClass mx-2"
           src="./assets/images/whatsapp-icon.png"
-          onclick="sendMessage('whatsapp')"
         />
         <img
           class="contactus-iconClass mx-2"
           src="./assets/images/facebook-icon.png"
-          onclick="sendMessage('facebook')"
         />
         <img
           class="contactus-iconClass mx-2"
           onclick="openForm()"
           src="./assets/images/gmail-icon.png"
-          onclick="sendMessage('gmail')"
         />
         <img
           class="contactus-iconClass mx-2"
           src="./assets/images/instagram-icon.png"
-          onclick="sendMessage('instagram')"
         />
       </div>
       <div id="marketing-line" class="align-right-bottom-2 d-md-block d-none">
@@ -370,26 +269,650 @@
           </div>
         </div>
       </div>
-      <!------------------------------------------------------------ Mobile Navbar ----------------------------------------------------------->
-      <nav
-        id="mobile-nav"
-        class="primary-mobile-nav nav nav-pills nav-justified fixed-bottom d-md-none d-flex"
-      >
-        <!-- <a class="nav-link" href="coconut.html">Coconut</a> -->
-        <a class="nav-link" onclick="openFaq()">Coconut</a>
-        <a class="nav-link" href="flaxseed.html">Flaxseed</a>
-        <a class="nav-link" href="sesame.html">Sesame</a>
-        <a class="nav-link" href="almond.html">Almond</a>
-        <a class="nav-link" href="groundnut.html">Groundnut</a>
-        <a class="nav-link" href="mustard.html">Mustard</a>
-      </nav>
+    </div>
+    <!-- Main Header Ends -->
+
+    <!-- Coconut Section Starts -->
+    <div id="coconut" class="jumbotron jumbotron-fluid m-0 p-0">
+      <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5">
+        <div class="col-md-8 col-12 pl-md-5 pl-0 pt-3">
+          <table>
+            <tr class="my-3">
+              <td style="width: 150px">
+                <h5 class="rounded-circle text-light">SKIN</h5>
+              </td>
+              <td>
+                <p class="px-md-5 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </td>
+            </tr>
+            <tr class="my-3">
+              <td style="width: 150px">
+                <h5 class="rounded-circle text-light">HAIR</h5>
+              </td>
+              <td>
+                <p class="px-md-5 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </td>
+            </tr>
+          </table>
+          <div class="row mt-3">
+            <div class="col-md-3 col-0"></div>
+            <div class="col-md-9 col-12">
+              <table>
+                <tr class="my-2">
+                  <td style="width: 150px">
+                    <h5 class="rounded-circle text-light">EDIBLE</h5>
+                  </td>
+                  <td>
+                    <p class="px-md-5 px-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim ve
+                    </p>
+                  </td>
+                </tr>
+                <tr class="my-2">
+                  <td style="width: 150px">
+                    <h5 class="rounded-circle text-light">COOKING</h5>
+                  </td>
+                  <td>
+                    <p class="px-md-5 px-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim ve
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 pr-0">
+          <table style="height: 100%">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  <img
+                    class="img-fluid d-md-block d-none"
+                    src="./assets/images/coconut-banner.png"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Coconut Section Ends -->
+
+    <div id="flaxseed" class="jumbotron jumbotron-fluid mb-0 py-0 vh-100">
+      <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5">
+        <div class="col-md-8 col-12 pl-md-5 pl-0 pt-3">
+          <table>
+            <tr class="my-3">
+              <td style="width: 150px">
+                <h5 class="rounded-circle text-light">SKIN</h5>
+              </td>
+              <td>
+                <p class="px-md-5 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </td>
+            </tr>
+            <tr class="my-3">
+              <td style="width: 150px">
+                <h5 class="rounded-circle text-light">HAIR</h5>
+              </td>
+              <td>
+                <p class="px-md-5 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </td>
+            </tr>
+          </table>
+          <div class="row mt-3">
+            <div class="col-md-4 col-0"></div>
+            <div class="col-md-8 col-12">
+              <table>
+                <tr class="my-3">
+                  <td style="width: 150px">
+                    <h5 class="rounded-circle text-light">EDIBLE</h5>
+                  </td>
+                  <td>
+                    <p class="px-md-5 px-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim ve
+                    </p>
+                  </td>
+                </tr>
+                <tr class="my-3">
+                  <td style="width: 150px">
+                    <h5 class="rounded-circle text-light">COOKING</h5>
+                  </td>
+                  <td>
+                    <p class="px-md-5 px-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim ve
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 pr-0 overflow-hidden">
+          <table style="height: 100%">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  <img
+                    class="img-fluid d-md-block d-none"
+                    src="./assets/images/flaxseed-banner.png"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <div id="sesame" class="jumbotron jumbotron-fluid mb-0 py-0 vh-100">
+      <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5">
+        <div class="col-md-8 col-12 pl-md-5 pl-0 pt-3">
+          <table>
+            <tr class="my-3">
+              <td style="width: 150px">
+                <h5 class="rounded-circle text-light">SKIN</h5>
+              </td>
+              <td>
+                <p class="px-md-5 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </td>
+            </tr>
+            <tr class="my-3">
+              <td style="width: 150px">
+                <h5 class="rounded-circle text-light">HAIR</h5>
+              </td>
+              <td>
+                <p class="px-md-5 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </td>
+            </tr>
+          </table>
+          <div class="row mt-3">
+            <div class="col-md-4 col-0"></div>
+            <div class="col-md-8 col-12">
+              <table>
+                <tr class="my-3">
+                  <td style="width: 150px">
+                    <h5 class="rounded-circle text-light">EDIBLE</h5>
+                  </td>
+                  <td>
+                    <p class="px-md-5 px-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim ve
+                    </p>
+                  </td>
+                </tr>
+                <tr class="my-3">
+                  <td style="width: 150px">
+                    <h5 class="rounded-circle text-light">COOKING</h5>
+                  </td>
+                  <td>
+                    <p class="px-md-5 px-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim ve
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 pr-0 overflow-hidden">
+          <table style="height: 100%">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  <img
+                    class="img-fluid d-md-block d-none"
+                    src="./assets/images/sesame-banner.png"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="almond" class="jumbotron jumbotron-fluid mb-0 py-0 vh-100">
+      <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5">
+        <div class="col-md-8 col-12 pl-md-5 pl-0 pt-3">
+          <table>
+            <tr class="my-3">
+              <td style="width: 150px">
+                <h5 class="rounded-circle text-light">SKIN</h5>
+              </td>
+              <td>
+                <p class="px-md-5 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </td>
+            </tr>
+            <tr class="my-3">
+              <td style="width: 150px">
+                <h5 class="rounded-circle text-light">HAIR</h5>
+              </td>
+              <td>
+                <p class="px-md-5 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </td>
+            </tr>
+          </table>
+          <div class="row mt-3">
+            <div class="col-md-4 col-0"></div>
+            <div class="col-md-8 col-12">
+              <table>
+                <tr class="my-3">
+                  <td style="width: 150px">
+                    <h5 class="rounded-circle text-light">EDIBLE</h5>
+                  </td>
+                  <td>
+                    <p class="px-md-5 px-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim ve
+                    </p>
+                  </td>
+                </tr>
+                <tr class="my-3">
+                  <td style="width: 150px">
+                    <h5 class="rounded-circle text-light">COOKING</h5>
+                  </td>
+                  <td>
+                    <p class="px-md-5 px-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim ve
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-0 pr-0 overflow-hidden">
+          <table style="height: 100%">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  <img
+                    class="img-fluid d-md-block d-none"
+                    src="./assets/images/almond-banner.png"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="groundnut" class="jumbotron jumbotron-fluid mb-0 py-0 vh-100">
+      <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5">
+        <div class="col-md-8 col-12 pl-md-5 pl-0 pt-3">
+          <table>
+            <tr class="my-3">
+              <td style="width: 150px">
+                <h5 class="rounded-circle text-light">SKIN</h5>
+              </td>
+              <td>
+                <p class="px-md-5 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </td>
+            </tr>
+            <tr class="my-3">
+              <td style="width: 150px">
+                <h5 class="rounded-circle text-light">HAIR</h5>
+              </td>
+              <td>
+                <p class="px-md-5 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </td>
+            </tr>
+          </table>
+          <div class="row mt-3">
+            <div class="col-md-4 col-0"></div>
+            <div class="col-md-8 col-12">
+              <table>
+                <tr class="my-3">
+                  <td style="width: 150px">
+                    <h5 class="rounded-circle text-light">EDIBLE</h5>
+                  </td>
+                  <td>
+                    <p class="px-md-5 px-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim ve
+                    </p>
+                  </td>
+                </tr>
+                <tr class="my-3">
+                  <td style="width: 150px">
+                    <h5 class="rounded-circle text-light">COOKING</h5>
+                  </td>
+                  <td>
+                    <p class="px-md-5 px-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim ve
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-0 pr-0 overflow-hidden">
+          <table style="height: 100%">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  <img
+                    class="img-fluid d-md-block d-none"
+                    src="./assets/images/groundnut-banner.png"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="mustard" class="jumbotron jumbotron-fluid mb-0 py-0 vh-100">
+      <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5">
+        <div class="col-md-8 col-12 pl-md-5 pl-0 pt-3">
+          <table>
+            <tr class="my-3">
+              <td style="width: 150px">
+                <h5 class="rounded-circle text-light">SKIN</h5>
+              </td>
+              <td>
+                <p class="px-md-5 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </td>
+            </tr>
+            <tr class="my-3">
+              <td style="width: 150px">
+                <h5 class="rounded-circle text-light">HAIR</h5>
+              </td>
+              <td>
+                <p class="px-md-5 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </td>
+            </tr>
+          </table>
+          <div class="row mt-3">
+            <div class="col-md-4 col-0"></div>
+            <div class="col-md-8 col-12">
+              <table>
+                <tr class="my-3">
+                  <td style="width: 150px">
+                    <h5 class="rounded-circle text-light">EDIBLE</h5>
+                  </td>
+                  <td>
+                    <p class="px-md-5 px-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim ve
+                    </p>
+                  </td>
+                </tr>
+                <tr class="my-3">
+                  <td style="width: 150px">
+                    <h5 class="rounded-circle text-light">COOKING</h5>
+                  </td>
+                  <td>
+                    <p class="px-md-5 px-0">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim ve
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-0 pr-0 overflow-hidden">
+          <table style="height: 100%">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  <img
+                    class="img-fluid d-md-block d-none"
+                    src="./assets/images/mustard-banner.png"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="faq" class="jumbotron jumbotron-fluid bg-white mb-0 py-0 h-auto">
+      <div class="row w-100">
+        <div class="col-sm-4">
+          <div class="offset-md-4 mt-3">
+            <img
+              width="200"
+              height="200"
+              class="logo_small"
+              src="./assets/images/logo_small.png"
+            />
+          </div>
+
+          <div class="offset-md-1 text-center ">
+            <img class="faq_img mb-5"
+              height="175"
+              width="350" 
+              src="./assets/images/faq_img.png" />
+          </div>
+
+          <div class="ml-4 mt-5">
+            <img
+              height="165"  
+              width="300"
+              class="natures_karawan_logo"
+              src="./assets/images/natures_karawan_logo.png"
+            />
+          </div>
+        </div>
+        <div class="col-sm-8 d-flex align-items-center">
+          <!-- <img
+            height="700"
+            width="1000"
+            class="footer_img mt-3"
+            src="./assets/images/blank_rectangle.png"
+          /> -->
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What is querySelector?
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  The querySelector() method returns the first element that
+                  matches a specified CSS selector(s) in the document. ... If
+                  the selector matches an ID in document that is used several
+                  times (Note that an "id" should be unique within a page and
+                  should not be used more than once), it returns the first
+                  matching element.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What does querySelector do in JS?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  The Document method querySelector() returns the first Element
+                  within the document that matches the specified selector, or
+                  group of selectors. If no matches are found, null is returned.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What does getElementById mean?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Definition and Usage The getElementById() method returns the
+                  element that has the ID attribute with the specified value.
+                  This method is one of the most common methods in the HTML DOM,
+                  and is used almost every time you want to manipulate, or get
+                  info from, an element on your document.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    What does getElementById mean?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                  Definition and Usage The getElementById() method returns the
+                  element that has the ID attribute with the specified value.
+                  This method is one of the most common methods in the HTML DOM,
+                  and is used almost every time you want to manipulate, or get
+                  info from, an element on your document.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    What does getElementById mean?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                  Definition and Usage The getElementById() method returns the
+                  element that has the ID attribute with the specified value.
+                  This method is one of the most common methods in the HTML DOM,
+                  and is used almost every time you want to manipulate, or get
+                  info from, an element on your document.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+        <div class="footer">
+          <img
+            width="100%"
+            class="footer_img"
+            src="./assets/images/footer_img.png"
+          />
+          <h4 class="footer-left-text">
+            A marketing firm
+            <h6 class="footer-right-text">
+              For business contact: natureskarawan@gmail.com
+            </h6>
+          </h4>
+          <!-- <h5 class="float-right-text">A marketing firm</h5> -->
+        </div>
+      </div>
+    </div>
+    <script>
+      $(Document).scroll(() => {
+        var $nav = $("#navbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      });
+    </script>
     <script src="./js/main.js"></script>
     <script src="./js/sendmail.js"></script>
-    <script src="./js/socialmedia.js"></script>
-
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
