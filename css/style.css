@@ -480,16 +480,21 @@ p.lead {
 #accordion {
   /* border: 2px solid rgb(0, 0, 0); */
   border-radius: 15px 15px 15px 15px;
-  background-color: rgba(207, 21, 21, 0);
+  background-color: rgba(0, 0, 0, 0.082);
   width: 100%;
 }
 
 .card {
   /* border: 2px solid rgb(0, 0, 0); */
+
+  border-radius: 15px 15px 15px 15px;
+}
+.card-header:first-child {
   border-radius: 15px 15px 15px 15px;
 }
 .card-header {
   /* border: 1px solid black; */
+  border-bottom: 0px;
   border-radius: 15px 15px 15px 15px;
 }
 .card-body {
