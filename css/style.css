@@ -161,7 +161,7 @@ p {
 }
 
 #subtitle {
-  background-color: #006B12;
+  background-color: #006b12;
   color: white;
   font-family: Roboto;
   line-height: 1.4;
@@ -174,7 +174,7 @@ p {
   width: 100px;
   height: 7px;
   margin-top: 5px;
-  background-color: #006B12;
+  background-color: #006b12;
 }
 
 .contact-btn-wrap {
@@ -186,7 +186,7 @@ button.contact {
   width: 400px;
   font-family: Montserrat;
   font-size: medium;
-  background-color: #B41414;
+  background-color: #b41414;
   transform: rotate(-90deg);
   transform-origin: 100% 0%;
   -webkit-transform: rotate(90deg);
@@ -408,9 +408,31 @@ p.lead {
   display: table-cell;
   vertical-align: middle;
 }
+/** Faq **/
+#faq {
+  position: absolute;
+  top: 700vh;
+  height: 100vh;
+  /* background-image: url(../assets/images/mustard-cover.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+}
 
+#mainHeader.faq .secondary-nav .nav-link.active {
+  background-image: linear-gradient(#e8d595, #a69869);
+}
+
+#faq .rounded-circle {
+  background-color: #a69869;
+  width: 150px !important;
+  height: 150px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
 .contactUsFormClass {
-  border: 1px solid #B41414;
+  border: 1px solid #b41414;
   border-radius: 8px;
   font-family: Montserrat;
   /* from arogyam 2  */
@@ -424,19 +446,14 @@ p.lead {
   transition: 0.5s;
 }
 
-#mainFormId {
-}
-
 .mainFormClass {
   background-color: rgba(253, 254, 255, 0.459);
   border-radius: 0px 0px 8px 8px;
 }
 
 .formHeading {
-  /* transform-origin: bottom left; */
-  /* transform: rotate(90deg); */
   font-size: 25px;
-  background-color: #B41414;
+  background-color: #b41414;
   /*border postioning => top-left top-right bottom-right bottom-left */
   border-radius: 8px 8px 0px 0px;
   font-family: Montserrat;
@@ -482,4 +499,49 @@ p.lead {
   position: fixed;
   cursor: pointer;
   transition: 0.5s;
+}
+/************************************************************* Faq Section ************************************************************/
+/* New */
+
+#accordion {
+  /* border: 2px solid rgb(0, 0, 0); */
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgba(0, 0, 0, 0.082);
+  width: 100%;
+}
+
+.card {
+  /* border: 2px solid rgb(0, 0, 0); */
+
+  border-radius: 15px 15px 15px 15px;
+}
+.card-header:first-child {
+  border-radius: 15px 15px 15px 15px;
+}
+.card-header {
+  /* border: 1px solid black; */
+  border-bottom: 0px;
+  border-radius: 15px 15px 15px 15px;
+}
+.card-body {
+  /* border: 1px solid black; */
+  border-radius: 15px 15px 15px 15px;
+}
+
+/* ******************************** Footer Section ******************************** */
+.footer {
+  position: relative;
+}
+.footer-left-text {
+  position: absolute;
+  bottom: 0vh;
+  left: 20px;
+}
+.footer-right-text {
+  position: absolute;
+  right: 20px;
+  bottom: 0vh;
+}
+.footer_img {
+  width: 100%;
 }
