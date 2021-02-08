@@ -13,6 +13,10 @@ a {
   font-family: Montserrat;
 }
 
+body {
+  display: flex;
+}
+
 p {
   font-family: Roboto !important;
 }
@@ -255,19 +259,10 @@ p.lead {
   width: 0%;
 }
 
-.secondary-mobile-nav {
-  background-color: #ffffff;
-}
-
-.secondary-mobile-nav .nav-link {
-  border-radius: 0;
-  border: 0.1rem solid #ffffff;
-  color: #000000;
-}
-
 /** Coconut **/
 #coconut {
   position: absolute;
+  z-index: -1;
   top: 100vh;
   height: 100vh;
   background-image: url(../assets/images/coconut-cover.png);
@@ -292,6 +287,7 @@ p.lead {
 /** Flaxseed **/
 #flaxseed {
   position: absolute;
+  z-index: -1;
   top: 200vh;
   height: 100vh;
   background-image: url(../assets/images/flaxseed-cover.png);
@@ -316,6 +312,7 @@ p.lead {
 /** Sesame **/
 #sesame {
   position: absolute;
+  z-index: -1;
   top: 300vh;
   height: 100vh;
   background-image: url(../assets/images/sesame-cover.png);
@@ -340,6 +337,7 @@ p.lead {
 /** Almond **/
 #almond {
   position: absolute;
+  z-index: -1;
   top: 400vh;
   height: 100vh;
   background-image: url(../assets/images/almond-cover.png);
@@ -364,6 +362,7 @@ p.lead {
 /** GroundNut **/
 #groundnut {
   position: absolute;
+  z-index: -1;
   top: 500vh;
   height: 100vh;
   background-image: url(../assets/images/groundnut-cover.png);
@@ -388,6 +387,7 @@ p.lead {
 /** Mustard **/
 #mustard {
   position: absolute;
+  z-index: -1;
   top: 600vh;
   height: 100vh;
   background-image: url(../assets/images/mustard-cover.png);
@@ -411,9 +411,9 @@ p.lead {
 /** Faq **/
 #faq {
   position: absolute;
+  z-index: -1;
   top: 700vh;
   height: 100vh;
-  /* background-image: url(../assets/images/mustard-cover.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
