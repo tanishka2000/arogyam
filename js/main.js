@@ -23,10 +23,10 @@ function openForm() {
     document.getElementById("contact-btn-wrap").style.marginRight = "30%";
     document.getElementById("contact-btn-wrap").style.opacity = 0;
   }
-  // for mobile screen
-  if (isMobile()) {
-    document.getElementById("mobile-nav").style.height = 0;
-  }
+  // // for mobile screen
+  // if (isMobile()) {
+  //   document.getElementById("mobile-nav").style.height = 0;
+  // }
 }
 
 function closeForm() {
@@ -42,10 +42,10 @@ function closeForm() {
     document.getElementById("contact-btn-wrap").style.marginRight = "0px";
     document.getElementById("contact-btn-wrap").style.opacity = 1;
   }
-  // for mobile screen
-  if (isMobile()) {
-    document.getElementById("mobile-nav").style.height = "auto";
-  }
+  // // for mobile screen
+  // if (isMobile()) {
+  //   document.getElementById("mobile-nav").style.height = "auto";
+  // }
 }
 
 function closeErrorAlert() {
