@@ -13,6 +13,10 @@ a {
   font-family: Montserrat;
 }
 
+body {
+  display: flex;
+}
+
 p {
   font-family: Roboto !important;
 }
@@ -20,15 +24,15 @@ p {
 /** Home Page **/
 #centerImg {
   display: flex;
+  align-self: center;
   position: absolute;
   right: 0;
   left: 0;
-  top: 5vh;
   max-height: 91vh;
 }
 
 /*Shrinking for mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   #mainHeader {
     align-items: center !important;
     background-color: #ffffff !important;
@@ -40,7 +44,7 @@ p {
     top: 0;
   }
   #brand-logo {
-    max-width: 60vw;
+    max-width: 60vw !important;
   }
   #contactus-iconId {
     margin-bottom: 10%;
@@ -97,7 +101,7 @@ p {
   }
   .natures_karawan_logo {
     margin-top: 80px;
-    height: 150px;
+    height: 6.8em;
     width: 272px;
   }
   .footer_img {
@@ -119,6 +123,9 @@ p {
   .footer-text-right-div {
     text-align: center;
   }
+  #coconut p, #flaxseed p, #sesame p, #almond p, #groundnut p, #mustard p {
+    font-size: smaller !important;
+  }
 }
 
 #mainBackDrop .img-fluid {
@@ -131,6 +138,7 @@ p {
   background-image: url(../assets/images/backDrop1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%;
 }
 
 #mainHeader p {
@@ -301,19 +309,10 @@ p.lead {
   width: 0%;
 }
 
-.secondary-mobile-nav {
-  background-color: #ffffff;
-}
-
-.secondary-mobile-nav .nav-link {
-  border-radius: 0;
-  border: 0.1rem solid #ffffff;
-  color: #000000;
-}
-
 /** Coconut **/
 #coconut {
   position: absolute;
+  z-index: -1;
   top: 100vh;
   height: 100vh;
   background-image: url(../assets/images/coconut-cover.png);
@@ -328,16 +327,13 @@ p.lead {
 
 #coconut .rounded-circle {
   background-color: #77a074;
-  width: 150px !important;
-  height: 150px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
+  height: 6.8em;
 }
 
 /** Flaxseed **/
 #flaxseed {
   position: absolute;
+  z-index: -1;
   top: 200vh;
   height: 100vh;
   background-image: url(../assets/images/flaxseed-cover.png);
@@ -353,7 +349,7 @@ p.lead {
 #flaxseed .rounded-circle {
   background-color: #5a5067;
   width: 150px !important;
-  height: 150px;
+  height: 6.8em;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
@@ -362,6 +358,7 @@ p.lead {
 /** Sesame **/
 #sesame {
   position: absolute;
+  z-index: -1;
   top: 300vh;
   height: 100vh;
   background-image: url(../assets/images/sesame-cover.png);
@@ -377,7 +374,7 @@ p.lead {
 #sesame .rounded-circle {
   background-color: #6f7d88;
   width: 150px !important;
-  height: 150px;
+  height: 6.8em;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
@@ -386,6 +383,7 @@ p.lead {
 /** Almond **/
 #almond {
   position: absolute;
+  z-index: -1;
   top: 400vh;
   height: 100vh;
   background-image: url(../assets/images/almond-cover.png);
@@ -401,7 +399,7 @@ p.lead {
 #almond .rounded-circle {
   background-color: #997777;
   width: 150px !important;
-  height: 150px;
+  height: 6.8em;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
@@ -410,6 +408,7 @@ p.lead {
 /** GroundNut **/
 #groundnut {
   position: absolute;
+  z-index: -1;
   top: 500vh;
   height: 100vh;
   background-image: url(../assets/images/groundnut-cover.png);
@@ -425,7 +424,7 @@ p.lead {
 #groundnut .rounded-circle {
   background-color: #a5775c;
   width: 150px !important;
-  height: 150px;
+  height: 6.8em;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
@@ -434,6 +433,7 @@ p.lead {
 /** Mustard **/
 #mustard {
   position: absolute;
+  z-index: -1;
   top: 600vh;
   height: 100vh;
   background-image: url(../assets/images/mustard-cover.png);
@@ -449,7 +449,7 @@ p.lead {
 #mustard .rounded-circle {
   background-color: #a69869;
   width: 150px !important;
-  height: 150px;
+  height: 6.8em;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
@@ -473,7 +473,7 @@ p.lead {
 #faq .rounded-circle {
   background-color: #a69869;
   width: 150px !important;
-  height: 150px;
+  height: 6.8em;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
@@ -499,8 +499,6 @@ p.lead {
 }
 
 .formHeading {
-  /* transform-origin: bottom left; */
-  /* transform: rotate(90deg); */
   font-size: 25px;
   background-color: #b41414;
   /*border postioning => top-left top-right bottom-right bottom-left */
