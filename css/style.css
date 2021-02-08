@@ -101,21 +101,14 @@ p {
   }
   .natures_karawan_logo {
     margin-top: 80px;
-    height: 6.8em;
+    /* height: 6.8em; */
+    height: 150px;
     width: 272px;
   }
   .footer_img {
     height: 120px;
   }
-  /* .footer-left-text {
-    bottom: 0vh;
-    left: 20px;
-   
-  } */
-  /* .footer-right-text {
-    right: 0px;
-    bottom: 0vh;
-  } */
+
   .footer-text-left-div {
     text-align: center;
     border-bottom: 1px solid white;
@@ -123,7 +116,12 @@ p {
   .footer-text-right-div {
     text-align: center;
   }
-  #coconut p, #flaxseed p, #sesame p, #almond p, #groundnut p, #mustard p {
+  #coconut p,
+  #flaxseed p,
+  #sesame p,
+  #almond p,
+  #groundnut p,
+  #mustard p {
     font-size: smaller !important;
   }
 }
