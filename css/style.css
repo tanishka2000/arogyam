@@ -43,7 +43,7 @@ p {
     position: static;
     top: 0;
   }
-  #brand-logo{
+  #brand-logo {
     max-width: 60vw;
   }
   #contactus-iconId {
@@ -61,7 +61,7 @@ p {
     width: 100px;
     height: 7px;
     margin-top: 5px;
-    background-color: #006B12;
+    background-color: #006b12;
   }
   p.lead::after {
     content: "";
@@ -69,13 +69,59 @@ p {
     width: 100px;
     height: 7px;
     margin-top: 5px;
-    background-color: #006B12;
+    background-color: #006b12;
   }
   .subtitle-wrap::after {
     display: none !important;
   }
   button.contact {
     width: auto !important;
+  }
+  /* Faq part responsive */
+  #accordion {
+    margin: 5%;
+  }
+
+  .faq_img {
+    display: block;
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo_small {
+    display: block;
+    height: 55%;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .natures_karawan_logo_div {
+    text-align: center;
+  }
+  .natures_karawan_logo {
+    margin-top: 80px;
+    height: 150px;
+    width: 272px;
+  }
+  .footer_img {
+    height: 120px;
+  }
+  /* .footer-left-text {
+    bottom: 0vh;
+    left: 20px;
+   
+  } */
+  /* .footer-right-text {
+    right: 0px;
+    bottom: 0vh;
+  } */
+  .footer-text-left-div {
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+  .footer-text-right-div {
+    text-align: center;
   }
 }
 
@@ -101,9 +147,9 @@ p {
   border-radius: 0 0 20px 20px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.75);
 }
 
 .navbar .nav-link h6::after {
@@ -408,12 +454,12 @@ p.lead {
   display: table-cell;
   vertical-align: middle;
 }
-/** Faq **/
+/********* Faq *************/
 #faq {
   position: absolute;
-  z-index: -1;
   top: 700vh;
   height: 100vh;
+  /* background-image: url(../assets/images/mustard-cover.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
@@ -524,15 +570,39 @@ p.lead {
   border-radius: 15px 15px 15px 15px;
 }
 .card-body {
-  /* border: 1px solid black; */
-  border-radius: 15px 15px 15px 15px;
+  /* border-left: 1px solid black; */
+  border-radius: 0px 15px 15px 0px;
+}
+.logo_small {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.faq_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-img-with-text {
+  background-image: url(../assets/images/footer_img.png);
+  background-size: 100%;
+}
+/***********************************FAQ card body************************************/
+.blockquote {
+  border: 1px solid rgba(222, 226, 230, 0.54);
+  border-left: 0.5rem solid rgba(0, 123, 255, 0.54);
+  /* color: #6c757d; */
+  margin: 1.875rem auto;
+  max-width: 90%;
+  position: relative;
+  width: 100%;
 }
 
 /* ******************************** Footer Section ******************************** */
 .footer {
   position: relative;
 }
-.footer-left-text {
+/* .footer-left-text {
   position: absolute;
   bottom: 0vh;
   left: 20px;
@@ -541,6 +611,12 @@ p.lead {
   position: absolute;
   right: 20px;
   bottom: 0vh;
+} */
+.footer-text-left {
+  text-align: left;
+}
+.footer-text-right {
+  text-align: right;
 }
 .footer_img {
   width: 100%;
