@@ -42,9 +42,10 @@ p {
     display: block;
     position: static;
     top: 0;
+    max-height: 50vh;
   }
   #brand-logo {
-    max-width: 60vw !important;
+    width: 50vw !important;
   }
   #contactus-iconId {
     margin-bottom: 10%;
@@ -53,7 +54,7 @@ p {
     font-size: medium;
   }
   p.lead {
-    font-size: smaller !important;
+    font-size: small !important;
   }
   p.lead::before {
     content: "";
@@ -142,6 +143,10 @@ p {
 #mainHeader p {
   color: #414141;
   font-size: medium;
+}
+
+#brand-logo {
+  width: 30vw;
 }
 
 .navbar {
@@ -262,6 +267,7 @@ p.market-credit {
 }
 
 p.lead {
+  font-size: small !important;
   font-weight: 500;
   color: #000000 !important;
 }
