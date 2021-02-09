@@ -1,14 +1,17 @@
 function isMobile() {
-  return screen.width <= parseInt("880px");
+  return screen.width <= parseInt("500px");
 }
 
 function openForm() {
   // closeFaq();
   document.getElementById("contactUsForm").style.opacity = isMobile() ? 1 : 1;
 
+  // document.getElementById("contactUsForm").style.width = isMobile()
+  //   ? "100%"
+  //   : "30%";
   document.getElementById("contactUsForm").style.width = isMobile()
     ? "100%"
-    : "30%";
+    : "455px";
 
   document.getElementById("socialMedia-icons").style.marginRight = isMobile()
     ? "100%"

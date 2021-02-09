@@ -126,7 +126,24 @@ p {
     font-size: smaller !important;
   }
 }
-
+@media screen and (min-width: 770px) and (max-width: 991px) {
+  .footer-text-left {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .footer-text-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
 #mainBackDrop .img-fluid {
   max-width: 80%;
 }
