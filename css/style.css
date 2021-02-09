@@ -645,4 +645,41 @@ p.lead {
 .footer_img {
   width: 100%;
 }
-/* background change for buttons in the nav for */
+/* background change for buttons in the nav */
+.coconut.dropdown-item.active {
+  /* color: #fff;
+  text-decoration: none;
+  background-color: #007bff; */
+  background-image: linear-gradient(#afd8ac, #77a074);
+}
+.flaxseed.dropdown-item.active {
+  /* color: #fff;
+  text-decoration: none;
+  background-color: #ff0000; */
+  background-image: linear-gradient(#beb4c5, #5a5067);
+}
+.sesame.dropdown-item.active {
+  /* color: #fff;
+  text-decoration: none;
+  background-color: #007bff; */
+  background-image: linear-gradient(#acc5d8, #6f7d88);
+}
+.almond.dropdown-item.active {
+  /* color: #fff;
+  text-decoration: none;
+  background-color: #007bff; */
+  background-image: linear-gradient(#d8acac, #997777);
+}
+
+.groundnut.dropdown-item.active {
+  /* color: #fff;
+  text-decoration: none;
+  background-color: #007bff; */
+  background-image: linear-gradient(#e6a57e, #a5775c);
+}
+.mustard.dropdown-item.active {
+  /* color: #fff;
+  text-decoration: none;
+  background-color: #007bff; */
+  background-image: linear-gradient(#e8d595, #a69869);
+}
