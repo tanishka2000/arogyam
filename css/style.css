@@ -42,6 +42,7 @@ p {
     display: block;
     position: static;
     top: 0;
+    max-height: 50vh;
   }
   #brand-logo {
     max-width: 60vw !important;
