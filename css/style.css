@@ -306,6 +306,10 @@ p.lead {
 #mainHeader .secondary-nav .nav-link.border h6::after {
   width: 0%;
 }
+/** For logo in the nav**/
+.nav-pills .nav-logo.nav-link.active {
+  background-color: rgba(255, 255, 255, 0);
+}
 
 /** Coconut **/
 #coconut {
@@ -318,8 +322,11 @@ p.lead {
   background-size: cover;
   background-position: left bottom;
 }
-
-#mainHeader .secondary-nav .nav-link.coconut.active {
+/* this below section of code is not working */
+/* #mainHeader .secondary-nav .nav-link.coconut.active {
+  background-image: linear-gradient(#afd8ac, #77a074);
+} */
+.nav-pills .coconut.nav-link.active {
   background-image: linear-gradient(#afd8ac, #77a074);
 }
 
@@ -340,10 +347,12 @@ p.lead {
   background-position: left bottom;
 }
 
-#mainHeader.flaxseed .secondary-nav .nav-link.active {
+/* #mainHeader.flaxseed .secondary-nav .nav-link.active {
+  background-image: linear-gradient(#beb4c5, #5a5067);
+} */
+.nav-pills .flaxseed.nav-link.active {
   background-image: linear-gradient(#beb4c5, #5a5067);
 }
-
 #flaxseed .rounded-circle {
   background-color: #5a5067;
   width: 150px !important;
@@ -365,10 +374,12 @@ p.lead {
   background-position: left bottom;
 }
 
-#mainHeader.sesame .secondary-nav .nav-link.active {
+/* #mainHeader.sesame .secondary-nav .nav-link.active {
+  background-image: linear-gradient(#acc5d8, #6f7d88);
+} */
+.nav-pills .sesame.nav-link.active {
   background-image: linear-gradient(#acc5d8, #6f7d88);
 }
-
 #sesame .rounded-circle {
   background-color: #6f7d88;
   width: 150px !important;
@@ -390,7 +401,10 @@ p.lead {
   background-position: left bottom;
 }
 
-#mainHeader.almond .secondary-nav .nav-link.active {
+/* #mainHeader.almond .secondary-nav .nav-link.active {
+  background-image: linear-gradient(#d8acac, #997777);
+} */
+.nav-pills .almond.nav-link.active {
   background-image: linear-gradient(#d8acac, #997777);
 }
 
@@ -415,7 +429,10 @@ p.lead {
   background-position: left bottom;
 }
 
-#mainHeader.groundnut .secondary-nav .nav-link.active {
+/* #mainHeader.groundnut .secondary-nav .nav-link.active {
+  background-image: linear-gradient(#e6a57e, #a5775c);
+} */
+.nav-pills .groundnut.nav-link.active {
   background-image: linear-gradient(#e6a57e, #a5775c);
 }
 
@@ -440,7 +457,10 @@ p.lead {
   background-position: left bottom;
 }
 
-#mainHeader.mustard .secondary-nav .nav-link.active {
+/* #mainHeader.mustard .secondary-nav .nav-link.active {
+  background-image: linear-gradient(#e8d595, #a69869);
+} */
+.nav-pills .mustard.nav-link.active {
   background-image: linear-gradient(#e8d595, #a69869);
 }
 
@@ -458,7 +478,6 @@ p.lead {
   top: 700vh;
   height: 100vh;
   width: 100%;
-  /* background-image: url(../assets/images/mustard-cover.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
@@ -620,3 +639,4 @@ p.lead {
 .footer_img {
   width: 100%;
 }
+/* background change for buttons in the nav for */
