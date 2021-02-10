@@ -44,6 +44,13 @@ p {
     background-color: #ffffff !important;
     background-image: none !important;
   }
+  /* d-flex width to 100%  for proper adjustment no gaps on the side*/
+  .d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 100%;
+  }
+  /*  */
   #centerImg {
     display: block;
     position: static;
@@ -121,8 +128,10 @@ p {
   .natures_karawan_logo {
     margin-top: 80px;
     /* height: 6.8em; */
-    height: 150px;
-    width: 272px;
+    /* height: 150px;
+    width: 272px; */
+    height: 23vw;
+    width: 40vw;
   }
   .footer_img {
     height: 120px;
@@ -359,6 +368,7 @@ p.lead {
 
 .oil-name {
   font-family: Niconne;
+  font-size: 200%;
 }
 
 /** Coconut **/
@@ -377,6 +387,7 @@ p.lead {
 }
 
 #coconut .rounded-circle {
+  width: 150px !important;
   background-color: #77a074;
   height: 6.8em;
 }
@@ -514,7 +525,7 @@ p.lead {
   border-radius: 8px;
   font-family: Montserrat;
   /* from arogyam 2  */
-  /* height: auto; */
+  /* height: 100vh; */
   width: 0;
   position: fixed;
   right: 0;
@@ -691,3 +702,4 @@ p.lead {
   background-color: #007bff; */
   background-image: linear-gradient(#e8d595, #a69869);
 }
+/* for proper mobile and pc alignment */
