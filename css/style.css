@@ -239,6 +239,11 @@ p {
   width: 0%;
 }
 
+.navbar .dropdown-menu {
+  right: 0 !important;
+  left: auto !important;
+}
+
 #navbar.scrolled {
   background-color: #fff !important;
   border-color: #fff !important;
