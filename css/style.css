@@ -163,6 +163,15 @@ p {
     padding-right: 15px;
     padding-left: 15px;
   }
+  #subtitle {
+    font-size: 30px !important;
+  }
+  .subtitle-wrap {
+    margin: 25px !important;
+  }
+  p.lead {
+    font-size: 20px !important;
+  }
   #mainHeader,
   #coconut,
   #flaxseed,
@@ -172,13 +181,21 @@ p {
   #mustard {
     height: 70vh !important;
   }
+  #coconut h1,
+  #flaxseed h1,
+  #sesame h1,
+  #almond h1,
+  #groundnut h1,
+  #mustard h1 {
+    font-size: 70px !important;
+  }
   #coconut p,
   #flaxseed p,
   #sesame p,
   #almond p,
   #groundnut p,
   #mustard p {
-    font-size: smaller !important;
+    font-size: 20px !important;
   }
   #coconut {
     top: 70vh !important;
