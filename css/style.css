@@ -95,6 +95,15 @@ p {
   }
 
   /** Oils Section **/
+  #coconut h1,
+  #flaxseed h1,
+  #sesame h1,
+  #almond h1,
+  #groundnut h1,
+  #mustard h1 {
+    margin: 0px 40px;
+    font-size: 70px !important;
+  }
   #coconut p,
   #flaxseed p,
   #sesame p,
@@ -163,6 +172,9 @@ p {
     padding-right: 15px;
     padding-left: 15px;
   }
+  #brand-logo {
+    width: 40vw !important;
+  }
   #subtitle {
     font-size: 30px !important;
   }
@@ -170,7 +182,7 @@ p {
     margin: 25px !important;
   }
   p.lead {
-    font-size: 20px !important;
+    font-size: 16px !important;
   }
   #mainHeader,
   #coconut,
@@ -179,7 +191,7 @@ p {
   #almond,
   #groundnut,
   #mustard {
-    height: 70vh !important;
+    height: 100vh !important;
   }
   #coconut h1,
   #flaxseed h1,
@@ -195,28 +207,28 @@ p {
   #almond p,
   #groundnut p,
   #mustard p {
-    font-size: 20px !important;
+    font-size: 16px !important;
   }
   #coconut {
-    top: 70vh !important;
+    top: 100vh !important;
   }
   #flaxseed {
-    top: 140vh !important;
+    top: 200vh !important;
   }
   #sesame {
-    top: 210vh !important;
+    top: 300vh !important;
   }
   #almond {
-    top: 280vh !important;
+    top: 400vh !important;
   }
   #groundnut {
-    top: 350vh !important;
+    top: 500vh !important;
   }
   #mustard {
-    top: 420vh !important;
+    top: 600vh !important;
   }
   #faq {
-    top: 490vh !important;
+    top: 700vh !important;
   }
 }
 
