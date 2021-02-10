@@ -87,41 +87,16 @@ p {
     width: auto !important;
   }
 
-  /** Oils Sections **/
-  #coconut,
-  #flaxseed,
-  #sesame,
-  #almond,
-  #groundnut,
-  #mustard {
-    height: 200vh !important;
-  }
+  /** Oils Section **/
   #coconut p,
   #flaxseed p,
   #sesame p,
   #almond p,
   #groundnut p,
   #mustard p {
-    font-size: smaller !important;
+    font-size: medium !important;
   }
-  #flaxseed {
-    top: 300vh !important;
-  }
-  #sesame {
-    top: 500vh !important;
-  }
-  #almond {
-    top: 700vh !important;
-  }
-  #groundnut {
-    top: 900vh !important;
-  }
-  #mustard {
-    top: 1100vh !important;
-  }
-  #faq {
-    top: 1300vh !important;
-  }
+
   /** FAQ Section **/
   #accordion {
     margin: 5%;
@@ -161,6 +136,7 @@ p {
     text-align: center;
   }
 }
+
 @media screen and (min-width: 770px) and (max-width: 991px) {
   .footer-text-left {
     flex: 0 0 100%;
@@ -179,6 +155,45 @@ p {
     padding-left: 15px;
   }
 }
+
+@media screen and (max-width: 770px) {
+  /** Oils Sections **/
+  #coconut,
+  #flaxseed,
+  #sesame,
+  #almond,
+  #groundnut,
+  #mustard {
+    height: 200vh !important;
+  }
+  #coconut p,
+  #flaxseed p,
+  #sesame p,
+  #almond p,
+  #groundnut p,
+  #mustard p {
+    font-size: smaller !important;
+  }
+  #flaxseed {
+    top: 300vh !important;
+  }
+  #sesame {
+    top: 500vh !important;
+  }
+  #almond {
+    top: 700vh !important;
+  }
+  #groundnut {
+    top: 900vh !important;
+  }
+  #mustard {
+    top: 1100vh !important;
+  }
+  #faq {
+    top: 1300vh !important;
+  }
+}
+
 #mainBackDrop .img-fluid {
   max-width: 80%;
 }
