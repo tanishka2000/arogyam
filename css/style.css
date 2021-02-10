@@ -46,6 +46,7 @@ p {
   }
   #brand-logo {
     width: 50vw !important;
+    margin-top: 100px;
   }
   #contactus-iconId {
     margin-bottom: 10%;
@@ -54,7 +55,7 @@ p {
     font-size: medium;
   }
   p.lead {
-    font-size: small !important;
+    font-size: medium !important;
   }
   p.lead::before {
     content: "";
@@ -62,6 +63,7 @@ p {
     width: 100px;
     height: 7px;
     margin-top: 5px;
+    margin-bottom: 7px;
     background-color: #006b12;
   }
   p.lead::after {
@@ -69,7 +71,7 @@ p {
     display: block;
     width: 100px;
     height: 7px;
-    margin-top: 5px;
+    margin-top: 7px;
     background-color: #006b12;
   }
   .subtitle-wrap::after {
@@ -292,7 +294,7 @@ p.market-credit {
 }
 
 p.lead {
-  font-size: small !important;
+  font-size: small;
   font-weight: 500;
   color: #000000 !important;
 }
