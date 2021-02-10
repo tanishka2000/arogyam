@@ -3,6 +3,11 @@
   src: url(../assets/fonts/Montserrat-SemiBold.ttf);
 }
 
+@font-face {
+  font-family: Niconne;
+  src: url(../assets/fonts/Niconne-Regular.ttf);
+}
+
 h1,
 h2,
 h3,
@@ -33,6 +38,7 @@ p {
 
 /*Shrinking for mobile*/
 @media screen and (max-width: 991px) {
+  /** Main Section **/
   #mainHeader {
     align-items: center !important;
     background-color: #ffffff !important;
@@ -80,11 +86,46 @@ p {
   button.contact {
     width: auto !important;
   }
-  /* Faq part responsive */
+
+  /** Oils Sections **/
+  #coconut,
+  #flaxseed,
+  #sesame,
+  #almond,
+  #groundnut,
+  #mustard {
+    height: 200vh !important;
+  }
+  #coconut p,
+  #flaxseed p,
+  #sesame p,
+  #almond p,
+  #groundnut p,
+  #mustard p {
+    font-size: smaller !important;
+  }
+  #flaxseed {
+    top: 300vh !important;
+  }
+  #sesame {
+    top: 500vh !important;
+  }
+  #almond {
+    top: 700vh !important;
+  }
+  #groundnut {
+    top: 900vh !important;
+  }
+  #mustard {
+    top: 1100vh !important;
+  }
+  #faq {
+    top: 1300vh !important;
+  }
+  /** FAQ Section **/
   #accordion {
     margin: 5%;
   }
-
   .faq_img {
     display: block;
     height: 50%;
@@ -118,14 +159,6 @@ p {
   }
   .footer-text-right-div {
     text-align: center;
-  }
-  #coconut p,
-  #flaxseed p,
-  #sesame p,
-  #almond p,
-  #groundnut p,
-  #mustard p {
-    font-size: smaller !important;
   }
 }
 @media screen and (min-width: 770px) and (max-width: 991px) {
@@ -304,66 +337,26 @@ p.lead {
   color: #000000 !important;
 }
 
-/** Other Pages **/
-#mainHeader .secondary-nav {
-  background-color: #ffffff;
-  border-radius: 0 0 20px 20px;
-}
-
-#mainHeader .secondary-nav .border {
-  background-color: #666666;
-  color: #ffffff;
-}
-
-#mainHeader .secondary-nav .nav-link {
-  margin: 0 1em;
-}
-
-#mainHeader .secondary-nav .nav-link h6 {
-  color: #000000;
-  margin-bottom: 0;
-}
-
-#mainHeader .secondary-nav .nav-link h6::after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #161616;
-  transition: all ease-in-out 250ms;
-}
-
-#mainHeader .secondary-nav .nav-link.active h6,
-#mainHeader .secondary-nav .nav-link.border h6 {
-  color: #ffffff;
-}
-
-#mainHeader .secondary-nav .nav-link.active h6::after,
-#mainHeader .secondary-nav .nav-link.border h6::after {
-  width: 0%;
-}
-/** For logo in the nav**/
+/** Oils Sections **/
 .nav-pills .nav-logo.nav-link.active {
   background-color: rgba(255, 255, 255, 0);
+}
+
+.oil-name {
+  font-family: Niconne;
 }
 
 /** Coconut **/
 #coconut {
   position: absolute;
-  z-index: -1;
   top: 100vh;
   height: 100vh;
   background-image: url(../assets/images/coconut-cover.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #afd8ac;
   background-position: left bottom;
 }
-/* this below section of code is not working */
-/* #mainHeader .secondary-nav .nav-link.coconut.active {
-  background-image: linear-gradient(#afd8ac, #77a074);
-} */
+
 .nav-pills .coconut.nav-link.active {
   background-image: linear-gradient(#afd8ac, #77a074);
 }
@@ -376,21 +369,18 @@ p.lead {
 /** Flaxseed **/
 #flaxseed {
   position: absolute;
-  z-index: -1;
   top: 200vh;
   height: 100vh;
   background-image: url(../assets/images/flaxseed-cover.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #beb4c5;
   background-position: left bottom;
 }
 
-/* #mainHeader.flaxseed .secondary-nav .nav-link.active {
-  background-image: linear-gradient(#beb4c5, #5a5067);
-} */
 .nav-pills .flaxseed.nav-link.active {
   background-image: linear-gradient(#beb4c5, #5a5067);
 }
+
 #flaxseed .rounded-circle {
   background-color: #5a5067;
   width: 150px !important;
@@ -403,21 +393,18 @@ p.lead {
 /** Sesame **/
 #sesame {
   position: absolute;
-  z-index: -1;
   top: 300vh;
   height: 100vh;
   background-image: url(../assets/images/sesame-cover.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #acc5d8;
   background-position: left bottom;
 }
 
-/* #mainHeader.sesame .secondary-nav .nav-link.active {
-  background-image: linear-gradient(#acc5d8, #6f7d88);
-} */
 .nav-pills .sesame.nav-link.active {
   background-image: linear-gradient(#acc5d8, #6f7d88);
 }
+
 #sesame .rounded-circle {
   background-color: #6f7d88;
   width: 150px !important;
@@ -430,18 +417,14 @@ p.lead {
 /** Almond **/
 #almond {
   position: absolute;
-  z-index: -1;
   top: 400vh;
   height: 100vh;
   background-image: url(../assets/images/almond-cover.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #d8acac;
   background-position: left bottom;
 }
 
-/* #mainHeader.almond .secondary-nav .nav-link.active {
-  background-image: linear-gradient(#d8acac, #997777);
-} */
 .nav-pills .almond.nav-link.active {
   background-image: linear-gradient(#d8acac, #997777);
 }
@@ -458,18 +441,14 @@ p.lead {
 /** GroundNut **/
 #groundnut {
   position: absolute;
-  z-index: -1;
   top: 500vh;
   height: 100vh;
   background-image: url(../assets/images/groundnut-cover.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #e6a57e;
   background-position: left bottom;
 }
 
-/* #mainHeader.groundnut .secondary-nav .nav-link.active {
-  background-image: linear-gradient(#e6a57e, #a5775c);
-} */
 .nav-pills .groundnut.nav-link.active {
   background-image: linear-gradient(#e6a57e, #a5775c);
 }
@@ -486,18 +465,14 @@ p.lead {
 /** Mustard **/
 #mustard {
   position: absolute;
-  z-index: -1;
   top: 600vh;
   height: 100vh;
   background-image: url(../assets/images/mustard-cover.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #e8d595;
   background-position: left bottom;
 }
 
-/* #mainHeader.mustard .secondary-nav .nav-link.active {
-  background-image: linear-gradient(#e8d595, #a69869);
-} */
 .nav-pills .mustard.nav-link.active {
   background-image: linear-gradient(#e8d595, #a69869);
 }
@@ -510,29 +485,15 @@ p.lead {
   display: table-cell;
   vertical-align: middle;
 }
-/********* Faq *************/
+
+/** FAQ **/
 #faq {
   position: absolute;
   top: 700vh;
   height: 100vh;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left bottom;
 }
 
-#mainHeader.faq .secondary-nav .nav-link.active {
-  background-image: linear-gradient(#e8d595, #a69869);
-}
-
-#faq .rounded-circle {
-  background-color: #a69869;
-  width: 150px !important;
-  height: 6.8em;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-}
 .contactUsFormClass {
   border: 1px solid #b41414;
   border-radius: 8px;
