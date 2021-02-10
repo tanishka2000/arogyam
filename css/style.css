@@ -163,6 +163,44 @@ p {
     padding-right: 15px;
     padding-left: 15px;
   }
+  #mainHeader,
+  #coconut,
+  #flaxseed,
+  #sesame,
+  #almond,
+  #groundnut,
+  #mustard {
+    height: 70vh !important;
+  }
+  #coconut p,
+  #flaxseed p,
+  #sesame p,
+  #almond p,
+  #groundnut p,
+  #mustard p {
+    font-size: smaller !important;
+  }
+  #coconut {
+    top: 70vh !important;
+  }
+  #flaxseed {
+    top: 140vh !important;
+  }
+  #sesame {
+    top: 210vh !important;
+  }
+  #almond {
+    top: 280vh !important;
+  }
+  #groundnut {
+    top: 350vh !important;
+  }
+  #mustard {
+    top: 420vh !important;
+  }
+  #faq {
+    top: 490vh !important;
+  }
 }
 
 @media screen and (max-width: 770px) {
