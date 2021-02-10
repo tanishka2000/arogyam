@@ -210,6 +210,14 @@ p {
   margin-bottom: 0;
 }
 
+.navbar .nav-link.active h5 {
+  color: #ffffff;
+}
+
+.navbar .nav-link.active h5::after {
+  background-color: #ffffff;
+}
+
 .navbar .nav-link.border h5 {
   color: #ffffff;
 }
