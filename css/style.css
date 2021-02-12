@@ -268,6 +268,15 @@ p {
   #faq {
     top: 1300vh !important;
   }
+  #alertEmptyFieldsTrue,
+  #alertEmptyFieldsFalse {
+    opacity: 0;
+    /* border: 1px solid black; */
+    width: 90% !important;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+  }
 }
 
 #mainBackDrop .img-fluid {
@@ -646,13 +655,22 @@ p.lead {
 }
 
 /*Alert Box*/
+.alert-area {
+  margin-top: 15vh;
+  /* border: 1px solid #b41414; */
+  border-radius: 8px;
+  font-family: Montserrat;
+  width: 100%;
+  position: fixed;
+}
 #alertEmptyFieldsTrue,
 #alertEmptyFieldsFalse {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   opacity: 0;
-  width: 50%;
-  margin: auto;
-  display: flex;
-  position: fixed;
+  width: 25vw;
+  position: relative;
   cursor: pointer;
   transition: 0.5s;
 }
