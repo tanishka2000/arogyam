@@ -41,10 +41,11 @@
     <a class="mustard flex-lg-fill text-sm-center nav-link d-lg-block d-none" href="#mustard">
       <h5>Mustard oil</h5>
     </a>
-    <a class="flex-lg-fill text-sm-center nav-link border ml-lg-0 ml-auto d-lg-block" href="#faq">
+    <a class="faq flex-lg-fill text-sm-center nav-link border ml-lg-0 ml-auto d-lg-block" href="#faq">
       <h5>FAQs</h5>
     </a>
-    <a class="flex-lg-fill text-sm-center nav-link border ml-lg-0 ml-1 d-lg-none d-block" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a class="flex-lg-fill text-sm-center nav-link border ml-lg-0 ml-1 d-lg-none d-block" id="navbarDropdownMenuLink"
+      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       <h5>Oils</h5>
     </a>
     <div class="dropdown-menu text-sm-center" aria-labelledby="navbarDropdownMenuLink">
@@ -69,26 +70,42 @@
     </div>
   </nav>
   <!-- Navbar Ends -->
-  <div class="mx-auto alert-area row text-center mx-0 px-0" style="z-index: 4;">
-    <div class="col-12 px-0 mx-0"><div id="alertEmptyFieldsTrue" onclick="closeErrorAlert()" class="alert alert-danger d-flex" role="alert" style="z-index:3;">
-      Please fill all the fields &nbsp;
-      <span class="float-right">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-          <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
-        </svg>
-      </span>
-     
-    </div></div>
-    <div class="col-12 px-0 mx-0"><div id="alertEmptyFieldsFalse" onclick="closeSuccessAlert()" class="alert alert-success d-flex " role="alert" style="z-index:3;">
-      Mail Sent&nbsp;&nbsp;<span class="float-right" aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-          <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
-        </svg>
-       
-      </span>
 
-    </div></div>
+
+  <!-- Alert Boxes -->
+  <div id="alert-area" class="mx-auto row text-center mx-0 px-0" style="z-index: 4;">
+    <div class="col-12 px-0 mx-0">
+      <div id="alertEmptyFieldsTrue" class="alert alert-danger" role="alert"
+        style="z-index:3;">
+        Please fill all the fields &nbsp;
+        <span class="svg-trash float-right" onclick="closeErrorAlert()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
+          </svg>
+        </span>
+
+      </div>
+    </div>
+    <div class="col-12 px-0 mx-0">
+      <div id="alertEmptyFieldsFalse" class="alert alert-success" role="alert"
+        style="z-index:3;">
+        Mail Sent&nbsp;&nbsp;
+        <span class="svg-trash float-right"  onclick="closeSuccessAlert()" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
+          </svg>
+
+        </span>
+
+      </div>
+    </div>
   </div>
+  <!-- Alert Boxes End -->
+
 
   <!-- Contact Us Sidebar Starts -->
   <div id="contact-btn-wrap" class="align-right-bottom" style="z-index:2;">
@@ -102,7 +119,8 @@
   <div id="mainHeader" class="jumbotron jumbotron-fluid p-0 d-flex align-items-center align-content-baseline">
     <img id="centerImg" src="./assets/images/main.png" alt="" class="img-fluid mx-auto d-none d-lg-flex" />
     <div class="col-lg-5 col-sm-12 py-5 px-lg-5 px-4 py-0 text-center" style="z-index:1;">
-      <img id="brand-logo" src="./assets/images/Arogyam.png" class="img-fluid text-md-left text-center float-lg-left float-none" />
+      <img id="brand-logo" src="./assets/images/Arogyam.png"
+        class="img-fluid text-md-left text-center float-lg-left float-none" />
       <h3 class="subtitle-wrap my-lg-3 my-0 mx-0 text-lg-left text-center">
         <mark id="subtitle" class="py-0">Wodden Cold Pressed | Extra Virgin</mark>
       </h3>
@@ -140,7 +158,7 @@
             <textarea class="form-control my-3" id="formMessageInput" rows="3" required></textarea>
           </div>
 
-          <button type="button" onclick="initiateMailSending()" class="btn btn-primary btn-block">
+          <button id="submitBtn" type="button" onclick="initiateMailSending()" class="btn btn-primary btn-block">
             Submit &nbsp;
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
               class="bi bi-clipboard-check" viewBox="0 0 20 20">
@@ -186,9 +204,11 @@
   <!-- Coconut Section Starts -->
   <div id="coconut" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
     <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5 d-flex align-items-stretch align-content-stretch">
-      <div class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
+      <div
+        class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
         <h1 class="oil-name display-2">Coconut Oil</h1>
-        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50" src="./assets/images/coconut-banner-2.png" />
+        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50"
+          src="./assets/images/coconut-banner-2.png" />
         <div class="d-flex my-auto align-items-stretch bd-highlight">
           <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
             <h5 style="width: 5.6em;">SKIN</h5>
@@ -262,9 +282,11 @@
   <!-- Flaxseed Section Starts -->
   <div id="flaxseed" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
     <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5 d-flex align-items-stretch align-content-stretch">
-      <div class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
+      <div
+        class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
         <h1 class="oil-name display-2">Flaxseed Oil</h1>
-        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50" src="./assets/images/flaxseed-banner-2.png" />
+        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50"
+          src="./assets/images/flaxseed-banner-2.png" />
         <div class="d-flex my-auto align-items-stretch bd-highlight">
           <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
             <h5 style="width: 5.6em;">SKIN</h5>
@@ -338,7 +360,8 @@
   <!-- Sesame Section Starts -->
   <div id="sesame" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
     <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5 d-flex align-items-stretch align-content-stretch">
-      <div class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
+      <div
+        class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
         <h1 class="oil-name display-2">Sesame Oil</h1>
         <img class="img-fluid align-self-start d-md-none d-block py-5 w-50" src="./assets/images/sesame-banner-2.png" />
         <div class="d-flex my-auto align-items-stretch bd-highlight">
@@ -414,7 +437,8 @@
   <!-- Almond Section Starts -->
   <div id="almond" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
     <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5 d-flex align-items-stretch align-content-stretch">
-      <div class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
+      <div
+        class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
         <h1 class="oil-name display-2">Almond Oil</h1>
         <img class="img-fluid align-self-start d-md-none d-block py-5 w-50" src="./assets/images/almond-banner-2.png" />
         <div class="d-flex my-auto align-items-stretch bd-highlight">
@@ -490,9 +514,11 @@
   <!-- Groundnut Section Starts -->
   <div id="groundnut" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
     <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5 d-flex align-items-stretch align-content-stretch">
-      <div class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
+      <div
+        class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
         <h1 class="oil-name display-2">Ground-Nut Oil</h1>
-        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50" src="./assets/images/groundnut-banner-2.png" />
+        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50"
+          src="./assets/images/groundnut-banner-2.png" />
         <div class="d-flex my-auto align-items-stretch bd-highlight">
           <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
             <h5 style="width: 5.6em;">SKIN</h5>
@@ -566,9 +592,11 @@
   <!-- Mustard Section Starts -->
   <div id="mustard" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
     <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5 d-flex align-items-stretch align-content-stretch">
-      <div class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
+      <div
+        class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
         <h1 class="oil-name display-2">Mustard Oil</h1>
-        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50" src="./assets/images/mustard-banner-2.png" />
+        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50"
+          src="./assets/images/mustard-banner-2.png" />
         <div class="d-flex my-auto align-items-stretch bd-highlight">
           <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
             <h5 style="width: 5.6em;">SKIN</h5>
@@ -643,23 +671,15 @@
   <div id="faq" class="jumbotron jumbotron-fluid bg-white mb-0 py-0 h-auto">
     <div class="row w-100 mt-5 mx-0">
       <div class="col-12 col-md-3 p-0">
-        <div class="mt-3" >
-          <img
-            width="200"
-            height="200"
-            class="logo_small"
-            src="./assets/images/logo_small.png"
-          />
+        <div class="mt-3">
+          <img width="200" height="200" class="logo_small" src="./assets/images/logo_small.png" />
         </div>
 
         <div class="">
-          <img class="faq_img mb-5"
-            height="80%"
-            width="80%" 
-            src="./assets/images/faq_img.png" />
+          <img class="faq_img mb-5" height="80%" width="80%" src="./assets/images/faq_img.png" />
         </div>
 
-        
+
       </div>
       <div class="col-12 col-md-9 d-flex align-items-center">
         <!-- <img
@@ -672,12 +692,13 @@
           <div class="card mb-1">
             <div class="card-header" id="headingOne">
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="false" aria-controls="collapseOne">
                   What is querySelector?
                 </button>
               </h2>
             </div>
-        
+
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body blockquote">
                 <!-- https://codepen.io/brucebentley/pen/JVmjWw -->
@@ -693,7 +714,8 @@
           <div class="card mb-1">
             <div class="card-header" id="headingTwo">
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
                   What does querySelector do in JS?
                 </button>
               </h2>
@@ -709,7 +731,8 @@
           <div class="card mb-1">
             <div class="card-header" id="headingThree">
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
                   What does getElementById mean?
                 </button>
               </h2>
@@ -727,7 +750,8 @@
           <div class="card mb-1">
             <div class="card-header" id="headingFour">
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
                   What does getElementById mean?
                 </button>
               </h2>
@@ -745,7 +769,8 @@
           <div class="card">
             <div class="card-header" id="headingFive">
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive"
+                  aria-expanded="false" aria-controls="collapseFive">
                   What does getElementById mean?
                 </button>
               </h2>
@@ -763,16 +788,11 @@
         </div>
       </div>
       <div class="natures_karawan_logo_div ml-4 mt-5 w-100">
-        <img
-          height="165"  
-          width="300"
-         class="natures_karawan_logo"
-          src="./assets/images/natures_karawan_logo.png"
-        />
+        <img height="165" width="300" class="natures_karawan_logo" src="./assets/images/natures_karawan_logo.png" />
       </div>
-      </div>
-      <div class="footer">
-        <!-- <img
+    </div>
+    <div class="footer">
+      <!-- <img
           width="100%"
           class="footer_img"
           src="./assets/images/footer_img.png"
@@ -783,15 +803,23 @@
             For business contact: natureskarawan@gmail.com
           </h6>
         </h4> -->
-        <div class="footer-img-with-text">
-          <div class="row w-100 p-0 m-0">
-            <div class="col-12 col-md-7 footer-text-left"><div class="footer-text-left-div"><h4 class="ml-4 mt-4">A marketking firm</h4></div> </div>
-            <div class="col-12 col-md-5 footer-text-right"><div class="footer-text-right-div"><h5 class="mr-1 mt-4"></h5>For business contact: natureskarawan@gmail.com</h5></div></div>
+      <div class="footer-img-with-text">
+        <div class="row w-100 p-0 m-0">
+          <div class="col-12 col-md-7 footer-text-left">
+            <div class="footer-text-left-div">
+              <h4 class="ml-4 mt-4">A marketking firm</h4>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 footer-text-right">
+            <div class="footer-text-right-div">
+              <h5 class="mr-1 mt-4"></h5>For business contact: natureskarawan@gmail.com</h5>
+            </div>
           </div>
         </div>
-        <!-- <h5 class="float-right-text">A marketing firm</h5> -->
       </div>
+      <!-- <h5 class="float-right-text">A marketing firm</h5> -->
     </div>
+  </div>
   </div>
   <!-- FAQ Section Ends -->
 
@@ -799,10 +827,10 @@
   <script src="./js/sendmail.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-  </script>
+    </script>
   <script>
     $(document).ready(function () {
       window.onscroll = () => {
@@ -815,6 +843,22 @@
   <!-- For scroll spy -->
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+  <!-- For alert box hide and show -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var cacheDom = "";
+      $('#submitBtn').click(function () {
+        if ($('.test').length > 0) {
+          cacheDom = $('.test');
+          $('.test').remove();
+        }
+      });
+      $('#add').click(function () {
+        $('.test3').append(cacheDom);
+      });
+    });
+  </script>
 </body>
 
 </html>

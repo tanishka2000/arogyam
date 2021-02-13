@@ -1,6 +1,7 @@
 function initiateMailSending() {
   var fieldsEmpty = checkInputs();
   if (fieldsEmpty == true) {
+    document.getElementById("alert-area").style.width = "100%";
     document.getElementById("alertEmptyFieldsTrue").style.opacity = 1;
     document.getElementById("alertEmptyFieldsFalse").style.opacity = 0;
   }
@@ -48,6 +49,7 @@ function sendMail() {
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === this.DONE) {
       console.log(this.responseText);
+      document.getElementById("alert-area").style.width = "100%";
       document.getElementById("alertEmptyFieldsFalse").style.opacity = 1;
       document.getElementById("alertEmptyFieldsTrue").style.opacity = 0;
     }

@@ -595,7 +595,9 @@ p.lead {
   height: 100vh;
   width: 100%;
 }
-
+.nav-pills .faq.nav-link.active {
+  /* background-image: linear-gradient(#e8d595, #a69869); */
+}
 .contactUsFormClass {
   border: 1px solid #b41414;
   border-radius: 8px;
@@ -655,12 +657,12 @@ p.lead {
 }
 
 /*Alert Box*/
-.alert-area {
+#alert-area {
   margin-top: 15vh;
   /* border: 1px solid #b41414; */
   border-radius: 8px;
   font-family: Montserrat;
-  width: 100%;
+  width: 0%;
   position: fixed;
 }
 #alertEmptyFieldsTrue,
@@ -671,8 +673,16 @@ p.lead {
   opacity: 0;
   width: 25vw;
   position: relative;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: 0.5s;
+}
+#alertEmptyFieldsTrue.alert.alert-danger.d-flex {
+  display: -ms-flexbox !important;
+  text-align: center;
+  display: flex !important;
+}
+.svg-trash {
+  cursor: pointer;
 }
 /************************************************************* Faq Section ************************************************************/
 /* New */
@@ -681,7 +691,7 @@ p.lead {
   /* border: 2px solid rgb(0, 0, 0); */
   border-radius: 15px 15px 15px 15px;
   background-color: rgba(0, 0, 0, 0.082);
-  width: 100%;
+  width: 95%;
 }
 
 .card {
