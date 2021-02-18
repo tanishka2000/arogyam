@@ -1,0 +1,44 @@
+/**********************************For karawan*******************************/
+/* underline-small */
+.navbar .nav-link h5::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 20%;
+  margin-left: 1.5%;
+  background-color: #161616;
+  transition: all ease-in-out 250ms;
+}
+.navbar {
+  background-color: rgb(255 255 255 / 65%);
+}
+.nav-right-text {
+  position: fixed;
+  right: 2vw;
+}
+.body-karawan {
+  opacity: 100%;
+  background-image: url(../assets/images/nature.png);
+}
+.semi_rect_circle_transparent {
+  position: fixed;
+  height: 100vh;
+  margin-left: -3%;
+}
+.semi_rect_circle_opaque {
+  position: fixed;
+  height: 100vh;
+  margin-left: -4%;
+}
+.main-logo {
+  /* width: 64vw; */
+  height: 63vh;
+}
+.main-container {
+  margin-top: 18.5vh;
+}
+.main-container .rounded-circle {
+  background-color: #2c7606;
+  height: 50vh;
+  width: 50vh;
+}
