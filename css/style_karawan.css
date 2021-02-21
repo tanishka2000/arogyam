@@ -1,11 +1,15 @@
 /**********************************For karawan*******************************/
+html {
+  height: 100%;
+}
 /* underline-small */
-.navbar .nav-link h5::after {
+.navbar .nav-link .h5::after {
   content: "";
   display: block;
-  height: 3px;
+  height: 4px;
   width: 20%;
   margin-left: 1.5%;
+  margin-top: 4.5px;
   background-color: #161616;
   transition: all ease-in-out 250ms;
 }
@@ -15,6 +19,16 @@
 .nav-right-text {
   position: fixed;
   right: 2vw;
+  font-size: 35px;
+  font-family: unset;
+  font-weight: unset;
+  font-family: "Segoe UI";
+}
+.karawan-nav-text {
+  color: #161616;
+  font-family: unset;
+  font-weight: bold;
+  font-family: "Segoe UI";
 }
 .body-karawan {
   opacity: 100%;
@@ -23,22 +37,76 @@
 .semi_rect_circle_transparent {
   position: fixed;
   height: 100vh;
-  margin-left: -3%;
+  width: 55%;
+  margin-left: 4%;
 }
 .semi_rect_circle_opaque {
   position: fixed;
   height: 100vh;
-  margin-left: -4%;
+  width: 55%;
+  margin-left: 3%;
+}
+.semi_rect_circle_opaque_2 {
+  position: fixed;
+  height: 100vh;
+  width: 55%;
+  margin-left: 0%;
 }
 .main-logo {
+  margin-left: 3%;
   /* width: 64vw; */
-  height: 63vh;
+  height: 64vh;
 }
 .main-container {
+  /* border: 2px solid black; */
+}
+.main-content {
+  height: calc(100% - 18.5vh);
+  /* border: 2px solid rgb(0, 132, 255); */
   margin-top: 18.5vh;
 }
 .main-container .rounded-circle {
+  margin-left: -15%;
+  margin-top: 15vh;
   background-color: #2c7606;
   height: 50vh;
   width: 50vh;
+}
+.display-text .text-head-1 {
+  font-size: 5.5vh;
+  line-height: 1;
+}
+.text-head-2 {
+  color: yellow;
+  font-size: 5.5vh;
+  line-height: 0.8;
+}
+.text-body {
+  color: white !important;
+  font-size: 2.5vh;
+}
+.display-text {
+  border: 1px solid black;
+  height: -webkit-fill-available;
+}
+.text-bottom-left {
+  position: fixed;
+  bottom: 3.4vh;
+  left: 1.5vw;
+  font-size: 40px;
+}
+.text-bottom-right {
+  position: fixed;
+  bottom: 0.9vh;
+  right: 0.8vw;
+  font-size: 20px;
+}
+#whatsapp-logo {
+  position: fixed;
+  height: 9.9vh;
+  width: 9.9vh;
+  border: 1.4vh solid white;
+  border-radius: 50%;
+  bottom: 5.5vh;
+  right: 1.5vw;
 }
