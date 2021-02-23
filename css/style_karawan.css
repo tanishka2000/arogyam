@@ -6,11 +6,20 @@ html {
   position: absolute;
   top: 0vh;
   height: 100vh;
+  opacity: 100%;
+  background-image: url(../assets/images/nature.png);
 }
 #karawan-2 {
   position: absolute;
   top: 100vh;
   height: 100vh;
+  opacity: 100%;
+  background-image: url(../assets/images/karawan_page_2bg.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
+  background-size: 45.01vw auto;
+  /* background-size: auto 55.2vh; */
 }
 #karawan-3 {
   position: absolute;
@@ -50,10 +59,7 @@ html {
   font-weight: bold;
   font-family: "Segoe UI";
 }
-.body-karawan {
-  opacity: 100%;
-  background-image: url(../assets/images/nature.png);
-}
+
 .semi_rect_circle_transparent {
   position: fixed;
   height: 100vh;
@@ -110,7 +116,7 @@ html {
 }
 .display-text {
   flex: unset;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: -webkit-fill-available;
 }
 .text-bottom-left {
@@ -138,4 +144,37 @@ html {
 }
 .down-arrow-svg {
   width: 9.06vw;
+}
+
+/*For Karawan Page 2*/
+.logo-karawan-2 {
+  margin-left: 4.5vw;
+  /* width: 24.7vw; */
+  width: auto;
+  height: 55vh;
+}
+.main-content-page-2 {
+  /* border: 2px solid black; */
+  height: calc(100% - 18.5vh);
+  margin-top: 18.5vh;
+}
+.main-container-page-2 {
+  border: 2px solid rgba(0, 0, 0, 0);
+  height: 100%;
+}
+.content-right-page-2 {
+  font-size: 4vh;
+  /* border: 1px solid rgb(55, 0, 128); */
+  margin: auto;
+  width: 48vw;
+}
+.content-right-page-2-bottom {
+  text-align: center;
+  /* border: 1px solid rgb(55, 0, 128); */
+  width: fit-content;
+  margin-top: 30.4vh;
+  margin-left: 26vw;
+}
+.font-3vh {
+  font-size: 3vh;
 }
