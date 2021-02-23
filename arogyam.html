@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap & other CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- icons -->
+  <link rel="icon" type="image/png" href="./assets/images/icon.png" />
+
+  <title>Arogyam</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+  <!-- Navbar Starts -->
+  <nav id="navbar"
+    class="navbar nav nav-expand-lg nav-pills flex-row fixed-top text-sm-left justify-content-flex-start">
+    <a class="nav-logo flex-lg-fill text-sm-center nav-link" href="#mainHeader"><img src="./assets/images/logo.png"
+        width="27vw" /></a>
+    <a class="coconut flex-lg-fill text-sm-center nav-link d-lg-block d-none" href="#coconut">
+      <h5>Coconut oil</h5>
+    </a>
+    <a class="flaxseed flex-lg-fill text-sm-center nav-link d-lg-block d-none" href="#flaxseed">
+      <h5>FlaxSeed oil</h5>
+    </a>
+    <a class="sesame flex-lg-fill text-sm-center nav-link d-lg-block d-none" href="#sesame">
+      <h5>Sesame oil</h5>
+    </a>
+    <a class="almond flex-lg-fill text-sm-center nav-link d-lg-block d-none" href="#almond">
+      <h5>Almond oil</h5>
+    </a>
+    <a class="groundnut flex-lg-fill text-sm-center nav-link d-lg-block d-none" href="#groundnut">
+      <h5>GroundNut oil</h5>
+    </a>
+    <a class="mustard flex-lg-fill text-sm-center nav-link d-lg-block d-none" href="#mustard">
+      <h5>Mustard oil</h5>
+    </a>
+    <a class="faq flex-lg-fill text-sm-center nav-link border ml-lg-0 ml-auto d-lg-block" href="#faq">
+      <h5>FAQs</h5>
+    </a>
+    <a class="flex-lg-fill text-sm-center nav-link border ml-lg-0 ml-1 d-lg-none d-block" id="navbarDropdownMenuLink"
+      role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <h5>Oils</h5>
+    </a>
+    <div class="dropdown-menu text-sm-center" aria-labelledby="navbarDropdownMenuLink">
+      <a class="coconut dropdown-item text-sm-center" href="#coconut">
+        <h5>Coconut oil</h5>
+      </a>
+      <a class="flaxseed dropdown-item text-sm-center" href="#flaxseed">
+        <h5>FlaxSeed oil</h5>
+      </a>
+      <a class="sesame dropdown-item text-sm-center" href="#sesame">
+        <h5>Sesame oil</h5>
+      </a>
+      <a class="almond dropdown-item text-sm-center" href="#almond">
+        <h5>Almond oil</h5>
+      </a>
+      <a class="groundnut dropdown-item text-sm-center" href="#groundnut">
+        <h5>GroundNut oil</h5>
+      </a>
+      <a class="mustard dropdown-item text-sm-center" href="#mustard">
+        <h5>Mustard oil</h5>
+      </a>
+    </div>
+  </nav>
+  <!-- Navbar Ends -->
+
+
+  <!-- Alert Boxes -->
+  <div id="alert-area" class="mx-auto row text-center mx-0 px-0" style="z-index: 4;">
+    <div class="col-12 px-0 mx-0">
+      <div id="alertEmptyFieldsTrue" class="alert alert-danger" role="alert"
+        style="z-index:3;">
+        Please fill all the fields &nbsp;
+        <span class="svg-trash float-right" onclick="closeErrorAlert()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
+          </svg>
+        </span>
+
+      </div>
+    </div>
+    <div class="col-12 px-0 mx-0">
+      <div id="alertEmptyFieldsFalse" class="alert alert-success" role="alert"
+        style="z-index:3;">
+        Mail Sent&nbsp;&nbsp;
+        <span class="svg-trash float-right"  onclick="closeSuccessAlert()" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
+          </svg>
+
+        </span>
+
+      </div>
+    </div>
+  </div>
+  <!-- Alert Boxes End -->
+
+
+  <!-- Contact Us Sidebar Starts -->
+  <div id="contact-btn-wrap" class="align-right-bottom" style="z-index:2;">
+    <button onclick="openForm()" class="btn btn-danger contact">
+      <span class="d-md-inline-block d-none">Contact Us to</span> Order
+    </button>
+  </div>
+  <!-- Contact Us Sidebar Ends -->
+
+  <!-- Main Header Starts-->
+  <div id="mainHeader" class="jumbotron jumbotron-fluid p-0 d-flex align-items-center align-content-baseline">
+    <img id="centerImg" src="./assets/images/main.png" alt="" class="img-fluid mx-auto d-none d-lg-flex" />
+    <div class="col-lg-5 col-sm-12 py-5 px-lg-5 px-4 py-0 text-center" style="z-index:1;">
+      <img id="brand-logo" src="./assets/images/Arogyam.png"
+        class="img-fluid text-md-left text-center float-lg-left float-none" />
+      <h3 class="subtitle-wrap my-lg-3 my-0 mx-0 text-lg-left text-center">
+        <mark id="subtitle" class="py-0">Wodden Cold Pressed | Extra Virgin</mark>
+      </h3>
+      <img id="centerImg" src="./assets/images/centerImg.png" alt="" class="img-fluid mx-auto d-block d-lg-none" />
+      <p class="lead text-left mr-lg-5 mr-0 pr-lg-5 pr-0">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.
+      </p>
+
+      <!-- Contact Us Form Starts -->
+      <div id="contactUsForm" class="contactUsFormClass">
+        <div class="formHeading text-center text-white">
+          Contact Us to Order &nbsp;
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-fill"
+            viewBox="0 0 20 20">
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+          </svg>
+        </div>
+        <form id="mainFormId" class="mainFormClass py-4 px-4">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <div class="input-group my-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+              </div>
+              <input type="email" placeholder="Enter Email" class="form-control" id="formEmailInput"
+                aria-describedby="emailHelp" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control my-3" id="formMessageInput" rows="3" required></textarea>
+          </div>
+
+          <button id="submitBtn" type="button" onclick="initiateMailSending()" class="btn btn-primary btn-block">
+            Submit &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-clipboard-check" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+              <path
+                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+              <path
+                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+            </svg>
+          </button>
+          <button type="button" onclick="closeForm()" class="btn btn-outline-danger btn-block">
+            Close&nbsp; &nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-arrow-bar-right" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z" />
+            </svg>
+          </button>
+        </form>
+      </div>
+      <!-- Contact Us Form Ends -->
+    </div>
+    <div id="socialMedia-icons" class="align-right-bottom-1 d-lg-block d-none">
+      <img class="contactus-iconClass mx-2" src="./assets/images/whatsapp-icon.png" />
+      <img class="contactus-iconClass mx-2" src="./assets/images/facebook-icon.png" />
+      <img class="contactus-iconClass mx-2" onclick="openForm()" src="./assets/images/gmail-icon.png" />
+      <img class="contactus-iconClass mx-2" src="./assets/images/instagram-icon.png" />
+    </div>
+    <div id="marketing-line" class="align-right-bottom-2 d-lg-block d-none">
+      <div class="row">
+        <div class="col-auto">
+          <img class="contactus-iconClass mx-2" src="./assets/images/natureskarawan-icon.png" />
+        </div>
+        <div class="col-auto">
+          <p class="market-credit">Marketed by ABC : 98xxxxxxxx</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main Header Ends -->
+
+  <!-- Coconut Section Starts -->
+  <div id="coconut" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
+    <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5 d-flex align-items-stretch align-content-stretch">
+      <div
+        class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
+        <h1 class="oil-name display-2">Coconut Oil</h1>
+        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50"
+          src="./assets/images/coconut-banner-2.png" />
+        <div class="d-flex my-auto align-items-stretch bd-highlight">
+          <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+            <h5 style="width: 5.6em;">SKIN</h5>
+          </div>
+          <div>
+            <p class="px-md-5 pr-5 pl-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex my-auto align-items-stretch bd-highlight">
+          <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+            <h5 style="width: 5.6em;">HAIR</h5>
+          </div>
+          <div>
+            <p class="px-md-5 pr-5 pl-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="row my-auto d-flex bd-highlight">
+          <div class="col-md-3 col-0 my-auto"></div>
+          <div class="col-md-9 col-12 my-auto">
+            <div class="d-flex my-auto align-items-stretch bd-highlight">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+                <h5 style="width: 5.6em;">EDIBLE</h5>
+              </div>
+              <div>
+                <p class="px-md-5 pr-5 pl-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-auto d-flex bd-highlight">
+          <div class="col-md-3 col-0 my-auto"></div>
+          <div class="col-md-9 col-12 my-auto">
+            <div class="d-flex my-auto align-items-stretch bd-highlight">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+                <h5 style="width: 5.6em;">COOKING</h5>
+              </div>
+              <div>
+                <p class="px-md-5 pr-5 pl-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 d-flex align-items-center pr-0">
+        <img class="img-fluid d-lg-block d-none" src="./assets/images/coconut-banner.png" />
+      </div>
+    </div>
+  </div>
+  <!-- Coconut Section Ends -->
+
+  <!-- Flaxseed Section Starts -->
+  <div id="flaxseed" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
+    <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5 d-flex align-items-stretch align-content-stretch">
+      <div
+        class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
+        <h1 class="oil-name display-2">Flaxseed Oil</h1>
+        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50"
+          src="./assets/images/flaxseed-banner-2.png" />
+        <div class="d-flex my-auto align-items-stretch bd-highlight">
+          <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+            <h5 style="width: 5.6em;">SKIN</h5>
+          </div>
+          <div>
+            <p class="px-md-5 pr-5 pl-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex my-auto align-items-stretch bd-highlight">
+          <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+            <h5 style="width: 5.6em;">HAIR</h5>
+          </div>
+          <div>
+            <p class="px-md-5 pr-5 pl-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="row my-auto d-flex bd-highlight">
+          <div class="col-md-3 col-0 my-auto"></div>
+          <div class="col-md-9 col-12 my-auto">
+            <div class="d-flex my-auto align-items-stretch bd-highlight">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+                <h5 style="width: 5.6em;">EDIBLE</h5>
+              </div>
+              <div>
+                <p class="px-md-5 pr-5 pl-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-auto d-flex bd-highlight">
+          <div class="col-md-3 col-0 my-auto"></div>
+          <div class="col-md-9 col-12 my-auto">
+            <div class="d-flex my-auto align-items-stretch bd-highlight">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+                <h5 style="width: 5.6em;">COOKING</h5>
+              </div>
+              <div>
+                <p class="px-md-5 pr-5 pl-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 d-flex align-items-center pr-0">
+        <img class="img-fluid d-lg-block d-none" src="./assets/images/flaxseed-banner.png" />
+      </div>
+    </div>
+  </div>
+  <!-- Flaxseed Section Ends -->
+
+  <!-- Sesame Section Starts -->
+  <div id="sesame" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
+    <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5 d-flex align-items-stretch align-content-stretch">
+      <div
+        class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
+        <h1 class="oil-name display-2">Sesame Oil</h1>
+        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50" src="./assets/images/sesame-banner-2.png" />
+        <div class="d-flex my-auto align-items-stretch bd-highlight">
+          <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+            <h5 style="width: 5.6em;">SKIN</h5>
+          </div>
+          <div>
+            <p class="px-md-5 pr-5 pl-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex my-auto align-items-stretch bd-highlight">
+          <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+            <h5 style="width: 5.6em;">HAIR</h5>
+          </div>
+          <div>
+            <p class="px-md-5 pr-5 pl-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="row my-auto d-flex bd-highlight">
+          <div class="col-md-3 col-0 my-auto"></div>
+          <div class="col-md-9 col-12 my-auto">
+            <div class="d-flex my-auto align-items-stretch bd-highlight">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+                <h5 style="width: 5.6em;">EDIBLE</h5>
+              </div>
+              <div>
+                <p class="px-md-5 pr-5 pl-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-auto d-flex bd-highlight">
+          <div class="col-md-3 col-0 my-auto"></div>
+          <div class="col-md-9 col-12 my-auto">
+            <div class="d-flex my-auto align-items-stretch bd-highlight">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+                <h5 style="width: 5.6em;">COOKING</h5>
+              </div>
+              <div>
+                <p class="px-md-5 pr-5 pl-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 d-flex align-items-center pr-0">
+        <img class="img-fluid d-lg-block d-none" src="./assets/images/sesame-banner.png" />
+      </div>
+    </div>
+  </div>
+  <!-- Sesame Section Ends -->
+
+  <!-- Almond Section Starts -->
+  <div id="almond" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
+    <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5 d-flex align-items-stretch align-content-stretch">
+      <div
+        class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
+        <h1 class="oil-name display-2">Almond Oil</h1>
+        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50" src="./assets/images/almond-banner-2.png" />
+        <div class="d-flex my-auto align-items-stretch bd-highlight">
+          <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+            <h5 style="width: 5.6em;">SKIN</h5>
+          </div>
+          <div>
+            <p class="px-md-5 pr-5 pl-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex my-auto align-items-stretch bd-highlight">
+          <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+            <h5 style="width: 5.6em;">HAIR</h5>
+          </div>
+          <div>
+            <p class="px-md-5 pr-5 pl-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="row my-auto d-flex bd-highlight">
+          <div class="col-md-3 col-0 my-auto"></div>
+          <div class="col-md-9 col-12 my-auto">
+            <div class="d-flex my-auto align-items-stretch bd-highlight">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+                <h5 style="width: 5.6em;">EDIBLE</h5>
+              </div>
+              <div>
+                <p class="px-md-5 pr-5 pl-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-auto d-flex bd-highlight">
+          <div class="col-md-3 col-0 my-auto"></div>
+          <div class="col-md-9 col-12 my-auto">
+            <div class="d-flex my-auto align-items-stretch bd-highlight">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+                <h5 style="width: 5.6em;">COOKING</h5>
+              </div>
+              <div>
+                <p class="px-md-5 pr-5 pl-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 d-flex align-items-center pr-0">
+        <img class="img-fluid d-lg-block d-none" src="./assets/images/almond-banner.png" />
+      </div>
+    </div>
+  </div>
+  <!-- Almond Section Ends -->
+
+  <!-- Groundnut Section Starts -->
+  <div id="groundnut" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
+    <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5 d-flex align-items-stretch align-content-stretch">
+      <div
+        class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
+        <h1 class="oil-name display-2">Ground-Nut Oil</h1>
+        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50"
+          src="./assets/images/groundnut-banner-2.png" />
+        <div class="d-flex my-auto align-items-stretch bd-highlight">
+          <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+            <h5 style="width: 5.6em;">SKIN</h5>
+          </div>
+          <div>
+            <p class="px-md-5 pr-5 pl-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex my-auto align-items-stretch bd-highlight">
+          <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+            <h5 style="width: 5.6em;">HAIR</h5>
+          </div>
+          <div>
+            <p class="px-md-5 pr-5 pl-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="row my-auto d-flex bd-highlight">
+          <div class="col-md-3 col-0 my-auto"></div>
+          <div class="col-md-9 col-12 my-auto">
+            <div class="d-flex my-auto align-items-stretch bd-highlight">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+                <h5 style="width: 5.6em;">EDIBLE</h5>
+              </div>
+              <div>
+                <p class="px-md-5 pr-5 pl-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-auto d-flex bd-highlight">
+          <div class="col-md-3 col-0 my-auto"></div>
+          <div class="col-md-9 col-12 my-auto">
+            <div class="d-flex my-auto align-items-stretch bd-highlight">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+                <h5 style="width: 5.6em;">COOKING</h5>
+              </div>
+              <div>
+                <p class="px-md-5 pr-5 pl-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 d-flex align-items-center pr-0">
+        <img class="img-fluid d-lg-block d-none" src="./assets/images/groundnut-banner.png" />
+      </div>
+    </div>
+  </div>
+  <!-- GroundNut Section Ends -->
+
+  <!-- Mustard Section Starts -->
+  <div id="mustard" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
+    <div class="row mx-0 mt-md-2 mb-md-0 mb-5 pb-5 d-flex align-items-stretch align-content-stretch">
+      <div
+        class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
+        <h1 class="oil-name display-2">Mustard Oil</h1>
+        <img class="img-fluid align-self-start d-md-none d-block py-5 w-50"
+          src="./assets/images/mustard-banner-2.png" />
+        <div class="d-flex my-auto align-items-stretch bd-highlight">
+          <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+            <h5 style="width: 5.6em;">SKIN</h5>
+          </div>
+          <div>
+            <p class="px-md-5 pr-5 pl-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="d-flex my-auto align-items-stretch bd-highlight">
+          <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+            <h5 style="width: 5.6em;">HAIR</h5>
+          </div>
+          <div>
+            <p class="px-md-5 pr-5 pl-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div class="row my-auto d-flex bd-highlight">
+          <div class="col-md-3 col-0 my-auto"></div>
+          <div class="col-md-9 col-12 my-auto">
+            <div class="d-flex my-auto align-items-stretch bd-highlight">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+                <h5 style="width: 5.6em;">EDIBLE</h5>
+              </div>
+              <div>
+                <p class="px-md-5 pr-5 pl-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-auto d-flex bd-highlight">
+          <div class="col-md-3 col-0 my-auto"></div>
+          <div class="col-md-9 col-12 my-auto">
+            <div class="d-flex my-auto align-items-stretch bd-highlight">
+              <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
+                <h5 style="width: 5.6em;">COOKING</h5>
+              </div>
+              <div>
+                <p class="px-md-5 pr-5 pl-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 d-flex align-items-center pr-0">
+        <img class="img-fluid d-lg-block d-none" src="./assets/images/mustard-banner.png" />
+      </div>
+    </div>
+  </div>
+  <!-- Mustard Section Ends -->
+
+  <!-- FAQ Section Starts -->
+  <div id="faq" class="jumbotron jumbotron-fluid bg-white mb-0 py-0 h-auto">
+    <div class="row w-100 mt-5 mx-0">
+      <div class="col-12 col-md-3 p-0">
+        <div class="mt-3">
+          <img width="200" height="200" class="logo_small" src="./assets/images/logo_small.png" />
+        </div>
+
+        <div class="">
+          <img class="faq_img mb-5" height="80%" width="80%" src="./assets/images/faq_img.png" />
+        </div>
+
+
+      </div>
+      <div class="col-12 col-md-9 d-flex align-items-center">
+        <!-- <img
+          height="700"
+          width="1000"
+          class="footer_img mt-3"
+          src="./assets/images/blank_rectangle.png"
+        /> -->
+        <div id="accordion" class="shadow-lg">
+          <div class="card mb-1">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="false" aria-controls="collapseOne">
+                  What is querySelector?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body blockquote">
+                <!-- https://codepen.io/brucebentley/pen/JVmjWw -->
+                The querySelector() method returns the first element that
+                matches a specified CSS selector(s) in the document. ... If
+                the selector matches an ID in document that is used several
+                times (Note that an "id" should be unique within a page and
+                should not be used more than once), it returns the first
+                matching element. &nbsp;<i>-Team Arogyam</i>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-1">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  What does querySelector do in JS?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body blockquote">
+                The Document method querySelector() returns the first Element
+                within the document that matches the specified selector, or
+                group of selectors. If no matches are found, null is returned. &nbsp;<i>-Team Arogyam</i>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-1">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  What does getElementById mean?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body blockquote">
+                Definition and Usage The getElementById() method returns the
+                element that has the ID attribute with the specified value.
+                This method is one of the most common methods in the HTML DOM,
+                and is used almost every time you want to manipulate, or get
+                info from, an element on your document. &nbsp;<i>-Team Arogyam</i>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-1">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
+                  What does getElementById mean?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body blockquote">
+                Definition and Usage The getElementById() method returns the
+                element that has the ID attribute with the specified value.
+                This method is one of the most common methods in the HTML DOM,
+                and is used almost every time you want to manipulate, or get
+                info from, an element on your document. &nbsp;<i>-Team Arogyam</i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive"
+                  aria-expanded="false" aria-controls="collapseFive">
+                  What does getElementById mean?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body blockquote">
+                Definition and Usage The getElementById() method returns the
+                element that has the ID attribute with the specified value.
+                This method is one of the most common methods in the HTML DOM,
+                and is used almost every time you want to manipulate, or get
+                info from, an element on your document. &nbsp;<i>-Team Arogyam</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="natures_karawan_logo_div ml-4 mt-5 w-100">
+        <img height="165" width="300" class="natures_karawan_logo" src="./assets/images/natures_karawan_logo.png" />
+      </div>
+    </div>
+    <div class="footer">
+      <!-- <img
+          width="100%"
+          class="footer_img"
+          src="./assets/images/footer_img.png"
+        />
+        <h4 class="footer-left-text">
+          A marketing firm
+          <h6 class="footer-right-text">
+            For business contact: natureskarawan@gmail.com
+          </h6>
+        </h4> -->
+      <div class="footer-img-with-text">
+        <div class="row w-100 p-0 m-0">
+          <div class="col-12 col-md-7 footer-text-left">
+            <div class="footer-text-left-div">
+              <h4 class="ml-4 mt-4">A marketking firm</h4>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 footer-text-right">
+            <div class="footer-text-right-div">
+              <h5 class="mr-1 mt-4"></h5>For business contact: natureskarawan@gmail.com</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <h5 class="float-right-text">A marketing firm</h5> -->
+    </div>
+  </div>
+  </div>
+  <!-- FAQ Section Ends -->
+
+  <script src="./js/main.js"></script>
+  <script src="./js/sendmail.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+  <script>
+    $(document).ready(function () {
+      window.onscroll = () => {
+        const $navbar = document.getElementById("navbar");
+        if ($(window).scrollTop() >= 100) $("nav").addClass('scrolled');
+        else $("nav").removeClass('scrolled');
+      }
+    });
+  </script>
+  <!-- For scroll spy -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+  <!-- For alert box hide and show -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var cacheDom = "";
+      $('#submitBtn').click(function () {
+        if ($('.test').length > 0) {
+          cacheDom = $('.test');
+          $('.test').remove();
+        }
+      });
+      $('#add').click(function () {
+        $('.test3').append(cacheDom);
+      });
+    });
+  </script>
+</body>
+
+</html>

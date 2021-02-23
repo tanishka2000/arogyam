@@ -12,6 +12,16 @@ html {
   top: 100vh;
   height: 100vh;
 }
+#karawan-3 {
+  position: absolute;
+  top: 200vh;
+  height: 100vh;
+}
+#karawan-4 {
+  position: absolute;
+  top: 300vh;
+  height: 100vh;
+}
 /* underline-small */
 .navbar .nav-link .h5::after {
   content: "";
