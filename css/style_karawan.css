@@ -14,7 +14,7 @@ html {
   top: 100vh;
   height: 100vh;
   opacity: 100%;
-  background-image: url(../assets/images/karawan_page_2bg.png);
+  background-image: url(../assets/images/karawan_page_2_bg.png);
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: right;
@@ -25,11 +25,15 @@ html {
   position: absolute;
   top: 200vh;
   height: 100vh;
+  background-image: url(../assets/images/karawan_page_3_bg.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 #karawan-4 {
   position: absolute;
   top: 300vh;
   height: 100vh;
+  background-image: url(../assets/images/nature.png);
 }
 /* underline-small */
 .navbar .nav-link .h5::after {
@@ -143,10 +147,11 @@ html {
 .down-arrow-svg-div {
 }
 .down-arrow-svg {
-  width: 9.06vw;
+  /* width: 9.06vw; */
+  height: 4.8vh;
 }
 
-/*For Karawan Page 2*/
+/**************For Karawan Page 2****************/
 .logo-karawan-2 {
   margin-left: 4.5vw;
   /* width: 24.7vw; */
@@ -177,4 +182,31 @@ html {
 }
 .font-3vh {
   font-size: 3vh;
+}
+
+/**************For Karawan Page 3****************/
+
+.img-life-in-a-pot {
+  margin-left: 4.5vw;
+  width: auto;
+  height: 61vh;
+  border: 5px solid #39df08;
+  border-radius: 50%;
+}
+.karawan-page-4-shape-1 {
+  height: 47.5vh;
+}
+.main-content-page-4 {
+  margin-top: 18.5vh;
+}
+.karawan-page-4-shape-2 {
+  height: fit-content;
+  background-image: url(../assets/images/karawan_page_4_shape2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bottom-karawan-logo {
+  margin-left: 11.67vw;
+  width: 27.55vw;
+  height: auto;
 }
