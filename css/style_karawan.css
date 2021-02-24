@@ -20,6 +20,7 @@ html {
   background-position-x: right;
   background-size: 45.01vw auto;
   /* background-size: auto 55.2vh; */
+  /* background-size: 45.01vw 55.2vh; */
 }
 #karawan-3 {
   position: absolute;
@@ -65,19 +66,19 @@ html {
 }
 
 .semi_rect_circle_transparent {
-  position: fixed;
+  position: absolute;
   height: 100vh;
   width: 55%;
   margin-left: 4%;
 }
 .semi_rect_circle_opaque {
-  position: fixed;
+  position: absolute;
   height: 100vh;
   width: 55%;
   margin-left: 3%;
 }
 .semi_rect_circle_opaque_2 {
-  position: fixed;
+  position: absolute;
   height: 100vh;
   width: 55%;
   margin-left: 0%;
@@ -89,6 +90,7 @@ html {
 }
 .main-container {
   /* border: 2px solid black; */
+  height: -webkit-fill-available;
 }
 .main-content {
   height: calc(100% - 18.5vh);
@@ -124,19 +126,21 @@ html {
   height: -webkit-fill-available;
 }
 .text-bottom-left {
-  position: fixed;
+  position: absolute;
   bottom: 3.4vh;
   left: 1.5vw;
   font-size: 40px;
 }
 .text-bottom-right {
-  position: fixed;
+  position: absolute;
   bottom: 0.9vh;
   right: 0.8vw;
   font-size: 20px;
+  /* letter-spacing: 0.083vw; */
+  letter-spacing: 0.07vw;
 }
 #whatsapp-logo {
-  position: fixed;
+  position: absolute;
   height: 9.9vh;
   width: 9.9vh;
   border: 1.4vh solid white;
@@ -173,12 +177,15 @@ html {
   margin: auto;
   width: 48vw;
 }
-.content-right-page-2-bottom {
+.content-right-page-2-3-bottom {
   text-align: center;
   /* border: 1px solid rgb(55, 0, 128); */
   width: fit-content;
-  margin-top: 30.4vh;
-  margin-left: 26vw;
+  /* margin-top: 30.4vh;
+  margin-left: 26vw; */
+  margin-top: 25.4vh;
+  margin-left: 36vw;
+  /* margin bottom and right not working on it */
 }
 .font-3vh {
   font-size: 3vh;
@@ -193,20 +200,46 @@ html {
   border: 5px solid #39df08;
   border-radius: 50%;
 }
-.karawan-page-4-shape-1 {
-  height: 47.5vh;
+/**************For Karawan Page 4****************/
+.main-container-page-4 {
+  /* z-index: 1; */
+  border: 0.8px solid rgba(165, 42, 42, 0);
+  height: -webkit-fill-available;
 }
 .main-content-page-4 {
   margin-top: 18.5vh;
 }
+.main-content-page-4-left {
+  margin-left: 10.15vw;
+  margin-right: 8.54vw;
+}
+.karawan-page-4-shape-1 {
+  height: 47.5vh;
+  margin-left: 3.34vw;
+}
+
+.text-head-page-4 {
+  font-size: 12vh;
+  color: #2c7606;
+}
+
+.text-body-page-4 {
+  font-size: 4vh;
+  margin-top: 2.6vh;
+  letter-spacing: -0.12vw;
+}
+
 .karawan-page-4-shape-2 {
   height: fit-content;
   background-image: url(../assets/images/karawan_page_4_shape2.png);
+  background-position-y: bottom;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 29.74vh;
 }
+
 .bottom-karawan-logo {
+  margin-top: 6.5vh;
   margin-left: 11.67vw;
-  width: 27.55vw;
-  height: auto;
+  width: auto;
+  height: 27.67vh;
 }
