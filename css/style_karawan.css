@@ -36,6 +36,40 @@ html {
   height: 100vh;
   background-image: url(../assets/images/nature.png);
 }
+
+@media screen and (max-width: 991px) {
+  #karawan-1 {
+    height: 200vh;
+  }
+  #karawan-2 {
+    top: 200vh;
+    height: 200vh;
+    background-size: 100vw auto;
+  }
+  #karawan-3 {
+    top: 400vh;
+    height: 200vh;
+  }
+  #karawan-4 {
+    top: 600vh;
+    height: 200vh;
+  }
+  .nav-right-text {
+    font-size: 25px !important;
+  }
+  .fixed-bottom #whatsapp-logo {
+    background-image: url("../assets/images/bottom-backdrop.svg");
+  }
+  .content-right-page-2 {
+    width: 80vw !important;
+  }
+  .content-right-page-2-3-bottom {
+    margin: auto !important;
+  }
+  .bottom-karawan-logo {
+    margin-left: 0 !important;
+  }
+}
 /* underline-small */
 .navbar .nav-link .h5::after {
   content: "";
@@ -86,7 +120,8 @@ html {
 .main-logo {
   margin-left: 3%;
   /* width: 64vw; */
-  height: 64vh;
+  max-height: 64vh;
+  max-width: 80vw;
 }
 .main-container {
   /* border: 2px solid black; */
@@ -101,11 +136,6 @@ html {
   background-color: #2c7606;
   height: 50vh;
   width: 50vh;
-}
-.content-right {
-  width: min-content;
-  margin-top: 13.14vh;
-  margin-left: 1.2vw;
 }
 .display-text .text-head-1 {
   font-size: 5.5vh;
@@ -146,10 +176,9 @@ html {
   border: 1.4vh solid white;
   border-radius: 50%;
   bottom: 5.5vh;
-  right: 1.5vw;
+  right: 2.2vw;
 }
-.down-arrow-svg-div {
-}
+
 .down-arrow-svg {
   /* width: 9.06vw; */
   height: 4.8vh;
@@ -194,9 +223,9 @@ html {
 /**************For Karawan Page 3****************/
 
 .img-life-in-a-pot {
-  margin-left: 4.5vw;
-  width: auto;
-  height: 61vh;
+  margin: 0;
+  max-width: 80vw;
+  max-height: 61vh;
   border: 5px solid #39df08;
   border-radius: 50%;
 }
@@ -240,6 +269,6 @@ html {
 .bottom-karawan-logo {
   margin-top: 6.5vh;
   margin-left: 11.67vw;
-  width: auto;
+  max-width: 90vw;
   height: 27.67vh;
 }
