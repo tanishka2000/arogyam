@@ -34,7 +34,11 @@ html {
   position: absolute;
   top: 300vh;
   height: 100vh;
-  background-image: url(../assets/images/nature.png);
+  background-color: #39DF08;
+  background-image: url(../assets/images/karawan_page_4_shape2.png);
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media screen and (max-width: 991px) {
@@ -108,13 +112,22 @@ html {
   .content-right-page-2-3-bottom.x {
     bottom: -16em !important;
   }
+  .text-head-page-4 {
+    font-size: 3em !important;
+  }
   .line-1, .line-2 {
-    font-size: 1.2em !important;
+    font-size: 0.8em !important;
   }
   .bottom-karawan-logo {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 1%;
     padding-bottom: 3em !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    margin-bottom: 0 !important;
   }
 }
 /* underline-small */
@@ -323,10 +336,6 @@ html {
 
 .karawan-page-4-shape-2 {
   height: fit-content;
-  background-image: url(../assets/images/karawan_page_4_shape2.png);
-  background-position-y: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
   margin-bottom: 10em;
 }
 
