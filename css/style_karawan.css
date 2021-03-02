@@ -110,7 +110,7 @@ html {
     bottom: 1em;
   }
   .content-right-page-2-3-bottom.x {
-    bottom: -16em !important;
+    bottom: -50vh !important;
   }
   .text-head-page-4 {
     font-size: 3em !important;
@@ -288,9 +288,12 @@ html {
   width: fit-content;
   /* margin-top: 30.4vh;
   margin-left: 26vw; */
-  margin-top: 25.4vh;
+  margin-top: 35vh;
   margin-left: 36vw;
   /* margin bottom and right not working on it */
+}
+.content-right-page-2-3-bottom.x {
+  margin-top: 35vh;
 }
 .font-3vh {
   font-size: 3vh;
