@@ -29,7 +29,7 @@ html {
   background-image: url(../assets/images/karawan_page_3_bg.png);
   background-repeat: no-repeat;
   background-position-y: bottom;
-  background-size: 100% auto;
+  background-size: 100% 30vh;
 }
 #karawan-4 {
   position: absolute;
@@ -39,7 +39,7 @@ html {
   background-image: url(../assets/images/karawan_page_4_shape2.png);
   background-position-y: bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 29.74vh;
 }
 
 @media screen and (max-width: 991px) {
@@ -103,7 +103,7 @@ html {
     width: 80vw !important;
     font-size: 1.2em !important;
   }
-  .content-right-page-2-3-bottom {
+  .content-right-page-2-bottom {
     margin: auto !important;
     position: absolute;
     top: auto;
@@ -111,9 +111,7 @@ html {
     right: 0;
     bottom: 1em;
   }
-  .content-right-page-2-3-bottom.x {
-    bottom: -50vh !important;
-  }
+
   .text-head-page-4 {
     font-size: 3em !important;
   }
@@ -135,12 +133,32 @@ html {
   .karawan-page-1-main-content-circle {
     margin-top: 0vh !important;
   }
+  /**************For Karawan Page 3****************/
   .main-content-page-3 {
     background-image: url(../assets/images/karawan_life_in_pot_bg.png);
     background-repeat: no-repeat;
     background-position-y: top;
     background-position-x: right;
     background-size: 100% 45.28vh;
+  }
+  .content-right-page-3-bottom {
+  }
+
+  .karawan-page-3-section-left {
+    height: 50% !important;
+  }
+  .karawan-page-3-section-right {
+    height: 50% !important;
+  }
+}
+@media screen and (max-width: 490px) {
+  /**************For Karawan Page 4****************/
+
+  #karawan-4 {
+    background-image: url(../assets/images/karawan_page_4_mobile_bg.png);
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 33.05vh;
   }
 }
 /* underline-small */
@@ -298,7 +316,7 @@ html {
   margin: auto;
   width: 45vw;
 }
-.content-right-page-2-3-bottom {
+.content-right-page-2-bottom {
   text-align: center;
   /* border: 1px solid rgb(55, 0, 128); */
   width: fit-content;
@@ -308,9 +326,7 @@ html {
   margin-left: 36vw;
   /* margin bottom and right not working on it */
 }
-.content-right-page-2-3-bottom.x {
-  margin-top: 35vh;
-}
+
 .font-3vh {
   font-size: 3vh;
 }
@@ -329,7 +345,17 @@ html {
   height: 100%;
   padding-top: 18.5vh;
 }
+.content-right-page-3-bottom {
+  text-align: center;
+  margin-top: 18vh;
+}
 
+.karawan-page-3-section-left {
+  height: 100%;
+}
+.karawan-page-3-section-right {
+  height: 100%;
+}
 /**************For Karawan Page 4****************/
 .main-container-page-4 {
   /* z-index: 1; */
