@@ -59,13 +59,32 @@ html {
     top: 600vh;
     height: 200vh;
   }
+  .semi_rect_circle_transparent {
+    margin-left: -5% !important;
+    width: 78.28vw !important;
+    height: 54.44vh !important;
+    margin-top: 18.05vh !important;
+  }
+  .semi_rect_circle_opaque {
+    margin-left: -8% !important;
+    width: 78.28vw !important;
+    height: 54.44vh !important;
+    margin-top: 18.05vh !important;
+  }
+  .semi_rect_circle_opaque_2 {
+    margin-left: -10% !important;
+    width: 78.28vw !important;
+    height: 54.44vh !important;
+    margin-top: 18.05vh !important;
+  }
   #whatsapp-logo {
     right: 7vw !important;
     bottom: 4vh !important;
     z-index: 111;
   }
   .main-logo {
-    padding-top: 20vh;
+    padding-top: 0vh;
+    margin-top: 13.425vh;
   }
   .nav-right-text {
     font-size: 1.5em !important;
@@ -189,7 +208,7 @@ html {
   font-weight: bold;
   font-family: "Segoe UI";
 }
-
+/* For Page 1 Background rectangles */
 .semi_rect_circle_transparent {
   position: absolute;
   margin: auto;
@@ -215,7 +234,6 @@ html {
   bottom: 0;
   max-height: 100vh;
   width: 55%;
-  margin-left: 0%;
 }
 .main-logo {
   margin-left: 3%;
