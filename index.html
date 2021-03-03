@@ -90,7 +90,7 @@
           >
             <div>
               <img
-                class="main-logo"
+                class="main-logo align-middle"
                 src="../arogyam/assets/images/final_llogo.png"
                 alt=""
               />
@@ -145,26 +145,41 @@
     <div id="karawan-2" class="w-100">
       <div class="main-container-page-2 w-100" style="z-index: 1">
         <div class="align-self-stretch main-content-page-2 row mx-0">
-          <div class="col-lg-4 col-12 h-lg-100 h-50 p-0 text-center">
+          <div
+            class="col-lg-4 col-12 h-lg-100 p-0 text-center karawan-page-2-section-left border border-danger"
+          >
             <img
               class="logo-karawan-2"
               src="../arogyam/assets/images/logo_karawan.png"
               alt=""
             />
+            <div
+              id="text-bottom-left-k-p-2"
+              class="text-bottom-left mb-lg-0 mb-5 pb-lg-0 pb-5"
+            >
+              Bringing Nature at it's purest form
+            </div>
           </div>
 
-          <div class="col-lg-8 col-12 h-lg-100 h-50 p-0 text-justify">
+          <div
+            class="col-lg-8 col-12 h-lg-100 p-0 text-justify border border-danger"
+          >
             <div class="row h-100 mx-0 px-0">
               <div class="col-12">
                 <div class="content-right-page-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor Lorem ipsum dolor sit<br />
-                  amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  eiusmod tempor Lorem ipsum dolor sit
+                  <div class="pt-3">
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    eiusmod tempor Lorem ipsum dolor sit
+                  </div>
                 </div>
               </div>
-              <div class="col-12 align-self-end">
-                <div class="content-right-page-2-bottom">
+              <div class="col-12 align-self-end border border-primary">
+                <!-- karawan-page-2-section-right-bottom -->
+                <div
+                  class="content-right-page-2-bottom border border-dark align-middle"
+                >
                   <div class="text-head-2">Life In A Pot</div>
                   <div class="text-white font-3vh">Soilless Potting Premix</div>
                   <div class="down-arrow-svg-div">
@@ -193,6 +208,12 @@
               src="../arogyam/assets/images/life_in_a_pot.png"
               alt=""
             />
+            <div
+              id="text-bottom-left-k-p-3"
+              class="text-bottom-left-k-p-3 mb-lg-0 mb-5 pb-lg-0 pb-5"
+            >
+              Bringing Nature at it's purest form
+            </div>
           </div>
           <div
             class="col-lg-8 col-12 h-lg-100 p-0 text-justify karawan-page-3-section-right"
@@ -265,5 +286,19 @@
         </div>
       </div>
     </div>
+    <script>
+      function isMobile() {
+        return screen.width <= parseInt("991px");
+        console.log("HEllo");
+      }
+      if (isMobile()) {
+        var elem1 = document.getElementById("text-bottom-left-k-p-2");
+        var elem2 = document.getElementById("text-bottom-left-k-p-3");
+        elem1.remove();
+        elem2.remove();
+        // var thingToRemove = document.querySelectorAll(".text-bottom-left")[1];
+        // thingToRemove.parentNode.removeChild(thingToRemove);
+      }
+    </script>
   </body>
 </html>

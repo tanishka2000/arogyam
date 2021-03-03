@@ -49,7 +49,11 @@ html {
   #karawan-2 {
     top: 200vh;
     height: 200vh;
-    background-size: 100vw auto;
+    background-size: 100vw 45.3vh;
+    background-image: url(../assets/images/karawan_page_2_mobile_bg.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
   }
   #karawan-3 {
     top: 400vh;
@@ -59,40 +63,32 @@ html {
     top: 600vh;
     height: 200vh;
   }
-  .semi_rect_circle_transparent {
-    margin-left: -5% !important;
-    width: 78.28vw !important;
-    height: 54.44vh !important;
-    margin-top: 18.05vh !important;
-  }
-  .semi_rect_circle_opaque {
-    margin-left: -8% !important;
-    width: 78.28vw !important;
-    height: 54.44vh !important;
-    margin-top: 18.05vh !important;
-  }
-  .semi_rect_circle_opaque_2 {
-    margin-left: -10% !important;
-    width: 78.28vw !important;
-    height: 54.44vh !important;
-    margin-top: 18.05vh !important;
-  }
+
   #whatsapp-logo {
     right: 7vw !important;
     bottom: 4vh !important;
     z-index: 111;
   }
   .main-logo {
-    padding-top: 0vh;
-    margin-top: 13.425vh;
+    /* padding-top: 0vh; */
+    margin-top: 8.425vh;
   }
   .nav-right-text {
     font-size: 1.5em !important;
   }
-  .text-bottom-left {
+  .text-bottom-left,
+  .text-bottom-left-k-p-3 {
+    /*text-bottom-left-k-p-3 element is removed in mobile screen*/
+    position: unset !important;
     bottom: 10vh !important;
-    font-size: 2em !important;
+    /* font-size: 3em !important; */
+    font-size: 11vw !important;
+    width: 98% !important;
+    margin-top: 6.75vh;
+    /* margin-bottom: 0rem !important; overwriting bootstrap mb,pb classes */
+    /* padding-bottom: 0rem !important; overwriting bootstrap mb,pb classes */
   }
+
   .text-bottom-right {
     font-size: 0.9em !important;
     width: 100% !important;
@@ -113,14 +109,17 @@ html {
   .fixed-bottom #whatsapp-logo {
     background-image: url("../assets/images/bottom-backdrop.svg");
   }
-  .text-head-1,
-  .text-head-2 {
-    padding-top: 0.7em !important;
-    font-size: 1.6em !important;
+  .text-body {
+    /* padding-top: 0.7em !important; */
+    font-size: 0.5em !important;
+  }
+  .text-body {
+    /* padding-top: 0.7em !important; */
+    font-size: 0.5em !important;
   }
   .content-right-page-2 {
     width: 80vw !important;
-    font-size: 1.2em !important;
+    font-size: 1.7em !important;
   }
   .content-right-page-2-bottom {
     margin: auto !important;
@@ -130,7 +129,9 @@ html {
     right: 0;
     bottom: 1em;
   }
-
+  .karawan-page-2-section-left {
+    /* height: max-content !important; */
+  }
   .text-head-page-4 {
     font-size: 3em !important;
   }
@@ -152,6 +153,7 @@ html {
   .karawan-page-1-main-content-circle {
     margin-top: 0vh !important;
   }
+
   /**************For Karawan Page 3****************/
   .main-content-page-3 {
     background-image: url(../assets/images/karawan_life_in_pot_bg.png);
@@ -178,6 +180,32 @@ html {
     background-position-y: bottom;
     background-repeat: no-repeat;
     background-size: 100% 33.05vh;
+  }
+}
+@media screen and (max-width: 680px) {
+  .semi_rect_circle_transparent {
+    /* margin-left: -5% !important; */
+    max-width: 100vw;
+    margin-left: -11.71vw !important;
+    width: auto !important;
+    height: 54.44vh !important;
+    margin-top: 18.05vh !important;
+  }
+  .semi_rect_circle_opaque {
+    /* margin-left: -8% !important; */
+    max-width: 100vw;
+    margin-left: -15.71vw !important;
+    width: auto !important;
+    height: 54.44vh !important;
+    margin-top: 18.05vh !important;
+  }
+  .semi_rect_circle_opaque_2 {
+    /* margin-left: -10% !important; */
+    max-width: 100vw;
+    margin-left: -15.71vw !important;
+    width: auto !important;
+    height: 54.44vh !important;
+    margin-top: 18.05vh !important;
   }
 }
 /* underline-small */
@@ -277,8 +305,17 @@ html {
 }
 .text-bottom-left {
   position: absolute;
-  width: 98% !important;
+  /* width: 98% !important; */
+  width: max-content;
   bottom: -38vh;
+  left: 1.5vw;
+  font-size: 35px;
+}
+.text-bottom-left-k-p-3 {
+  position: absolute;
+  /* width: 98% !important; */
+  width: max-content;
+  bottom: 0vh;
   left: 1.5vw;
   font-size: 35px;
 }
@@ -312,8 +349,12 @@ html {
 }
 
 /**************For Karawan Page 2****************/
+.karawan-page-2-section-left {
+  overflow: visible;
+}
 .logo-karawan-2 {
   margin-left: 4.5vw;
+  margin-top: 4vh;
   /* width: 24.7vw; */
   width: auto;
   height: 55vh;
@@ -328,20 +369,17 @@ html {
   border: 2px solid rgba(0, 0, 0, 0);
   height: 100%;
 }
-.content-right-page-2 {
+.content-right-page-2,
+.content-right-page-2 p {
   font-size: 4vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
   /* border: 1px solid rgb(55, 0, 128); */
   margin: auto;
   width: 45vw;
 }
 .content-right-page-2-bottom {
   text-align: center;
-  /* border: 1px solid rgb(55, 0, 128); */
   width: fit-content;
-  /* margin-top: 30.4vh;
-  margin-left: 26vw; */
-  margin-top: 35vh;
-  margin-left: 36vw;
   /* margin bottom and right not working on it */
 }
 
@@ -370,6 +408,7 @@ html {
 
 .karawan-page-3-section-left {
   height: 100%;
+  overflow: visible;
 }
 .karawan-page-3-section-right {
   height: 100%;
