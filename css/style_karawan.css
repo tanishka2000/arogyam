@@ -77,6 +77,7 @@ html {
     font-size: 1.5em !important;
   }
   .text-bottom-left,
+  .text-bottom-left-k-p-2,
   .text-bottom-left-k-p-3 {
     /*text-bottom-left-k-p-3 element is removed in mobile screen*/
     position: unset !important;
@@ -93,7 +94,8 @@ html {
     font-size: 0.9em !important;
     width: 100% !important;
     bottom: 2vh !important;
-    padding-left: 6vw !important;
+    /* padding-left: 6vw !important; */
+    padding-left: 2vw !important;
     margin-bottom: -1em !important;
     padding-bottom: 0.4em !important;
     left: 0 !important;
@@ -119,15 +121,15 @@ html {
   }
   .content-right-page-2 {
     width: 80vw !important;
-    font-size: 1.7em !important;
+    font-size: 5.5vw !important;
   }
   .content-right-page-2-bottom {
     margin: auto !important;
-    position: absolute;
-    top: auto;
+    /* position: absolute; */
+    /* top: auto;
     left: 0;
     right: 0;
-    bottom: 1em;
+    bottom: 1em; */
   }
   .karawan-page-2-section-left {
     /* height: max-content !important; */
@@ -163,13 +165,18 @@ html {
     background-size: 100% 45.28vh;
   }
   .content-right-page-3-bottom {
+    margin: auto !important;
   }
 
   .karawan-page-3-section-left {
-    height: 50% !important;
+    height: max-content !important;
   }
   .karawan-page-3-section-right {
     height: 50% !important;
+  }
+  #content-right-page-3-bottom-row {
+    background-color: #39df08;
+    align-self: flex-end !important;
   }
 }
 @media screen and (max-width: 490px) {
@@ -206,6 +213,26 @@ html {
     width: auto !important;
     height: 54.44vh !important;
     margin-top: 18.05vh !important;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 991px) {
+  .content-right-page-2 {
+    font-size: 3.5vw !important ;
+  }
+  .content-right-page-2-bottom .text-head-2 {
+    padding-top: 1.5rem !important;
+    font-size: 4.5vw !important ;
+  }
+  .content-right-page-2-bottom .text-white.direction-box-text {
+    font-size: 2.5vw !important ;
+  }
+  .content-right-page-3-bottom {
+    margin-top: 13.5vh !important;
+  }
+  .content-right-page-3-bottom .text-head-2 {
+    /* padding-top: 1.5rem !important; */
+    margin-top: 0.5rem !important;
+    font-size: 4.5vw !important ;
   }
 }
 /* underline-small */
@@ -305,9 +332,15 @@ html {
 }
 .text-bottom-left {
   position: absolute;
-  /* width: 98% !important; */
   width: max-content;
   bottom: -38vh;
+  left: 1.5vw;
+  font-size: 35px;
+}
+.text-bottom-left-k-p-2 {
+  position: absolute;
+  width: max-content;
+  bottom: 3.425vh;
   left: 1.5vw;
   font-size: 35px;
 }
@@ -350,7 +383,7 @@ html {
 
 /**************For Karawan Page 2****************/
 .karawan-page-2-section-left {
-  overflow: visible;
+  /* overflow: visible; */
 }
 .logo-karawan-2 {
   margin-left: 4.5vw;
@@ -380,10 +413,12 @@ html {
 .content-right-page-2-bottom {
   text-align: center;
   width: fit-content;
+  margin-top: 27.5vh;
+  margin-left: 37.39vw;
   /* margin bottom and right not working on it */
 }
 
-.font-3vh {
+.direction-box-text {
   font-size: 3vh;
 }
 
@@ -403,7 +438,10 @@ html {
 }
 .content-right-page-3-bottom {
   text-align: center;
-  margin-top: 18vh;
+  margin-top: 27.5vh;
+  margin-left: 37.39vw;
+  /* margin-top: 18vh; */
+  width: fit-content;
 }
 
 .karawan-page-3-section-left {
@@ -437,9 +475,10 @@ html {
 }
 
 .text-body-page-4 {
+  text-align: left;
   font-size: 4vh;
   margin-top: 2.6vh;
-  letter-spacing: -0.12vw;
+  /* letter-spacing: -0.12vw; */
 }
 
 .karawan-page-4-shape-2 {
