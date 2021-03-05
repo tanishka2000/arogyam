@@ -41,7 +41,42 @@ html {
   background-repeat: no-repeat;
   background-size: 100% 29.74vh;
 }
+@media screen and (max-width: 490px) {
+  /**************For Karawan Page 4****************/
 
+  #karawan-4 {
+    background-image: url(../assets/images/karawan_page_4_mobile_bg.png);
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 33.05vh;
+  }
+}
+@media screen and (max-width: 680px) {
+  .semi_rect_circle_transparent {
+    /* margin-left: -5% !important; */
+    max-width: 100vw;
+    margin-left: -11.71vw !important;
+    width: auto !important;
+    height: 54.44vh !important;
+    margin-top: 18.05vh !important;
+  }
+  .semi_rect_circle_opaque {
+    /* margin-left: -8% !important; */
+    max-width: 100vw;
+    margin-left: -15.71vw !important;
+    width: auto !important;
+    height: 54.44vh !important;
+    margin-top: 18.05vh !important;
+  }
+  .semi_rect_circle_opaque_2 {
+    /* margin-left: -10% !important; */
+    max-width: 100vw;
+    margin-left: -15.71vw !important;
+    width: auto !important;
+    height: 54.44vh !important;
+    margin-top: 18.05vh !important;
+  }
+}
 @media screen and (max-width: 991px) {
   #karawan-1 {
     height: 200vh;
@@ -83,7 +118,7 @@ html {
     position: unset !important;
     bottom: 10vh !important;
     /* font-size: 3em !important; */
-    font-size: 11vw !important;
+    font-size: 8vw !important;
     width: 98% !important;
     margin-top: 6.75vh;
     /* margin-bottom: 0rem !important; overwriting bootstrap mb,pb classes */
@@ -179,42 +214,7 @@ html {
     align-self: flex-end !important;
   }
 }
-@media screen and (max-width: 490px) {
-  /**************For Karawan Page 4****************/
-
-  #karawan-4 {
-    background-image: url(../assets/images/karawan_page_4_mobile_bg.png);
-    background-position-y: bottom;
-    background-repeat: no-repeat;
-    background-size: 100% 33.05vh;
-  }
-}
-@media screen and (max-width: 680px) {
-  .semi_rect_circle_transparent {
-    /* margin-left: -5% !important; */
-    max-width: 100vw;
-    margin-left: -11.71vw !important;
-    width: auto !important;
-    height: 54.44vh !important;
-    margin-top: 18.05vh !important;
-  }
-  .semi_rect_circle_opaque {
-    /* margin-left: -8% !important; */
-    max-width: 100vw;
-    margin-left: -15.71vw !important;
-    width: auto !important;
-    height: 54.44vh !important;
-    margin-top: 18.05vh !important;
-  }
-  .semi_rect_circle_opaque_2 {
-    /* margin-left: -10% !important; */
-    max-width: 100vw;
-    margin-left: -15.71vw !important;
-    width: auto !important;
-    height: 54.44vh !important;
-    margin-top: 18.05vh !important;
-  }
-}
+/* For tablet and small screen devices */
 @media screen and (min-width: 425px) and (max-width: 991px) {
   .content-right-page-2 {
     font-size: 3.5vw !important ;
@@ -234,7 +234,28 @@ html {
     margin-top: 0.5rem !important;
     font-size: 4.5vw !important ;
   }
+  .text-body-page-4 {
+    font-size: 4.5vw !important ;
+  }
 }
+@media screen and (min-width: 725px) and (max-width: 991px) {
+  .text-bottom-left {
+    font-size: 6vw !important;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1230px) {
+  .main-logo {
+    max-width: 100% !important;
+  }
+  .img-life-in-a-pot {
+    max-width: -webkit-fill-available !important;
+  }
+  .karawan-page-4-shape-1 {
+    margin-bottom: 13%;
+    margin-left: unset !important;
+  }
+}
+
 /* underline-small */
 .navbar .nav-link .h5::after {
   content: "";
@@ -248,9 +269,12 @@ html {
 }
 .navbar {
   background-color: rgb(255 255 255 / 65%);
+  /* border: unset !important; */
+  transition-delay: 0.1s;
 }
 .nav-right-text {
-  position: fixed;
+  text-align: end;
+  /* position: fixed; */
   right: 2vw;
   font-size: 35px;
   font-family: unset;
@@ -386,7 +410,7 @@ html {
   /* overflow: visible; */
 }
 .logo-karawan-2 {
-  margin-left: 4.5vw;
+  /* margin-left: 4.5vw; */
   margin-top: 4vh;
   /* width: 24.7vw; */
   width: auto;
