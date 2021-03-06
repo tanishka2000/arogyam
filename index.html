@@ -92,7 +92,12 @@
           </div>
           <div class="col-1 px-0 d-block d-sm-none d-md-none d-lg-none">
             <a
-              class="flex-lg-fill text-sm-center ml-lg-0 ml-1 d-lg-none d-block"
+              class="flex-lg-fill text-sm-center nav-link ml-lg-0 ml-1 d-lg-none d-block"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
             >
               <h5 class="text-dark">
                 <svg
@@ -110,8 +115,35 @@
                 </svg>
               </h5>
             </a>
+            <div
+              class="dropdown-menu text-sm-center"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a class="coconut dropdown-item text-sm-center" href="#coconut">
+                <h5>Coconut oil</h5>
+              </a>
+              <a class="flaxseed dropdown-item text-sm-center" href="#flaxseed">
+                <h5>FlaxSeed oil</h5>
+              </a>
+              <a class="sesame dropdown-item text-sm-center" href="#sesame">
+                <h5>Sesame oil</h5>
+              </a>
+              <a class="almond dropdown-item text-sm-center" href="#almond">
+                <h5>Almond oil</h5>
+              </a>
+              <a
+                class="groundnut dropdown-item text-sm-center"
+                href="#groundnut"
+              >
+                <h5>GroundNut oil</h5>
+              </a>
+              <a class="mustard dropdown-item text-sm-center" href="#mustard">
+                <h5>Mustard oil</h5>
+              </a>
+            </div>
           </div>
         </div>
+        <!-- abhi kiya -->
       </nav>
       <!-- Navbar Ends -->
       <div style="height: 100vh; position: absolute; top: 0; width: 100%">
@@ -370,5 +402,15 @@
         console.log(document.documentElement.scrollTop);
       }
     </script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
