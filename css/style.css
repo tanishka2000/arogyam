@@ -375,6 +375,9 @@ p {
 .navbar .dropdown-menu {
   right: 0 !important;
   left: auto !important;
+  /* background-color: #000000;
+  text-decoration: underline;
+  text-underline-position: under; */
 }
 
 #navbar.scrolled {

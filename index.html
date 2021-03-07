@@ -31,7 +31,7 @@
         id="navbar"
         class="navbar nav nav-expand-lg nav-pills fixed-top text-sm-left justify-content-flex-start"
       >
-        <div class="row w-100">
+        <div class="row w-100 mx-0">
           <div class="col-2">
             <a
               class="flex-lg-fill text-sm-center nav-link m-0 p-0"
@@ -70,6 +70,11 @@
           </div>
           <div class="col-3 pr-0 d-none d-sm-none d-md-block d-lg-none">
             <a
+              id="navbarDropdownMenuLink-md"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
               class="flex-lg-fill text-sm-center nav-link border ml-lg-0 ml-1 d-lg-none d-block"
             >
               <h5>Oils</h5>
@@ -81,6 +86,11 @@
           </div>
           <div class="col-3 pr-0 d-none d-sm-block d-md-none d-lg-none">
             <a
+              id="navbarDropdownMenuLink-sm"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
               class="flex-lg-fill text-sm-center nav-link border ml-lg-0 ml-1 d-lg-none d-block"
             >
               <h5>Oils</h5>
@@ -91,9 +101,10 @@
             <h3 class="nav-right-text mb-0 mt-1">A marketing firm</h3>
           </div>
           <div class="col-1 px-0 d-block d-sm-none d-md-none d-lg-none">
+            <!-- Menu burger button -->
             <a
-              class="flex-lg-fill text-sm-center nav-link ml-lg-0 ml-1 d-lg-none d-block"
-              id="navbarDropdownMenuLink"
+              class="flex-lg-fill text-sm-center ml-lg-0 ml-1 d-lg-none d-block"
+              id="navbarDropdownMenuLink-xs"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -115,35 +126,48 @@
                 </svg>
               </h5>
             </a>
-            <div
-              class="dropdown-menu text-sm-center"
-              aria-labelledby="navbarDropdownMenuLink"
+          </div>
+          <!-- Mobile Dropdown -->
+          <div
+            id="mobile-dropdown-menu"
+            class="dropdown-menu text-center d-lg-none"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <!-- For mid screen -->
+            <a
+              class="dropdown-item d-none d-sm-none d-md-block d-lg-none text-sm-center"
             >
-              <a class="coconut dropdown-item text-sm-center" href="#coconut">
-                <h5>Coconut oil</h5>
-              </a>
-              <a class="flaxseed dropdown-item text-sm-center" href="#flaxseed">
-                <h5>FlaxSeed oil</h5>
-              </a>
-              <a class="sesame dropdown-item text-sm-center" href="#sesame">
-                <h5>Sesame oil</h5>
-              </a>
-              <a class="almond dropdown-item text-sm-center" href="#almond">
-                <h5>Almond oil</h5>
-              </a>
-              <a
-                class="groundnut dropdown-item text-sm-center"
-                href="#groundnut"
-              >
-                <h5>GroundNut oil</h5>
-              </a>
-              <a class="mustard dropdown-item text-sm-center" href="#mustard">
-                <h5>Mustard oil</h5>
-              </a>
-            </div>
+              <h5>Arogyam Cold Pressed Oils</h5>
+            </a>
+            <a
+              class="dropdown-item d-none d-sm-none d-md-block d-lg-none text-sm-center"
+            >
+              <h5>Life in Pot Organic Mixture</h5>
+            </a>
+            <!-- For small screen -->
+            <a
+              class="dropdown-item d-none d-sm-block d-md-none d-lg-none text-sm-center"
+            >
+              <h5>Cold Pressed Oils</h5>
+            </a>
+            <a
+              class="dropdown-item d-none d-sm-block d-md-none d-lg-none text-sm-center"
+            >
+              <h5>Life in Pot</h5>
+            </a>
+            <!-- For extra small screen -->
+            <a
+              class="dropdown-item d-block d-sm-none d-md-none d-lg-none text-sm-center"
+            >
+              <h5>Oils</h5>
+            </a>
+            <a
+              class="dropdown-item d-block d-sm-none d-md-none d-lg-none text-sm-center"
+            >
+              <h5>Life in Pot</h5>
+            </a>
           </div>
         </div>
-        <!-- abhi kiya -->
       </nav>
       <!-- Navbar Ends -->
       <div style="height: 100vh; position: absolute; top: 0; width: 100%">
@@ -226,7 +250,7 @@
       <div class="main-container-page-2 w-100" style="z-index: 1">
         <div class="align-self-stretch main-content-page-2 row mx-0">
           <div
-            class="col-lg-4 col-12 h-lg-100 p-0 text-center karawan-page-2-section-left border border-danger"
+            class="col-lg-4 col-12 h-lg-100 p-0 text-center karawan-page-2-section-left"
           >
             <img
               class="logo-karawan-2"
@@ -235,15 +259,13 @@
             />
             <div
               id="text-bottom-left-k-p-2"
-              class="text-bottom-left-k-p-2 mb-lg-0 mb-5 pb-lg-0 pb-5 border border-primary"
+              class="text-bottom-left-k-p-2 mb-lg-0 mb-5 pb-lg-0 pb-5"
             >
               Bringing Nature at it's purest form
             </div>
           </div>
 
-          <div
-            class="col-lg-8 col-12 h-lg-100 p-0 text-justify border border-danger"
-          >
+          <div class="col-lg-8 col-12 h-lg-100 p-0 text-justify">
             <div class="row h-100 mx-0 px-0">
               <div class="col-12">
                 <div class="content-right-page-2">
@@ -255,11 +277,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 border border-primary">
+              <div class="col-12">
                 <!-- karawan-page-2-section-right-bottom -->
-                <div
-                  class="content-right-page-2-bottom border border-dark align-middle"
-                >
+                <div class="content-right-page-2-bottom align-middle">
                   <div class="text-head-2">Life In A Pot</div>
                   <div class="text-white direction-box-text">
                     Soilless Potting Premix
@@ -283,7 +303,7 @@
       <div class="main-container-page-2 w-100" style="z-index: 1">
         <div class="align-self-stretch main-content-page-3 row mx-0">
           <div
-            class="col-lg-4 col-12 h-lg-100 p-0 text-center karawan-page-3-section-left border border-danger"
+            class="col-lg-4 col-12 h-lg-100 p-0 text-center karawan-page-3-section-left"
           >
             <img
               class="img-life-in-a-pot img-fluid"
@@ -300,7 +320,7 @@
           <div
             class="col-lg-8 col-12 h-lg-100 p-0 text-justify karawan-page-3-section-right"
           >
-            <div class="row mx-0 px-0 h-100 border border-danger">
+            <div class="row mx-0 px-0 h-100">
               <div class="col-12">
                 <div class="content-right-page-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -309,11 +329,8 @@
                   eiusmod tempor Lorem ipsum dolor sit
                 </div>
               </div>
-              <div
-                id="content-right-page-3-bottom-row"
-                class="col-12 border border-dark"
-              >
-                <div class="content-right-page-3-bottom border border-primary">
+              <div id="content-right-page-3-bottom-row" class="col-12">
+                <div class="content-right-page-3-bottom">
                   <div class="text-head-2">About Us</div>
 
                   <div class="down-arrow-svg-div">
@@ -412,5 +429,19 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+    <!-- Script for dropdown -->
+    <script>
+      $(function () {
+        $("#navbarDropdownMenuLink-xs").on("click", function () {
+          $("#mobile-dropdown-menu").toggle();
+        });
+        $("#navbarDropdownMenuLink-sm").on("click", function () {
+          $("#mobile-dropdown-menu").toggle();
+        });
+        $("#navbarDropdownMenuLink-md").on("click", function () {
+          $("#mobile-dropdown-menu").toggle();
+        });
+      });
+    </script>
   </body>
 </html>
