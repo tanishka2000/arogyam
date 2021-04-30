@@ -271,7 +271,6 @@ p {
   #errorAlert,
   #successAlert {
     display: none;
-    /* border: 1px solid black; */
     width: 90% !important;
     position: relative;
     cursor: pointer;
