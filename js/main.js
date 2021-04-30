@@ -52,14 +52,14 @@ function closeForm() {
 }
 
 function closeErrorAlert() {
-  document.getElementById("alertEmptyFieldsTrue").style.opacity = 0;
+  document.getElementById("errorAlert").style.display = "none";
   setTimeout(() => {
     document.getElementById("alert-area").style.width = "0%";
   }, 400);
 }
 
 function closeSuccessAlert() {
-  document.getElementById("alertEmptyFieldsFalse").style.opacity = 0;
+  document.getElementById("successAlert").style.display = "none";
   setTimeout(() => {
     document.getElementById("alert-area").style.width = "0%";
   }, 400);

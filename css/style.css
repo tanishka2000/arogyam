@@ -268,9 +268,9 @@ p {
   #faq {
     top: 1300vh !important;
   }
-  #alertEmptyFieldsTrue,
-  #alertEmptyFieldsFalse {
-    opacity: 0;
+  #errorAlert,
+  #successAlert {
+    display: none;
     /* border: 1px solid black; */
     width: 90% !important;
     position: relative;
@@ -598,9 +598,9 @@ p.lead {
   height: 100vh;
   width: 100%;
 }
-.nav-pills .faq.nav-link.active {
-  /* background-image: linear-gradient(#e8d595, #a69869); */
-}
+/* .nav-pills .faq.nav-link.active { */
+/* background-image: linear-gradient(#e8d595, #a69869); */
+/* } */
 .contactUsFormClass {
   border: 1px solid #b41414;
   border-radius: 8px;
@@ -668,18 +668,17 @@ p.lead {
   width: 0%;
   position: fixed;
 }
-#alertEmptyFieldsTrue,
-#alertEmptyFieldsFalse {
-  display: block;
+#errorAlert,
+#successAlert {
+  display: none;
   margin-left: auto;
   margin-right: auto;
-  opacity: 0;
   width: 25vw;
   position: relative;
   /* cursor: pointer; */
   transition: 0.5s;
 }
-#alertEmptyFieldsTrue.alert.alert-danger.d-flex {
+#errorAlert.alert.alert-danger.d-flex {
   display: -ms-flexbox !important;
   text-align: center;
   display: flex !important;

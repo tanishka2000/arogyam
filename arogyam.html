@@ -75,30 +75,31 @@
   <!-- Alert Boxes -->
   <div id="alert-area" class="mx-auto row text-center mx-0 px-0" style="z-index: 4;">
     <div class="col-12 px-0 mx-0">
-      <div id="alertEmptyFieldsTrue" class="alert alert-danger" role="alert"
+      <div id="errorAlert" class="alert alert-danger" role="alert"
         style="z-index:3;">
-        Please fill all the fields &nbsp;
+        Invalid Input !! &nbsp;
         <span class="svg-trash float-right" onclick="closeErrorAlert()">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill"
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill"
             viewBox="0 0 16 16">
             <path
               d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
-          </svg>
+          </svg> -->
+          ❌ 
         </span>
 
       </div>
     </div>
     <div class="col-12 px-0 mx-0">
-      <div id="alertEmptyFieldsFalse" class="alert alert-success" role="alert"
+      <div id="successAlert" class="alert alert-success" role="alert"
         style="z-index:3;">
-        Mail Sent&nbsp;&nbsp;
+        We received you message 👍&nbsp;&nbsp;
         <span class="svg-trash float-right"  onclick="closeSuccessAlert()" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill"
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill"
             viewBox="0 0 16 16">
             <path
               d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
-          </svg>
-
+          </svg> -->
+          ❌
         </span>
 
       </div>
@@ -113,7 +114,6 @@
       <span class="d-md-inline-block d-none">Contact Us to</span> Order
     </button>
   </div>
-  <!-- Contact Us Sidebar Ends -->
 
   <!-- Main Header Starts-->
   <div id="mainHeader" class="jumbotron jumbotron-fluid p-0 d-flex align-items-center align-content-baseline">
@@ -126,10 +126,7 @@
       </h3>
       <img id="centerImg" src="./assets/images/centerImg.png" alt="" class="img-fluid mx-auto d-block d-lg-none" />
       <p class="lead text-left mr-lg-5 mr-0 pr-lg-5 pr-0">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat.
+        Arogyam extra virgin oil celebrates the sacred ancient Indian traditional art of extracting oil from various seeds. Arogyam extra virgin oil is an saga of producing and preparing the beneficial unsaturated fats that are keymakers of our health in a right way. We adopt an unparalleled ancient wisdom and scientific techniques in preparation of our cold pressed edible oils. Arogyam not just presents the finest and purest oils but it also represents the Health, Harmony and Healing properties of oil in its natural form. It’s just the best one for healthy you .
       </p>
 
       <!-- Contact Us Form Starts -->
@@ -142,23 +139,22 @@
               d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
           </svg>
         </div>
-        <form id="mainFormId" class="mainFormClass py-4 px-4">
+        <form id="mainFormId" class="mainFormClass text-left py-4 px-4" action="https://formspree.io/f/mqkweppd" method="POST">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
             <div class="input-group my-3">
               <div class="input-group-prepend">
                 <div class="input-group-text">@</div>
               </div>
-              <input type="email" placeholder="Enter Email" class="form-control" id="formEmailInput"
-                aria-describedby="emailHelp" />
+              <input type="email" name="email"  id="formEmailInput" class="form-control" placeholder="Enter Email" required/>
             </div>
           </div>
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control my-3" id="formMessageInput" rows="3" required></textarea>
+            <textarea type="text" name="message" id="formMessageInput" class="form-control my-3" rows="3" required></textarea>
           </div>
 
-          <button id="submitBtn" type="button" onclick="initiateMailSending()" class="btn btn-primary btn-block">
+          <button type="submit" id="submitBtn" class="btn btn-primary btn-block" onclick="initiateMailSending()">
             Submit &nbsp;
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
               class="bi bi-clipboard-check" viewBox="0 0 20 20">
@@ -199,7 +195,6 @@
       </div>
     </div>
   </div>
-  <!-- Main Header Ends -->
 
   <!-- Coconut Section Starts -->
   <div id="coconut" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
@@ -215,10 +210,8 @@
           </div>
           <div>
             <p class="px-md-5 pr-5 pl-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              This oil is super rich and powerful in anti-bacterial, anti-aging, antioxidants and anti- inflammatory properties.
+               Treats Eczema, dermatitis and Psoriasis, shields against UV Radiation, moisturizes dry skin, best for body massage. Heals skin wound and burns.
             </p>
           </div>
         </div>
@@ -228,10 +221,9 @@
           </div>
           <div>
             <p class="px-md-5 pr-5 pl-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              The presence of lauric acid aids in getting the oil more easily absorbed deep into the hair shaft. 
+              It results in reduced protein loss while washing them. Protects hair from sun damage, 
+              its antimicrobial properties could be useful for treating dandruff. Offers the essential proteins necessary for revamping and healing damaged hair.
             </p>
           </div>
         </div>
@@ -240,14 +232,14 @@
           <div class="col-md-9 col-12 my-auto">
             <div class="d-flex my-auto align-items-stretch bd-highlight">
               <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-                <h5 style="width: 5.6em;">EDIBLE</h5>
+                <h5 style="width: 5.6em;">HEALTH</h5>
               </div>
               <div>
                 <p class="px-md-5 pr-5 pl-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Helps burn adamant abdomen fat and aids in losing weight. It is easy to digest and aids in
+                   proper working of the thyroid and endocrine glands. Boosts metabolic rate , increases good 
+                   cholesterol due to its medium chain triglycerides (MCT) content, supports heart health,
+                   treats Alzheimer’s disease, prevents yeast infection and improves dental health. Highly recommended for bone health, treats epilepsy and manages diabetes.
                 </p>
               </div>
             </div>
@@ -262,10 +254,10 @@
               </div>
               <div>
                 <p class="px-md-5 pr-5 pl-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  It is impeccably apt for sautéing, roasting and frying. 
+                  It can also be used as a healthy swap for butter in making baked products which promotes
+                   the rich aroma and flavour of the dishes. Coconut chiefly a saturated fat is stable and
+                   able to hold high temperature thus is an excellent cooking medium.
                 </p>
               </div>
             </div>
@@ -277,7 +269,6 @@
       </div>
     </div>
   </div>
-  <!-- Coconut Section Ends -->
 
   <!-- Flaxseed Section Starts -->
   <div id="flaxseed" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
@@ -293,10 +284,7 @@
           </div>
           <div>
             <p class="px-md-5 pr-5 pl-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              The Omega-3 fatty acids in cold pressed flax seed Oil helps your body to produce collagen that keeps skin smooth and elastic. Lignans in this oil brighten and lighten the complexion since these are potent antioxidants. It inhibits the production of sebum hence very effective in controlling acne.
             </p>
           </div>
         </div>
@@ -306,10 +294,7 @@
           </div>
           <div>
             <p class="px-md-5 pr-5 pl-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              Abundant Omega-3 fatty acids nourish hair follicles for healthy hair growth. It’s rich protein, selenium and lignans content build up hair volume, vitamin E in oil helps to treat hair loss and stimulate new hair growth. Prevents flaking, nourishes scalp and fights dandruff.
             </p>
           </div>
         </div>
@@ -318,14 +303,13 @@
           <div class="col-md-9 col-12 my-auto">
             <div class="d-flex my-auto align-items-stretch bd-highlight">
               <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-                <h5 style="width: 5.6em;">EDIBLE</h5>
+                <h5 style="width: 5.6em;">HEALTH</h5>
               </div>
               <div>
                 <p class="px-md-5 pr-5 pl-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Flax seed oil effectively prevents atherosclerosis, myocardial infection and hypertensive
+disease. Reduces the risk of cancer, Alzheimer’s disease, multiple sclerosis, depression or nerve damage in diabetes. It stimulates metabolism, strengthen the excretory system, supports muscle growth fat reduction. Effective in Prostrate diseases and alleviates premenstrual headaches, irritability, abdominal pain and swelling.
+The long chain fatty acids present in cold pressed flax seed Oil aids in supporting brain function and eye health. The high content of omega 3 fatty acids in this oil improves heart health, decreases blood pressure, increases the elasticity of the arteries and lowers bad cholesterol. It builds more muscle mass, which burns more calories than fat resulting in weight loss.
                 </p>
               </div>
             </div>
@@ -340,10 +324,7 @@
               </div>
               <div>
                 <p class="px-md-5 pr-5 pl-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  This oil should not be subjected to heat treatment such as heating, cooking, frying because it has very low thermal resistance. Best to consume it a spoonful in raw form, combine it with cottage cheese, yogurt, in addition to salads and cold dishes. You can add one teaspoon or 15 ml into smoothies, shakes or soups.
                 </p>
               </div>
             </div>
@@ -355,7 +336,6 @@
       </div>
     </div>
   </div>
-  <!-- Flaxseed Section Ends -->
 
   <!-- Sesame Section Starts -->
   <div id="sesame" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
@@ -370,10 +350,7 @@
           </div>
           <div>
             <p class="px-md-5 pr-5 pl-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              It naturally protects against the uv sun rays and free radicals, Its excellent antibacterial properties, helps to get rid of acne, pimple, blackheads and white heads. Effective exfoliator, moisturizer, and skin brightener. Prevents wrinkles and leaves behind a naturally glowing skin.
             </p>
           </div>
         </div>
@@ -383,10 +360,7 @@
           </div>
           <div>
             <p class="px-md-5 pr-5 pl-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              This oil is enriched with vitamins Band E, and minerals such as magnesium, calcium, phosphorus and protein which help strengthen the hair from the roots. It stimulates blood circulation, hair follicles thereby promotes hair growth, prevents premature hair greying and combat scalp dryness. It has quick penetrative and anti microbial properties that prevents dandruff. It is a natural sun-blocking agent that prevents hair from sun damage.
             </p>
           </div>
         </div>
@@ -395,14 +369,11 @@
           <div class="col-md-9 col-12 my-auto">
             <div class="d-flex my-auto align-items-stretch bd-highlight">
               <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-                <h5 style="width: 5.6em;">EDIBLE</h5>
+                <h5 style="width: 5.6em;">HEALTH</h5>
               </div>
               <div>
                 <p class="px-md-5 pr-5 pl-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  It has a wide range of Polyunsaturated fatty acids, including Sesamol ,Sesaminol and Sesamin that benefits cardiovascular system, balances cholesterol levels. It stimulates blood circulation ,metabolism and improves intestinal health. Many cultures has used this oil to treat joint pain, premenstrual cramps, to regulate blood sugar levels, anxiety, depression and massages.
                 </p>
               </div>
             </div>
@@ -417,10 +388,8 @@
               </div>
               <div>
                 <p class="px-md-5 pr-5 pl-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  It is commonly used in Asian cuisine, particularly for stir fries. Sesame oil is often used to saute
+meats and vegetables or is added to salads, dressings and marinades. It is quite versatile.
                 </p>
               </div>
             </div>
@@ -432,7 +401,6 @@
       </div>
     </div>
   </div>
-  <!-- Sesame Section Ends -->
 
   <!-- Almond Section Starts -->
   <div id="almond" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
@@ -447,10 +415,8 @@
           </div>
           <div>
             <p class="px-md-5 pr-5 pl-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              It has high content of fatty acids such as Oleic, Linoleic, palmitic , stearic acid which acts as a emollient as well as a natural cleanser. It protects from bacteria and allergens, softens dry skins , prevents wrinkles,
+boosts cell regeneration and reduces Oxidative stress giving a healthy glow to your skin.
             </p>
           </div>
         </div>
@@ -460,10 +426,7 @@
           </div>
           <div>
             <p class="px-md-5 pr-5 pl-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              It’s enriched Vitamin B-7, or biotin content, helps to keep hair and nails healthy and strong. It possesses amazing scalp treatment properties. Its Anti bacterial and fungicidal properties balances the yeast that causes dandruff. Easily soaks into the skin , hence hydrates the scalp and cleanses the hair follicles.
             </p>
           </div>
         </div>
@@ -472,14 +435,11 @@
           <div class="col-md-9 col-12 my-auto">
             <div class="d-flex my-auto align-items-stretch bd-highlight">
               <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-                <h5 style="width: 5.6em;">EDIBLE</h5>
+                <h5 style="width: 5.6em;">HEALTH</h5>
               </div>
               <div>
                 <p class="px-md-5 pr-5 pl-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Almond oil is rich in Vitamin E content and it is a great source of magnesium, phosphorus and copper. The antioxidant rich oil is known for its free radical fighting abilities. It is anti inflammatory and boosts immunity. Because of its high levels of antioxidants, it reduces the risk of Cardiovascular disease . As almond oil is full of Monounsaturated fatty acids ,good cholesterol(HDL) gets elevated, when it replaces saturated and trans fat.
                 </p>
               </div>
             </div>
@@ -494,10 +454,7 @@
               </div>
               <div>
                 <p class="px-md-5 pr-5 pl-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  At low heat, Its mild flavour makes it perfect for slipping into dishes. It is best used for salad dressing, low heat baking, or as a finishing oil on top of a dish to add extra flavour and nutrition.
                 </p>
               </div>
             </div>
@@ -509,7 +466,6 @@
       </div>
     </div>
   </div>
-  <!-- Almond Section Ends -->
 
   <!-- Groundnut Section Starts -->
   <div id="groundnut" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
@@ -525,10 +481,8 @@
           </div>
           <div>
             <p class="px-md-5 pr-5 pl-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              Being enriched with Vitamin E, peanut oil can reduce and delay the signs of ageing like blemishes, dark spots, pigmentation, fine lines and patchy skin, it
+lightens the lip colour and restore its natural pinkies, can be applied as a lip balms.
             </p>
           </div>
         </div>
@@ -538,10 +492,7 @@
           </div>
           <div>
             <p class="px-md-5 pr-5 pl-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              Cold pressed groundnut oil is enriched with potent antioxidant vitamin E that controls hair damage, prevents dandruff, treat split ends and moisturizes the hair. It also boosts hair growth and reduces protein loss in hair due to its emollient properties. It also improves scalp health and prevents scalp dryness.
             </p>
           </div>
         </div>
@@ -550,14 +501,12 @@
           <div class="col-md-9 col-12 my-auto">
             <div class="d-flex my-auto align-items-stretch bd-highlight">
               <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-                <h5 style="width: 5.6em;">EDIBLE</h5>
+                <h5 style="width: 5.6em;">HEALTH</h5>
               </div>
               <div>
                 <p class="px-md-5 pr-5 pl-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  This oil is rich in Monounsaturated fatty acids (MUFA) that helps in improving heart health, prevents coronary artery disease and heart attacks by maintaining a healthy blood lipid profile , regulates high blood pressure and prevents many disorders of stomach. It is used as an antispasmodic . It helps in building muscles
+and for body strengthening. Good for weight loss and joint pain.
                 </p>
               </div>
             </div>
@@ -572,10 +521,7 @@
               </div>
               <div>
                 <p class="px-md-5 pr-5 pl-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  The oil has nutty flavour and has a relatively high smoking point which makes it ideal for cooking, deep frying . It is used in South Asian cuisines to make savoury dishes and salads. It imparts great flavor to gravies, stir -fries, and curries. It can be used as barbecue marinades, dips, sauces, and peanut butter
                 </p>
               </div>
             </div>
@@ -587,7 +533,6 @@
       </div>
     </div>
   </div>
-  <!-- GroundNut Section Ends -->
 
   <!-- Mustard Section Starts -->
   <div id="mustard" class="jumbotron jumbotron-fluid d-flex align-items-stretch m-0 p-0">
@@ -603,10 +548,9 @@
           </div>
           <div>
             <p class="px-md-5 pr-5 pl-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              The presence of ALLYL ISOTHICYANATE prevents and inhibits the fungal growth infection as that of in athletes foot. 
+              Due to its rich Vitamin E content, it acts as an natural cleanser by stimulating the sweat glands,
+               it lightens pigmentation spots, improves complexion, arrests premature aging, acts as natural sunscreen and fights air pollutants.
             </p>
           </div>
         </div>
@@ -616,10 +560,8 @@
           </div>
           <div>
             <p class="px-md-5 pr-5 pl-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              The essential fatty acids content moisturizes and revitalizes the scalp, fights dandruff and recurring fungal infections,
+               prevents greying of hair and promotes hair growth.
             </p>
           </div>
         </div>
@@ -628,14 +570,13 @@
           <div class="col-md-9 col-12 my-auto">
             <div class="d-flex my-auto align-items-stretch bd-highlight">
               <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-                <h5 style="width: 5.6em;">EDIBLE</h5>
+                <h5 style="width: 5.6em;">HEALTH</h5>
               </div>
               <div>
                 <p class="px-md-5 pr-5 pl-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Alpha-linolenic acid (ALA) lowers the IHD (Ischaemic Heart Disease) risk, while Glucosinolates and Phytonutrients provide 
+                  protection against colorectal and gastrointestinal cancers.
+                   Very effective for Rheumatoid arthritis, Asthma, sinus congestion, it invigorates digestion and is ideal for dental health.
                 </p>
               </div>
             </div>
@@ -650,10 +591,9 @@
               </div>
               <div>
                 <p class="px-md-5 pr-5 pl-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Most unique factor of this cooking oil is that its composition is based on our body requirements hence is highly therapeutic for us.
+                   It carries a pungent flavour which tastes great in many recipes.
+                   It tolerates high temperature and is Ideal for shallow, stir fry, for pickles ,chutneys and snacks.
                 </p>
               </div>
             </div>
@@ -665,7 +605,6 @@
       </div>
     </div>
   </div>
-  <!-- Mustard Section Ends -->
 
   <!-- FAQ Section Starts -->
   <div id="faq" class="jumbotron jumbotron-fluid bg-white mb-0 py-0 h-auto">
@@ -818,8 +757,8 @@
     </div>
   </div>
   </div>
-  <!-- FAQ Section Ends -->
 
+  <!-- scripts -->
   <script src="./js/main.js"></script>
   <script src="./js/sendmail.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
