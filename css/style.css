@@ -553,6 +553,15 @@ p.lead {
   }
 
   /** Oils Section **/
+  #coconut,
+  #flaxseed,
+  #sesame,
+  #almond,
+  #groundnut,
+  #mustard {
+    padding-bottom: 400px;
+  }
+
   #coconut h1,
   #flaxseed h1,
   #sesame h1,
@@ -650,6 +659,15 @@ p.lead {
   
   p.lead {
     font-size: 16px !important;
+  }
+
+  #coconut,
+  #flaxseed,
+  #sesame,
+  #almond,
+  #groundnut,
+  #mustard {
+    padding-bottom: 400px;
   }
   
   #coconut h1,
