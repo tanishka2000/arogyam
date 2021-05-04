@@ -280,13 +280,10 @@ html {
   /* position: fixed; */
   right: 2vw;
   font-size: 35px;
-  font-family: unset;
-  font-weight: unset;
   font-family: "Segoe UI";
 }
 .karawan-nav-text {
   color: #161616;
-  font-family: unset;
   font-weight: bold;
   font-family: "Segoe UI";
 }
@@ -433,7 +430,7 @@ html {
 .content-right-page-2 p {
   font-size: 4vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
-  /* border: 1px solid rgb(55, 0, 128); */
+  letter-spacing: -0.06em;
   margin: auto;
   width: 45vw;
 }
@@ -504,6 +501,8 @@ html {
 .text-body-page-4 {
   text-align: left;
   font-size: 4vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: -0.06em;
   margin-top: 2.6vh;
   /* letter-spacing: -0.12vw; */
 }
