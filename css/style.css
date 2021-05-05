@@ -333,7 +333,7 @@ p.lead {
 
 /** FAQ **/
 #faq {
-  min-height: 100vh;
+  min-height: unset;
   width: 100%;
 }
 
