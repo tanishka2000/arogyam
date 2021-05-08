@@ -482,6 +482,10 @@ p.lead {
   text-align: left;
 }
 
+.footer-text-center {
+  text-align: center;
+}
+
 .footer-text-right {
   text-align: right;
 }
@@ -612,6 +616,10 @@ p.lead {
   .footer-text-left-div {
     text-align: center;
     border-bottom: 1px solid white;
+  }
+
+  .footer-text-center-div {
+    text-align: center;
   }
 
   .footer-text-right-div {
