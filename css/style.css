@@ -1,6 +1,5 @@
-@font-face {
-  font-family: Montserrat;
-  src: url(../assets/fonts/Montserrat-SemiBold.ttf);
+body{
+  font-family: 'Roboto', sans-serif;
 }
 
 @font-face {
@@ -15,11 +14,16 @@ h4,
 h5,
 h6,
 a {
-  font-family: Montserrat;
+  font-family: 'Roboto', sans-serif;
+}
+
+h5{
+  font-weight: 700;
 }
 
 p {
-  font-family: Roboto !important;
+  font-family: 'Roboto', sans-serif;
+  margin-top: revert;
 }
 
 /** Navbar **/
@@ -136,16 +140,13 @@ p {
   max-height: 91vh;
 }
 
-#mainHeader #brand-logo {
-  width: 30vw;
-}
-
 #subtitle {
   background-color: #006b12;
   color: white;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.4;
   border-radius: 5px;
+
 }
 
 .subtitle-wrap::after {
@@ -169,7 +170,8 @@ p {
 
 button.contact {
   width: 400px;
-  font-family: Montserrat;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
   font-size: medium;
   background-color: #b41414;
   transform: rotate(-90deg);
@@ -178,14 +180,14 @@ button.contact {
 }
 
 p.h5 {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: medium;
   font-weight: 400;
 }
 
 p.market-credit {
-  font-family: Roboto;
-  font-size: 30px !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px !important;
   color: #000000 !important;
   font-weight: 400;
 }
@@ -216,7 +218,6 @@ p.lead {
 }
 
 #coconut .rounded-circle {
-  width: 150px !important;
   background-color: #77a074;
   height: 6.8em;
 }
@@ -236,7 +237,6 @@ p.lead {
 
 #flaxseed .rounded-circle {
   background-color: #5a5067;
-  width: 150px !important;
   height: 6.8em;
   text-align: center;
   display: table-cell;
@@ -258,7 +258,6 @@ p.lead {
 
 #sesame .rounded-circle {
   background-color: #6f7d88;
-  width: 150px !important;
   height: 6.8em;
   text-align: center;
   display: table-cell;
@@ -280,7 +279,6 @@ p.lead {
 
 #almond .rounded-circle {
   background-color: #997777;
-  width: 150px !important;
   height: 6.8em;
   text-align: center;
   display: table-cell;
@@ -302,7 +300,6 @@ p.lead {
 
 #groundnut .rounded-circle {
   background-color: #a5775c;
-  width: 150px !important;
   height: 6.8em;
   text-align: center;
   display: table-cell;
@@ -324,7 +321,6 @@ p.lead {
 
 #mustard .rounded-circle {
   background-color: #a69869;
-  width: 150px !important;
   height: 6.8em;
   text-align: center;
   display: table-cell;
@@ -340,7 +336,7 @@ p.lead {
 .contactUsFormClass {
   border: 1px solid #b41414;
   border-radius: 8px;
-  font-family: Montserrat;
+  font-family: 'Roboto', sans-serif;
   width: 0;
   position: fixed;
   right: 0;
@@ -358,7 +354,7 @@ p.lead {
   font-size: 25px;
   background-color: #b41414;
   border-radius: 8px 8px 0px 0px;
-  font-family: Montserrat;
+  font-family: 'Roboto', sans-serif;
 }
 
 .align-right-bottom {
@@ -386,8 +382,8 @@ p.lead {
 }
 
 .contactus-iconClass {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   transition: 0.5s;
 }
 
@@ -395,7 +391,7 @@ p.lead {
 #alert-area {
   margin-top: 15vh;
   border-radius: 8px;
-  font-family: Montserrat;
+  font-family: 'Roboto', sans-serif;
   width: 0%;
   position: fixed;
 }
@@ -437,6 +433,7 @@ p.lead {
 }
 
 .card-header {
+  font-size: 20px;
   border-bottom: 0px;
   border-radius: 15px 15px 15px 15px;
 }
@@ -507,11 +504,6 @@ p.lead {
     position: static;
     top: 0;
     max-height: 50vh;
-  }
-
-  #brand-logo {
-    width: 50vw !important;
-    margin-top: 100px;
   }
 
   #contactus-iconId {
@@ -645,11 +637,6 @@ p.lead {
     padding-right: 15px;
     padding-left: 15px;
   }
-
-  #brand-logo {
-    width: 40vw !important;
-  }
-
   #subtitle {
     font-size: 30px !important;
   }
