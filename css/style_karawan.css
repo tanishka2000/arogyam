@@ -40,6 +40,7 @@ html {
   background-position-y: bottom;
   background-repeat: no-repeat;
   background-size: 100% 29.74vh;
+  justify-content: center;
 }
 @media screen and (max-width: 490px) {
   /**************For Karawan Page 4****************/
@@ -96,7 +97,7 @@ html {
   }
   #karawan-4 {
     top: 600vh;
-    height: 200vh;
+    height: 150vh;
   }
 
   #whatsapp-logo {
@@ -479,7 +480,7 @@ html {
 .main-container-page-4 {
   /* z-index: 1; */
   border: 0.8px solid rgba(165, 42, 42, 0);
-  height: -webkit-fill-available;
+  max-height: -webkit-fill-available;
 }
 .main-content-page-4 {
   margin-top: 18.5vh;
@@ -508,7 +509,7 @@ html {
 }
 
 .karawan-page-4-shape-2 {
-  height: fit-content;
+  max-height: fit-content;
   margin-bottom: 10em;
 }
 
