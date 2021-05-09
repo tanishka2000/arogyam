@@ -10,7 +10,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
   <!-- icons -->
   <link rel="icon" type="image/png" href="./assets/images/icon.png" />
 
@@ -20,9 +23,9 @@
 <body data-spy="scroll" data-target="#navbar">
   <!-- Navbar Starts -->
   <nav id="navbar"
-    class="navbar nav nav-expand-lg nav-pills flex-row fixed-top text-sm-left justify-content-flex-start">
+    class="navbar nav nav-expand-lg nav-pills flex-row sticky-top text-sm-left justify-content-flex-start">
     <a class="nav-logo flex-lg-fill text-sm-center nav-link" href="#mainHeader"><img src="./assets/images/logo.png"
-        width="27vw" /></a>
+        width="35vw" /></a>
     <a class="coconut flex-lg-fill text-sm-center nav-link d-lg-block d-none" href="#coconut">
       <h5>Coconut oil</h5>
     </a>
@@ -119,14 +122,19 @@
   <div id="mainHeader" class="jumbotron jumbotron-fluid row p-0">
     <img id="centerImg-pc" src="./assets/images/main.png" alt="" class="img-fluid mx-auto d-none d-lg-flex" />
     <div class="col-lg-5 col-sm-12 py-5 px-lg-5 px-4 py-0 text-lg-left text-center align-self-center" style="z-index:1;">
-      <img id="brand-logo" src="./assets/images/Arogyam.png"
-        class="img-fluid" />
+      <!--img id="brand-logo" src="./assets/images/Arogyam.png"
+        class="img-fluid" /--->
+      <h1 style="font-family: 'Merienda One', cursive; font-size: 6.5vw !important;
+      margin-top: 0px; color: black;">Arogyam</h1>
       <h3 class="subtitle-wrap my-lg-3 my-0 mx-0">
         <mark id="subtitle" class="py-0">Wooden Cold Pressed | Extra Virgin</mark>
       </h3>
       <img id="centerImg" src="./assets/images/centerImg.png" alt="" class="img-fluid mx-auto d-block d-lg-none" />
       <p class="lead text-left mr-lg-5 mr-0 pr-lg-5 pr-0">
-        Arogyam extra virgin oil celebrates the sacred ancient Indian traditional art of extracting oil from various seeds. Arogyam extra virgin oil is an saga of producing and preparing the beneficial unsaturated fats that are keymakers of our health in a right way. We adopt an unparalleled ancient wisdom and scientific techniques in preparation of our cold pressed edible oils. Arogyam not just presents the finest and purest oils but it also represents the Health, Harmony and Healing properties of oil in its natural form. It’s just the best one for healthy you .
+        Arogyam extra virgin oil celebrates the sacred ancient Indian traditional art of extracting oil from various seeds. 
+        <br>
+        Arogyam not just presents the finest and purest oils but it also represents the Health, Harmony and Healing properties of oil in its natural form. 
+        <br>It’s just the best one for healthy you.
       </p>
 
       <!-- Contact Us Form Starts -->
@@ -139,7 +147,7 @@
               d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
           </svg>
         </div>
-        <form id="mainFormId" class="mainFormClass text-left py-4 px-4" action="https://formspree.io/f/mqkweppd" method="POST">
+        <form id="mainFormId" class="mainFormClass text-left py-4 px-4" action="https://formspree.io/f/xqkwevng" method="POST">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
             <div class="input-group my-3">
@@ -179,18 +187,26 @@
       <!-- Contact Us Form Ends -->
     </div>
     <div id="socialMedia-icons" class="align-right-bottom-1 d-lg-block d-none">
-      <img class="contactus-iconClass mx-2" src="./assets/images/whatsapp-icon.png" />
-      <img class="contactus-iconClass mx-2" src="./assets/images/facebook-icon.png" />
-      <img class="contactus-iconClass mx-2" onclick="openForm()" src="./assets/images/gmail-icon.png" />
-      <img class="contactus-iconClass mx-2" src="./assets/images/instagram-icon.png" />
+      <a href="https://api.WhatsApp.com/send?phone=+919893858525" target="_blank">
+        <img class="contactus-iconClass mx-2" src="./assets/images/whatsapp-icon.png" />
+      </a>
+      <a href="https://www.facebook.com/natureskarawan/" target="_blank">
+        <img class="contactus-iconClass mx-2" src="./assets/images/facebook-icon.png" />
+      </a>
+      <a href="tomail:natureskarawan@gmail.com" target="_blank">
+        <img class="contactus-iconClass mx-2" src="./assets/images/gmail-icon.png" />
+      </a>
+      <a href="https://www.instagram.com/coldpressed_extravirgin_oils/" target="_blank">
+        <img class="contactus-iconClass mx-2" src="./assets/images/instagram-icon.png" />
+      </a>
     </div>
     <div id="marketing-line" class="align-right-bottom-2 d-lg-block d-none">
       <div class="row">
         <div class="col-auto">
-          <img class="contactus-iconClass mx-2" src="./assets/images/natureskarawan-icon.png" />
+          <img style="width: 100px; height: 57.5px;" class="contactus-iconClass mx-2" src="./assets/images/natures_karawan_logo.png" />
         </div>
         <div class="col-auto">
-          <p class="market-credit">Marketed by ABC : 98xxxxxxxx</p>
+          <p class="market-credit">Marketed by <a style="color: #B41414" href="./index.html">Nature's Karawan</a> : 9893858525</p>
         </div>
       </div>
     </div>
@@ -202,65 +218,77 @@
       class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
       <h1 class="oil-name display-2">Coconut Oil</h1>
       <!-- Product Summary -->
-      <p class="px-md-5 pr-5 pl-2">
+      <p class="px-md-5 pr-5 pl-2" style="font-size: 20px; font-weight: 600;">
         Coconut oil is widely considered as a super food due to its versatile benefits and uses.
       </p>
       <img class="img-fluid align-self-start d-md-none d-block py-5 w-50"
         src="./assets/images/coconut-banner-2.png" />
       <div class="d-flex my-auto align-items-stretch bd-highlight">
         <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-          <h5 style="width: 5.6em;">SKIN</h5>
+          <h5 style="width: 5.5em;">SKIN</h5>
         </div>
         <div>
-          <p class="px-md-5 pr-5 pl-2">
+          <p class="px-md-5 pr-5 pl-2" >
+            <img src="./assets/images/tri.png" width="10px"/>
             This oil is super rich and powerful in anti-bacterial, anti-aging, antioxidants and anti- inflammatory properties.
-              Treats Eczema, dermatitis and Psoriasis, shields against UV Radiation, moisturizes dry skin, best for body massage. Heals skin wound and burns.
+            <br>
+            <img src="./assets/images/tri.png" width="10px"/>
+            Treats Eczema, dermatitis and Psoriasis, shields against UV Radiation, moisturizes dry skin, best for body massage.
+            <br>
+            <img src="./assets/images/tri.png" width="10px"/>
+            Heals skin wound and burns.
           </p>
         </div>
       </div>
       <div class="d-flex my-auto align-items-stretch bd-highlight">
-        <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-          <h5 style="width: 5.6em;">HAIR</h5>
+        <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2" style="margin-top: 7px;">
+          <h5 style="width: 5.5em;">HAIR</h5>
         </div>
-        <div>
+        <div >
           <p class="px-md-5 pr-5 pl-2">
-            The presence of lauric acid aids in getting the oil more easily absorbed deep into the hair shaft. 
-            It results in reduced protein loss while washing them. Protects hair from sun damage, 
-            its antimicrobial properties could be useful for treating dandruff. Offers the essential proteins necessary for revamping and healing damaged hair.
+            <img src="./assets/images/tri.png" width="10px"/>
+            The presence of lauric acid aids in getting the oil more easily absorbed deep into the hair shaft. <br>
+            <img src="./assets/images/tri.png" width="10px"/>
+            It results in reduced protein loss while washing hair. 
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Offers the essential proteins necessary for revamping and healing damaged hair.
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Protects hair from sun damage, its antimicrobial properties could be useful for treating dandruff.
           </p>
         </div>
       </div>
-      <div class="row my-auto d-flex bd-highlight">
+      <div class="row my-auto d-flex bd-highlight mx-0">
         <div class="col-md-3 col-0 my-auto"></div>
         <div class="col-md-9 col-12 my-auto">
           <div class="d-flex my-auto align-items-stretch bd-highlight">
             <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-              <h5 style="width: 5.6em;">HEALTH</h5>
+              <h5 style="width: 5.5em;">HEALTH</h5>
             </div>
             <div>
               <p class="px-md-5 pr-5 pl-2">
-                Helps burn adamant abdomen fat and aids in losing weight. It is easy to digest and aids in
-                  proper working of the thyroid and endocrine glands. Boosts metabolic rate , increases good 
-                  cholesterol due to its medium chain triglycerides (MCT) content, supports heart health,
-                  treats Alzheimer’s disease, prevents yeast infection and improves dental health. Highly recommended for bone health, treats epilepsy and manages diabetes.
+                <img src="./assets/images/tri.png" width="10px"/> Helps burn adamant abdomen fat and aids in losing weight. 
+                <br><img src="./assets/images/tri.png" width="10px"/> Boosts metabolic rate , supports heart health.
+                <br><img src="./assets/images/tri.png" width="10px"/> Easy to digest and aids in proper working of the thyroid and endocrine glands. 
+                <br><img src="./assets/images/tri.png" width="10px"/> Increases good cholesterol due to its medium chain triglycerides (MCT) content.
+                <br><img src="./assets/images/tri.png" width="10px"/> Treats Alzheimer’s disease, prevents yeast infection and improves dental health. 
+                <br><img src="./assets/images/tri.png" width="10px"/> Highly recommended for bone health, treats epilepsy and manages diabetes.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row my-auto d-flex bd-highlight">
+      <div class="row my-auto d-flex bd-highlight mx-0">
         <div class="col-md-3 col-0 my-auto"></div>
         <div class="col-md-9 col-12 my-auto">
           <div class="d-flex my-auto align-items-stretch bd-highlight">
             <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-              <h5 style="width: 5.6em;">COOKING</h5>
+              <h5 style="width: 5.5em;">COOKING</h5>
             </div>
             <div>
               <p class="px-md-5 pr-5 pl-2">
-                It is impeccably apt for sautéing, roasting and frying. 
-                It can also be used as a healthy swap for butter in making baked products which promotes
-                  the rich aroma and flavour of the dishes. Coconut chiefly a saturated fat is stable and
-                  able to hold high temperature thus is an excellent cooking medium.
+                <img src="./assets/images/tri.png" width="10px"/>It is impeccably apt for sautéing, roasting and frying. 
+                <br><img src="./assets/images/tri.png" width="10px"/>It can also be used as a healthy swap for butter in making baked products which promotes the rich aroma and flavour of the dishes. 
+                <br><img src="./assets/images/tri.png" width="10px"/>Coconut chiefly a saturated fat is stable and able to hold high temperature thus is an excellent cooking medium.
               </p>
             </div>
           </div>
@@ -278,7 +306,7 @@
       class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
       <h1 class="oil-name display-2">Flaxseed Oil</h1>
       <!-- Product Summary -->
-      <p class="px-md-5 pr-5 pl-2">
+      <p class="px-md-5 pr-5 pl-2" style="font-size: 20px; font-weight: 600">
         Add this Omega-3 rich oil to your diet to open the door to brighten skin, healthier hair and a happy body. Here is why every vegetarian needs flaxseed oil in their diet.
       </p>
       
@@ -286,51 +314,77 @@
         src="./assets/images/flaxseed-banner-2.png" />
       <div class="d-flex my-auto align-items-stretch bd-highlight">
         <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-          <h5 style="width: 5.6em;">SKIN</h5>
+          <h5 style="width: 5.5em;">SKIN</h5>
         </div>
         <div>
           <p class="px-md-5 pr-5 pl-2">
-            The Omega-3 fatty acids in cold pressed flax seed Oil helps your body to produce collagen that keeps skin smooth and elastic. Lignans in this oil brighten and lighten the complexion since these are potent antioxidants. It inhibits the production of sebum hence very effective in controlling acne.
+            <img src="./assets/images/tri.png" width="10px"/>
+            It contains Omega-3 fatty acids which helps your body to produce collagen that keeps skin smooth and elastic. 
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Lignans in this oil brighten and lighten the complexion since these are potent antioxidants.
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            It inhibits the production of sebum hence very effective in controlling acne.
           </p>
         </div>
       </div>
       <div class="d-flex my-auto align-items-stretch bd-highlight">
-        <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-          <h5 style="width: 5.6em;">HAIR</h5>
+        <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2" style="margin-top: 7px;">
+          <h5 style="width: 5.5em;">HAIR</h5>
         </div>
         <div>
           <p class="px-md-5 pr-5 pl-2">
-            Abundant Omega-3 fatty acids nourish hair follicles for healthy hair growth. It’s rich protein, selenium and lignans content build up hair volume, vitamin E in oil helps to treat hair loss and stimulate new hair growth. Prevents flaking, nourishes scalp and fights dandruff.
+            <img src="./assets/images/tri.png" width="10px"/>
+            Abundant Omega-3 fatty acids nourish hair follicles for healthy hair growth. 
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Prevents flaking, nourishes scalp and fights dandruff.
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            It’s rich protein, selenium and lignans content build up hair volume, vitamin E in oil helps to treat hair loss and stimulate new hair growth. 
           </p>
         </div>
       </div>
-      <div class="row my-auto d-flex bd-highlight">
+      <div class="row my-auto d-flex bd-highlight mx-0">
         <div class="col-md-3 col-0 my-auto"></div>
         <div class="col-md-9 col-12 my-auto">
           <div class="d-flex my-auto align-items-stretch bd-highlight">
             <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-              <h5 style="width: 5.6em;">HEALTH</h5>
+              <h5 style="width: 5.5em;">HEALTH</h5>
             </div>
             <div>
               <p class="px-md-5 pr-5 pl-2">
-                Flax seed oil effectively prevents atherosclerosis, myocardial infection and hypertensive
-disease. Reduces the risk of cancer, Alzheimer’s disease, multiple sclerosis, depression or nerve damage in diabetes. It stimulates metabolism, strengthen the excretory system, supports muscle growth fat reduction. Effective in Prostrate diseases and alleviates premenstrual headaches, irritability, abdominal pain and swelling.
-The long chain fatty acids present in cold pressed flax seed Oil aids in supporting brain function and eye health. The high content of omega 3 fatty acids in this oil improves heart health, decreases blood pressure, increases the elasticity of the arteries and lowers bad cholesterol. It builds more muscle mass, which burns more calories than fat resulting in weight loss.
+                <img src="./assets/images/tri.png" width="10px"/>
+                Effectively prevents atherosclerosis, myocardial infection, hypertensive disease. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                Reduces the risk of cancer, Alzheimer’s disease, multiple sclerosis.
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                Depression or nerve damage in diabetes, decreases BP, lowers bad cholesterol. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                It stimulates metabolism, strengthen excretory system, Improves heart health. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                The long chain fatty acids present aids in supporting brain function & eye health.
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                Effective in Prostrate diseases and alleviates premenstrual headaches, irritability, abdominal pain and swelling. Increases the elasticity of the arteries.  
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                It builds more muscle mass, which burns more calories than fat resulting in weight loss.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row my-auto d-flex bd-highlight">
+      <div class="row my-auto d-flex bd-highlight mx-0">
         <div class="col-md-3 col-0 my-auto"></div>
         <div class="col-md-9 col-12 my-auto">
           <div class="d-flex my-auto align-items-stretch bd-highlight">
             <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-              <h5 style="width: 5.6em;">COOKING</h5>
+              <h5 style="width: 5.5em;">COOKING</h5>
             </div>
             <div>
               <p class="px-md-5 pr-5 pl-2">
-                This oil should not be subjected to heat treatment such as heating, cooking, frying because it has very low thermal resistance. Best to consume it a spoonful in raw form, combine it with cottage cheese, yogurt, in addition to salads and cold dishes. You can add one teaspoon or 15 ml into smoothies, shakes or soups.
+                <img src="./assets/images/tri.png" width="10px"/>
+                This oil should not be subjected to heat treatment such as heating, cooking, frying because it has very low thermal resistance. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                Best to consume it a spoonful in raw form, combine it with cottage cheese, yogurt, in addition to salads and cold dishes. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                You can add one teaspoon or 15 ml into smoothies, shakes or soups.
               </p>
             </div>
           </div>
@@ -348,56 +402,79 @@ The long chain fatty acids present in cold pressed flax seed Oil aids in support
       class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
       <h1 class="oil-name display-2">Sesame Oil</h1>
       <!-- Product Summary -->
-      <p class="px-md-5 pr-5 pl-2">
+      <p class="px-md-5 pr-5 pl-2" style="font-size: 20px; font-weight: 600">
         Sesame oil is one versatile oil that has taken center stage in recent years as one of the best oils to consume both internally or externally.
       </p>
       <img class="img-fluid align-self-start d-md-none d-block py-5 w-50" src="./assets/images/sesame-banner-2.png" />
       <div class="d-flex my-auto align-items-stretch bd-highlight">
         <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-          <h5 style="width: 5.6em;">SKIN</h5>
+          <h5 style="width: 5.5em;">SKIN</h5>
         </div>
         <div>
           <p class="px-md-5 pr-5 pl-2">
-            It naturally protects against the uv sun rays and free radicals, Its excellent antibacterial properties, helps to get rid of acne, pimple, blackheads and white heads. Effective exfoliator, moisturizer, and skin brightener. Prevents wrinkles and leaves behind a naturally glowing skin.
+            <img src="./assets/images/tri.png" width="10px"/>
+            It naturally protects against the uv sun rays and free radicals.
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Its excellent antibacterial properties, helps to get rid of acne, pimple, blackheads and white heads. 
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Effective exfoliator, moisturizer, and skin brightener. 
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Prevents wrinkles and leaves behind a naturally glowing skin.
           </p>
         </div>
       </div>
       <div class="d-flex my-auto align-items-stretch bd-highlight">
-        <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-          <h5 style="width: 5.6em;">HAIR</h5>
+        <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2" style="margin-top: 7px;">
+          <h5 style="width: 5.5em;">HAIR</h5>
         </div>
         <div>
           <p class="px-md-5 pr-5 pl-2">
-            This oil is enriched with vitamins Band E, and minerals such as magnesium, calcium, phosphorus and protein which help strengthen the hair from the roots. It stimulates blood circulation, hair follicles thereby promotes hair growth, prevents premature hair greying and combat scalp dryness. It has quick penetrative and anti microbial properties that prevents dandruff. It is a natural sun-blocking agent that prevents hair from sun damage.
+            <img src="./assets/images/tri.png" width="10px"/>
+            It is a natural sun-blocking agent that prevents hair from sun damage.
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            It has quick penetrative and anti microbial properties that prevents dandruff. 
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Enriched with vitamins (B, E), minerals (magnesium, calcium, phosphorus) & protein which strengthens hair from roots.
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            It stimulates blood circulation, hair follicles thereby promotes hair growth, prevents premature hair greying and combat scalp dryness.
           </p>
         </div>
       </div>
-      <div class="row my-auto d-flex bd-highlight">
+      <div class="row my-auto d-flex bd-highlight mx-0">
         <div class="col-md-3 col-0 my-auto"></div>
         <div class="col-md-9 col-12 my-auto">
           <div class="d-flex my-auto align-items-stretch bd-highlight">
             <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-              <h5 style="width: 5.6em;">HEALTH</h5>
+              <h5 style="width: 5.5em;">HEALTH</h5>
             </div>
             <div>
               <p class="px-md-5 pr-5 pl-2">
-                It has a wide range of Polyunsaturated fatty acids, including Sesamol ,Sesaminol and Sesamin that benefits cardiovascular system, balances cholesterol levels. It stimulates blood circulation ,metabolism and improves intestinal health. Many cultures has used this oil to treat joint pain, premenstrual cramps, to regulate blood sugar levels, anxiety, depression and massages.
+                <img src="./assets/images/tri.png" width="10px"/>
+                It has a wide range of Polyunsaturated fatty acids, including Sesamol, Sesaminol and Sesamin that benefits cardiovascular system, balances cholesterol levels. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                It stimulates blood circulation ,metabolism and improves intestinal health. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                Many cultures has used this oil to treat joint pain, premenstrual cramps, to regulate blood sugar levels, anxiety, depression and massages.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row my-auto d-flex bd-highlight">
+      <div class="row my-auto d-flex bd-highlight mx-0">
         <div class="col-md-3 col-0 my-auto"></div>
         <div class="col-md-9 col-12 my-auto">
           <div class="d-flex my-auto align-items-stretch bd-highlight">
             <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-              <h5 style="width: 5.6em;">COOKING</h5>
+              <h5 style="width: 5.5em;">COOKING</h5>
             </div>
             <div>
               <p class="px-md-5 pr-5 pl-2">
-                It is commonly used in Asian cuisine, particularly for stir fries. Sesame oil is often used to saute
-meats and vegetables or is added to salads, dressings and marinades. It is quite versatile.
+                <img src="./assets/images/tri.png" width="10px"/>
+                It is quite versatile.
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                It is commonly used in Asian cuisine, particularly for stir fries. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                Sesame oil is often used to saute meats and vegetables or is added to salads, dressings and marinades. 
               </p>
             </div>
           </div>
@@ -415,56 +492,78 @@ meats and vegetables or is added to salads, dressings and marinades. It is quite
       class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
       <h1 class="oil-name display-2">Almond Oil</h1>
       <!-- Product Summary -->
-      <p class="px-md-5 pr-5 pl-2">
+      <p class="px-md-5 pr-5 pl-2" style="font-size: 20px; font-weight: 600">
         Almonds the “king of nuts", are packed with natural nutrients that can work wonders for a healthy you.
       </p>
       <img class="img-fluid align-self-start d-md-none d-block py-5 w-50" src="./assets/images/almond-banner-2.png" />
       <div class="d-flex my-auto align-items-stretch bd-highlight">
         <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-          <h5 style="width: 5.6em;">SKIN</h5>
+          <h5 style="width: 5.5em;">SKIN</h5>
         </div>
         <div>
           <p class="px-md-5 pr-5 pl-2">
-            It has high content of fatty acids such as Oleic, Linoleic, palmitic , stearic acid which acts as a emollient as well as a natural cleanser. It protects from bacteria and allergens, softens dry skins , prevents wrinkles,
-boosts cell regeneration and reduces Oxidative stress giving a healthy glow to your skin.
+            <img src="./assets/images/tri.png" width="10px"/>
+            It has high content of fatty acids (Oleic, Linoleic, palmitic, stearic) which acts as a emollient as well as a natural cleanser. 
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            It protects from bacteria and allergens, softens dry skins, prevents wrinkles.
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Boosts cell regeneration and reduces Oxidative stress giving a healthy glow to your skin.
           </p>
         </div>
       </div>
       <div class="d-flex my-auto align-items-stretch bd-highlight">
-        <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-          <h5 style="width: 5.6em;">HAIR</h5>
+        <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2" style="margin-top: 7px;">
+          <h5 style="width: 5.5em;">HAIR</h5>
         </div>
         <div>
           <p class="px-md-5 pr-5 pl-2">
-            It’s enriched Vitamin B-7, or biotin content, helps to keep hair and nails healthy and strong. It possesses amazing scalp treatment properties. Its Anti bacterial and fungicidal properties balances the yeast that causes dandruff. Easily soaks into the skin , hence hydrates the scalp and cleanses the hair follicles.
+            <img src="./assets/images/tri.png" width="10px"/>
+            It’s enriched Vitamin B-7, or biotin content, helps to keep hair and nails healthy and strong. <br><img src="./assets/images/tri.png" width="10px"/>
+            It possesses amazing scalp treatment properties. 
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Its Anti bacterial and fungicidal properties balances the yeast that causes dandruff. 
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Easily soaks into the skin, hence hydrates the scalp and cleanses the hair follicles.
           </p>
         </div>
       </div>
-      <div class="row my-auto d-flex bd-highlight">
+      <div class="row my-auto d-flex bd-highlight mx-0">
         <div class="col-md-3 col-0 my-auto"></div>
         <div class="col-md-9 col-12 my-auto">
           <div class="d-flex my-auto align-items-stretch bd-highlight">
             <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-              <h5 style="width: 5.6em;">HEALTH</h5>
+              <h5 style="width: 5.5em;">HEALTH</h5>
             </div>
             <div>
               <p class="px-md-5 pr-5 pl-2">
-                Almond oil is rich in Vitamin E content and it is a great source of magnesium, phosphorus and copper. The antioxidant rich oil is known for its free radical fighting abilities. It is anti inflammatory and boosts immunity. Because of its high levels of antioxidants, it reduces the risk of Cardiovascular disease . As almond oil is full of Monounsaturated fatty acids ,good cholesterol(HDL) gets elevated, when it replaces saturated and trans fat.
+                <img src="./assets/images/tri.png" width="10px"/>
+                Rich in Vitamin E content & a great source of magnesium, phosphorus & copper. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                The antioxidant rich oil is known for its free radical fighting abilities. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                It is anti inflammatory and boosts immunity. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                Contains high levels of antioxidants, that reduces risk of Cardiovascular disease. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                As almond oil is full of Monounsaturated fatty acids, good cholesterol(HDL) gets elevated, when it replaces saturated and trans fat.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row my-auto d-flex bd-highlight">
+      <div class="row my-auto d-flex bd-highlight mx-0">
         <div class="col-md-3 col-0 my-auto"></div>
         <div class="col-md-9 col-12 my-auto">
           <div class="d-flex my-auto align-items-stretch bd-highlight">
             <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-              <h5 style="width: 5.6em;">COOKING</h5>
+              <h5 style="width: 5.5em;">COOKING</h5>
             </div>
             <div>
               <p class="px-md-5 pr-5 pl-2">
-                At low heat, Its mild flavour makes it perfect for slipping into dishes. It is best used for salad dressing, low heat baking, or as a finishing oil on top of a dish to add extra flavour and nutrition.
+                <img src="./assets/images/tri.png" width="10px"/>
+                At low heat, Its mild flavour makes it perfect for slipping into dishes. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                It is best used for salad dressing, low heat baking, or as a finishing oil on top of a dish to add extra flavour and nutrition.
               </p>
             </div>
           </div>
@@ -482,58 +581,77 @@ boosts cell regeneration and reduces Oxidative stress giving a healthy glow to y
       class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
       <h1 class="oil-name display-2">Ground-Nut Oil</h1>
       <!-- Product Summary -->
-      <p class="px-md-5 pr-5 pl-2">
+      <p class="px-md-5 pr-5 pl-2" style="font-size: 20px; font-weight: 600">
         Renowned nutritionists and dietitians bow down to cold pressed ground nut oil both for its nutrition and health benefits.
       </p>
       <img class="img-fluid align-self-start d-md-none d-block py-5 w-50"
         src="./assets/images/groundnut-banner-2.png" />
       <div class="d-flex my-auto align-items-stretch bd-highlight">
         <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-          <h5 style="width: 5.6em;">SKIN</h5>
+          <h5 style="width: 5.5em;">SKIN</h5>
         </div>
         <div>
           <p class="px-md-5 pr-5 pl-2">
-            Being enriched with Vitamin E, peanut oil can reduce and delay the signs of ageing like blemishes, dark spots, pigmentation, fine lines and patchy skin, it
-lightens the lip colour and restore its natural pinkies, can be applied as a lip balms.
+            <img src="./assets/images/tri.png" width="10px"/>
+            Being enriched with Vitamin E, peanut oil can reduce and delay the signs of ageing like blemishes, dark spots, pigmentation, fine lines and patchy skin.
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            It lightens the lip colour and restore its natural pinkies. Can be applied as a lip balms.
           </p>
         </div>
       </div>
       <div class="d-flex my-auto align-items-stretch bd-highlight">
-        <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-          <h5 style="width: 5.6em;">HAIR</h5>
+        <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2" style="margin-top: 7px;">
+          <h5 style="width: 5.5em;">HAIR</h5>
         </div>
         <div>
           <p class="px-md-5 pr-5 pl-2">
-            Cold pressed groundnut oil is enriched with potent antioxidant vitamin E that controls hair damage, prevents dandruff, treat split ends and moisturizes the hair. It also boosts hair growth and reduces protein loss in hair due to its emollient properties. It also improves scalp health and prevents scalp dryness.
+            <img src="./assets/images/tri.png" width="10px"/>
+            Enriched with potent antioxidant vitamin E that prevents dandruff & hair damage, treat split ends & moisturizes hair. 
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            It also boosts hair growth and reduces protein loss in hair due to its emollient properties. <br><img src="./assets/images/tri.png" width="10px"/>
+            It also improves scalp health and prevents scalp dryness.
           </p>
         </div>
       </div>
-      <div class="row my-auto d-flex bd-highlight">
+      <div class="row my-auto d-flex bd-highlight mx-0">
         <div class="col-md-3 col-0 my-auto"></div>
         <div class="col-md-9 col-12 my-auto">
           <div class="d-flex my-auto align-items-stretch bd-highlight">
             <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-              <h5 style="width: 5.6em;">HEALTH</h5>
+              <h5 style="width: 5.5em;">HEALTH</h5>
             </div>
             <div>
               <p class="px-md-5 pr-5 pl-2">
-                This oil is rich in Monounsaturated fatty acids (MUFA) that helps in improving heart health, prevents coronary artery disease and heart attacks by maintaining a healthy blood lipid profile , regulates high blood pressure and prevents many disorders of stomach. It is used as an antispasmodic . It helps in building muscles
-and for body strengthening. Good for weight loss and joint pain.
+                <img src="./assets/images/tri.png" width="10px"/>
+                Regulates high blood pressure and prevents many disorders of stomach. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                It is used as an antispasmodic. Good for weight loss and joint pain.
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                It helps in building muscles and for body strengthening.
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                Rich in Monounsaturated fatty acids (MUFA) that helps in improving heart health, prevents coronary artery disease & heart attacks by maintaining a healthy blood lipid profile.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row my-auto d-flex bd-highlight">
+      <div class="row my-auto d-flex bd-highlight mx-0">
         <div class="col-md-3 col-0 my-auto"></div>
         <div class="col-md-9 col-12 my-auto">
           <div class="d-flex my-auto align-items-stretch bd-highlight">
             <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-              <h5 style="width: 5.6em;">COOKING</h5>
+              <h5 style="width: 5.5em;">COOKING</h5>
             </div>
             <div>
               <p class="px-md-5 pr-5 pl-2">
-                The oil has nutty flavour and has a relatively high smoking point which makes it ideal for cooking, deep frying . It is used in South Asian cuisines to make savoury dishes and salads. It imparts great flavor to gravies, stir -fries, and curries. It can be used as barbecue marinades, dips, sauces, and peanut butter
+                <img src="./assets/images/tri.png" width="10px"/>
+                It can be used as barbecue marinades, dips, sauces, and peanut butter.
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                It is used in South Asian cuisines to make savoury dishes and salads.
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                It imparts great flavor to gravies, stir-fries, and curries. 
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                The oil has nutty flavour and has a relatively high smoking point which makes it ideal for cooking, deep frying.
               </p>
             </div>
           </div>
@@ -551,63 +669,76 @@ and for body strengthening. Good for weight loss and joint pain.
       class="col-lg-9 col-12 pl-md-5 pr-0 pl-0 pr-0 pt-3 d-flex flex-column align-items-stretch align-content-stretch">
       <h1 class="oil-name display-2">Mustard Oil</h1>
       <!-- Product Summary -->
-      <p class="px-md-5 pr-5 pl-2">
+      <p class="px-md-5 pr-5 pl-2" style="font-size: 20px; font-weight: 600">
         Cold pressed mustard oil is one versatile oil that rules both over our heart and health due its immense beneficial properties.
       </p>
       <img class="img-fluid align-self-start d-md-none d-block py-5 w-50"
         src="./assets/images/mustard-banner-2.png" />
       <div class="d-flex my-auto align-items-stretch bd-highlight">
         <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-          <h5 style="width: 5.6em;">SKIN</h5>
+          <h5 style="width: 5.5em;">SKIN</h5>
         </div>
         <div>
           <p class="px-md-5 pr-5 pl-2">
-            The presence of ALLYL ISOTHICYANATE prevents and inhibits the fungal growth infection as that of in athletes foot. 
-            Due to its rich Vitamin E content, it acts as an natural cleanser by stimulating the sweat glands,
-              it lightens pigmentation spots, improves complexion, arrests premature aging, acts as natural sunscreen and fights air pollutants.
+            <img src="./assets/images/tri.png" width="10px"/>
+            The presence of ALLYL ISOTHICYANATE prevents and inhibits the fungal growth infection as that of in athletes foot.
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Due to its rich Vitamin E content, it acts as an natural cleanser by stimulating the sweat glands, it lightens pigmentation spots, improves complexion, arrests premature aging.
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Acts as natural sunscreen and fights air pollutants.
           </p>
         </div>
       </div>
       <div class="d-flex my-auto align-items-stretch bd-highlight">
-        <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-          <h5 style="width: 5.6em;">HAIR</h5>
+        <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2" style="max-resolution: 7px;">
+          <h5 style="width: 5.5em;">HAIR</h5>
         </div>
         <div>
           <p class="px-md-5 pr-5 pl-2">
-            The essential fatty acids content moisturizes and revitalizes the scalp, fights dandruff and recurring fungal infections,
-              prevents greying of hair and promotes hair growth.
+            <img src="./assets/images/tri.png" width="10px"/>
+            The essential fatty acids content moisturizes and revitalizes the scalp, fights dandruff and recurring fungal infections.
+            <br><img src="./assets/images/tri.png" width="10px"/>
+            Prevents greying of hair and promotes hair growth.
           </p>
         </div>
       </div>
-      <div class="row my-auto d-flex bd-highlight">
+      <div class="row my-auto d-flex bd-highlight mx-0">
         <div class="col-md-3 col-0 my-auto"></div>
         <div class="col-md-9 col-12 my-auto">
           <div class="d-flex my-auto align-items-stretch bd-highlight">
             <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-              <h5 style="width: 5.6em;">HEALTH</h5>
+              <h5 style="width: 5.5em;">HEALTH</h5>
             </div>
             <div>
               <p class="px-md-5 pr-5 pl-2">
-                Alpha-linolenic acid (ALA) lowers the IHD (Ischaemic Heart Disease) risk, while Glucosinolates and Phytonutrients provide 
-                protection against colorectal and gastrointestinal cancers.
-                  Very effective for Rheumatoid arthritis, Asthma, sinus congestion, it invigorates digestion and is ideal for dental health.
+                <img src="./assets/images/tri.png" width="10px"/>
+                Alpha-linolenic acid (ALA) lowers the IHD (Ischaemic Heart Disease) risk.
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                Very effective for Rheumatoid arthritis, Asthma, sinus congestion.
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                It invigorates digestion and is ideal for dental health.
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                Glucosinolates and Phytonutrients provide protection against colorectal and gastrointestinal cancers.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row my-auto d-flex bd-highlight">
+      <div class="row my-auto d-flex bd-highlight mx-0">
         <div class="col-md-3 col-0 my-auto"></div>
         <div class="col-md-9 col-12 my-auto">
           <div class="d-flex my-auto align-items-stretch bd-highlight">
             <div class="d-flex align-items-center justify-content-center rounded-circle text-center text-light mx-2">
-              <h5 style="width: 5.6em;">COOKING</h5>
+              <h5 style="width: 5.5em;">COOKING</h5>
             </div>
             <div>
               <p class="px-md-5 pr-5 pl-2">
+                <img src="./assets/images/tri.png" width="10px"/>
                 Most unique factor of this cooking oil is that its composition is based on our body requirements hence is highly therapeutic for us.
-                  It carries a pungent flavour which tastes great in many recipes.
-                  It tolerates high temperature and is Ideal for shallow, stir fry, for pickles ,chutneys and snacks.
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                It carries a pungent flavour which tastes great in many recipes.
+                <br><img src="./assets/images/tri.png" width="10px"/>
+                It tolerates high temperature hence ideal for shallow, stir fry, pickles, chutneys & snacks.
               </p>
             </div>
           </div>
@@ -646,8 +777,8 @@ and for body strengthening. Good for weight loss and joint pain.
                   aria-expanded="false" aria-controls="collapseOne">
               <h2 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne"
-                  aria-expanded="false" aria-controls="collapseOne">
-                  What is querySelector?
+                  aria-expanded="false" aria-controls="collapseOne" style="font-size: 20px;">
+                  What is meaning of extravirgin oil? What is coldpress technique?
                 </button>
               </h2>
             </div>
@@ -655,12 +786,7 @@ and for body strengthening. Good for weight loss and joint pain.
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body blockquote">
                 
-                The querySelector() method returns the first element that
-                matches a specified CSS selector(s) in the document. ... If
-                the selector matches an ID in document that is used several
-                times (Note that an "id" should be unique within a page and
-                should not be used more than once), it returns the first
-                matching element. &nbsp;<i>-Team Arogyam</i>
+                Extravirgin means oil extracted by pressing of pure & healthy oil seeds. When oil extracted by  pressing of oil seeds at room temperature called coldpressed.<br><i style="color: #8b8b8b;font-weight: 400;">-Team Arogyam</i>
               </div>
             </div>
           </div>
@@ -669,16 +795,14 @@ and for body strengthening. Good for weight loss and joint pain.
             aria-expanded="false" aria-controls="collapseTwo">
               <h2 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                  aria-expanded="false" aria-controls="collapseTwo">
-                  What does querySelector do in JS?
+                  aria-expanded="false" aria-controls="collapseTwo" style="font-size: 20px;">
+                  What is the shelf-life of extravirgin coldpressed oil?
                 </button>
               </h2>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
               <div class="card-body blockquote">
-                The Document method querySelector() returns the first Element
-                within the document that matches the specified selector, or
-                group of selectors. If no matches are found, null is returned. &nbsp;<i>-Team Arogyam</i>
+                When packed and stored in cool & dark place it lasts 12-18 months without rancid. <br><i style="color: #8b8b8b;font-weight: 400;">-Team Arogyam</i>
               </div>
             </div>
           </div>
@@ -687,18 +811,14 @@ and for body strengthening. Good for weight loss and joint pain.
             aria-expanded="false" aria-controls="collapseThree" >
               <h2 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
-                  aria-expanded="false" aria-controls="collapseThree">
-                  What does getElementById mean?
+                  aria-expanded="false" aria-controls="collapseThree" style="font-size: 20px;">
+                  Why coldpressed oil is good for health?
                 </button>
               </h2>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
               <div class="card-body blockquote">
-                Definition and Usage The getElementById() method returns the
-                element that has the ID attribute with the specified value.
-                This method is one of the most common methods in the HTML DOM,
-                and is used almost every time you want to manipulate, or get
-                info from, an element on your document. &nbsp;<i>-Team Arogyam</i>
+                Heat and chemicals damage actual fatty acid composition of oil and also destroy vitamins, Phytosterols, Antioxidants & minerals. Induce Rancid Unsaturated fatty acids, trans fats and free radicals. Coldpressed oil is free from all such issues. <br><i style="color: #8b8b8b;font-weight: 400;">-Team Arogyam</i>
               </div>
             </div>
           </div>
@@ -707,18 +827,14 @@ and for body strengthening. Good for weight loss and joint pain.
             aria-expanded="false" aria-controls="collapseFour">
               <h2 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
-                  aria-expanded="false" aria-controls="collapseFour">
-                  What does getElementById mean?
+                  aria-expanded="false" aria-controls="collapseFour" style="font-size: 20px;">
+                  Which oil is best for consumption?
                 </button>
               </h2>
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
               <div class="card-body blockquote">
-                Definition and Usage The getElementById() method returns the
-                element that has the ID attribute with the specified value.
-                This method is one of the most common methods in the HTML DOM,
-                and is used almost every time you want to manipulate, or get
-                info from, an element on your document. &nbsp;<i>-Team Arogyam</i>
+                Only locally produced coldpressed, extravirgin and physically filtered oil is any time good. <br><i style="color: #8b8b8b;font-weight: 400;">-Team Arogyam</i>
               </div>
             </div>
           </div>
@@ -727,18 +843,14 @@ and for body strengthening. Good for weight loss and joint pain.
             aria-expanded="false" aria-controls="collapseFive">
               <h2 class="mb-0">
                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive"
-                  aria-expanded="false" aria-controls="collapseFive">
-                  What does getElementById mean?
+                  aria-expanded="false" aria-controls="collapseFive" style="font-size: 20px;">
+                  Is extravirgin coldpressed oil super food?
                 </button>
               </h2>
             </div>
             <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
               <div class="card-body blockquote">
-                Definition and Usage The getElementById() method returns the
-                element that has the ID attribute with the specified value.
-                This method is one of the most common methods in the HTML DOM,
-                and is used almost every time you want to manipulate, or get
-                info from, an element on your document. &nbsp;<i>-Team Arogyam</i>
+                 Yes indeed, almost all natural-oil seeds oil have very healthy Poly & MONO Unsaturated and Saturated Fatty Acids composition. <br><i style="color: #8b8b8b;font-weight: 400;">-Team Arogyam</i>
               </div>
             </div>
           </div>
@@ -759,11 +871,19 @@ and for body strengthening. Good for weight loss and joint pain.
               <h4 class="ml-4 mt-4">A marketking firm</h4>
             </div>
           </div>
+          
           <div class="col-12 col-md-5 footer-text-right">
-            <div class="footer-text-right-div">
-              <h5 class="mr-1 mt-4"></h5>For business contact: natureskarawan@gmail.com</h5>
+            <div class="footer-text-right-div mt-3">
+              <!-- <h5 class="mr-1 mt-4"></h5> -->
+              For business contact: <a style="color: black; font-weight: 700;" href="tomail:natureskarawan@gmail.com" target="_blank">natureskarawan@gmail.com</a><br/>
+              Developed by <a href="https://dscvitpune.com/" target="_blank" title="Visit DSC Vit Pune Website" style=" color: black;">Google Developer Student Club, VIT Pune</a></h5>
             </div>
           </div>
+          <!-- <div class="col-12 col-md-12 footer-text-center">
+            <div class="footer-text-center-div">
+              <a href="http://dscvitpune.com" style="color: rgb(32, 21, 21); font-weight: 500; font-size: 17px;" target="_blank">Developed by Google Developer Student Club, VIT Pune</a>
+            </div>
+          </div> -->
         </div>
       </div>
       <!-- <h5 class="float-right-text">A marketing firm</h5> -->
