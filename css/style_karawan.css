@@ -118,7 +118,7 @@ html {
     position: unset !important;
     bottom: 10vh !important;
     /* font-size: 3em !important; */
-    font-size: 8vw !important;
+    font-size: 6vw !important;
     width: 98% !important;
     margin-top: 6.75vh;
     /* margin-bottom: 0rem !important; overwriting bootstrap mb,pb classes */
@@ -156,7 +156,7 @@ html {
   }
   .content-right-page-2 {
     width: 80vw !important;
-    font-size: 5.5vw !important;
+    font-size: 2.5vw !important;
   }
   .content-right-page-2-bottom {
     margin: auto !important;
@@ -260,6 +260,10 @@ html {
   }
 }
 
+.specialcase:hover{
+  background-color: black !important;
+}
+
 /* underline-small */
 .navbar .nav-link .h5::after {
   content: "";
@@ -280,12 +284,12 @@ html {
   /* position: fixed; */
   right: 2vw;
   font-size: 35px;
-  font-family: "Segoe UI";
+  font-family: 'Roboto', sans-serif;
 }
 .karawan-nav-text {
   color: #161616;
   font-weight: bold;
-  font-family: "Segoe UI";
+  font-family: 'Roboto', sans-serif;
 }
 /* For Page 1 Background rectangles */
 .semi_rect_circle_transparent {
@@ -359,14 +363,14 @@ html {
   width: max-content;
   bottom: -38vh;
   left: 1.5vw;
-  font-size: 35px;
+  font-size: 25px;
 }
 .text-bottom-left-k-p-2 {
   position: absolute;
   width: max-content;
   bottom: 3.425vh;
   left: 1.5vw;
-  font-size: 35px;
+  font-size: 25px;
 }
 .text-bottom-left-k-p-3 {
   position: absolute;
@@ -374,7 +378,7 @@ html {
   width: max-content;
   bottom: 0vh;
   left: 1.5vw;
-  font-size: 35px;
+  font-size: 25px;
 }
 .text-bottom-right {
   position: absolute;
@@ -429,7 +433,7 @@ html {
 .content-right-page-2,
 .content-right-page-2 p {
   font-size: 4vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
   letter-spacing: -0.06em;
   margin: auto;
   width: 45vw;
@@ -501,7 +505,7 @@ html {
 .text-body-page-4 {
   text-align: left;
   font-size: 4vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: -0.06em;
   margin-top: 2.6vh;
   /* letter-spacing: -0.12vw; */
