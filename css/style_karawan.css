@@ -97,7 +97,8 @@ html {
   }
   #karawan-4 {
     top: 600vh;
-    height: 150vh;
+    height: auto;
+    padding-bottom: 35vh;
   }
 
   #whatsapp-logo {
