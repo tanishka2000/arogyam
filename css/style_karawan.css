@@ -34,7 +34,7 @@ html {
 #karawan-4 {
   position: absolute;
   top: 300vh;
-  height: 100vh;
+  height: auto;
   background-color: #39df08;
   background-image: url(../assets/images/karawan_page_4_shape2.png);
   background-position-y: bottom;
@@ -156,25 +156,16 @@ html {
   }
   .content-right-page-2 {
     width: 80vw !important;
-    font-size: 2.5vw !important;
+    /* font-size: 2.5vw !important; */
   }
   .content-right-page-2-bottom {
     margin: auto !important;
-    /* position: absolute; */
-    /* top: auto;
-    left: 0;
-    right: 0;
-    bottom: 1em; */
   }
   /* .karawan-page-2-section-left { */
-    /* height: max-content !important; */
+  /* height: max-content !important; */
   /* } */
   .text-head-page-4 {
     font-size: 3em !important;
-  }
-  .line-1,
-  .line-2 {
-    font-size: 0.8em !important;
   }
   .bottom-karawan-logo {
     position: absolute;
@@ -213,16 +204,13 @@ html {
     align-self: flex-end !important;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   #content-right-page-3-bottom-row {
     background-color: #39df08;
   }
 }
 /* For tablet and small screen devices */
 @media screen and (min-width: 425px) and (max-width: 991px) {
-  .content-right-page-2 {
-    font-size: 4.5vw !important ;
-  }
   .content-right-page-2-bottom .text-head-2 {
     padding-top: 1.5rem !important;
     font-size: 4.5vw !important ;
@@ -239,7 +227,7 @@ html {
     font-size: 4.5vw !important ;
   }
   .text-body-page-4 {
-    font-size: 4.5vw !important ;
+    font-size: 1.5rem !important ;
   }
 }
 @media screen and (min-width: 725px) and (max-width: 991px) {
@@ -260,7 +248,7 @@ html {
   }
 }
 
-.specialcase:hover{
+.specialcase:hover {
   background-color: black !important;
 }
 
@@ -284,12 +272,12 @@ html {
   /* position: fixed; */
   right: 2vw;
   font-size: 35px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .karawan-nav-text {
   color: #161616;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* For Page 1 Background rectangles */
 .semi_rect_circle_transparent {
@@ -411,7 +399,7 @@ html {
 
 /**************For Karawan Page 2****************/
 /* .karawan-page-2-section-left { */
-  /* overflow: visible; */
+/* overflow: visible; */
 /* } */
 .logo-karawan-2 {
   /* margin-left: 4.5vw; */
@@ -432,8 +420,8 @@ html {
 }
 .content-right-page-2,
 .content-right-page-2 p {
-  font-size: 4vh;
-  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif !important;
   letter-spacing: -0.06em;
   margin: auto;
   width: 45vw;
@@ -460,7 +448,7 @@ html {
   border-radius: 50%;
 }
 .main-content-page-3 {
-  /* border: 2px solid black; */
+  border: 2px solid black;
   height: 100%;
   padding-top: 18.5vh;
 }
@@ -477,7 +465,17 @@ html {
   overflow: visible;
 }
 .karawan-page-3-section-right {
-  height: 100%;
+  height: max-content;
+}
+.karawan-page-3-subheading::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 5px;
+  background-color: #16161624;
+  transition: all ease-in-out 250ms;
 }
 /**************For Karawan Page 4****************/
 .main-container-page-4 {
@@ -504,8 +502,8 @@ html {
 
 .text-body-page-4 {
   text-align: left;
-  font-size: 4vh;
-  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
   letter-spacing: -0.06em;
   margin-top: 2.6vh;
   /* letter-spacing: -0.12vw; */
@@ -521,4 +519,10 @@ html {
   margin-left: 11.67vw;
   max-width: 90vw;
   height: 27.67vh;
+}
+
+.developed-by {
+  color: rgb(131, 131, 131);
+  font-weight: 500;
+  font-size: 17px;
 }
