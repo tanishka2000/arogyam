@@ -1,5 +1,5 @@
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 @font-face {
@@ -14,15 +14,15 @@ h4,
 h5,
 h6,
 a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-h5{
+h5 {
   font-weight: 700;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: revert;
 }
 
@@ -133,6 +133,7 @@ p {
 }
 
 #mainHeader #centerImg-pc {
+  top: 6vh;
   align-self: center;
   position: absolute;
   right: 0;
@@ -143,10 +144,9 @@ p {
 #subtitle {
   background-color: #006b12;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.4;
   border-radius: 5px;
-
 }
 
 .subtitle-wrap::after {
@@ -170,7 +170,7 @@ p {
 
 button.contact {
   width: 400px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: medium;
   background-color: #b41414;
@@ -180,13 +180,13 @@ button.contact {
 }
 
 p.h5 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: medium;
   font-weight: 400;
 }
 
 p.market-credit {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 25px !important;
   color: #000000 !important;
   font-weight: 400;
@@ -336,7 +336,7 @@ p.lead {
 .contactUsFormClass {
   border: 1px solid #b41414;
   border-radius: 8px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 0;
   position: fixed;
   right: 0;
@@ -354,7 +354,7 @@ p.lead {
   font-size: 25px;
   background-color: #b41414;
   border-radius: 8px 8px 0px 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .align-right-bottom {
@@ -391,7 +391,7 @@ p.lead {
 #alert-area {
   margin-top: 15vh;
   border-radius: 8px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 0%;
   position: fixed;
 }
