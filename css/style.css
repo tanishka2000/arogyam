@@ -687,7 +687,10 @@ p.lead {
   #faq {
     top: 700vh !important;
   }
+}
 
+@media screen and (max-width: 770px) {
+  /* Alert boxes */
   #errorAlert,
   #successAlert {
     display: none;
